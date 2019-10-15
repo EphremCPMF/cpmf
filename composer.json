@@ -286,6 +286,10 @@
         },
         "enable-patching": true,
         "patches": {
+            "drupal/views_php": {
+                "Too few arguments in views_php": "https://www.drupal.org/files/issues/miss_arg_1-2627234-6.patch",
+                "Deprecated function": "https://www.drupal.org/files/issues/2019-01-16/create_function_depreciate-3026201-3.patch"
+            }
         }
     }
 }
