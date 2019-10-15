@@ -1,0 +1,20 @@
+uuid: 93e9fa7b-0a8c-4a41-a0a7-39002fd6f1d5
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_i_ugg_pros_trained
+field_name: field_i_ugg_pros_trained
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

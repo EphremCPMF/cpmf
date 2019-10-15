@@ -1,0 +1,26 @@
+uuid: 6917dcd6-243c-4d37-b33d-6f2ff83b6021
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pillar_isc
+    - node.type.indicator_data
+  module:
+    - computed_field
+id: node.indicator_data.field_pillar_isc
+field_name: field_pillar_isc
+entity_type: node
+bundle: indicator_data
+label: 'Inclusive and Safer Cities Development'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  prefix: ''
+  suffix: ''
+  code: '$value = cpmf_data_get_pillar_score(''isc'', $entity);'
+field_type: computed_decimal

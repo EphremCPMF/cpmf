@@ -1,0 +1,31 @@
+uuid: 43d4cf28-eb73-45d0-abb5-4e4b4030f5e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_i_uis_water_treated
+    - node.type.indicator_data
+  module:
+    - disable_field
+third_party_settings:
+  disable_field:
+    add_disable: none
+    add_disable_roles: {  }
+    edit_disable: none
+    edit_disable_roles: {  }
+id: node.indicator_data.field_i_uis_water_treated
+field_name: field_i_uis_water_treated
+entity_type: node
+bundle: indicator_data
+label: 'Of the city’s total water supply, what proportion is safely treated?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: !!float 0
+  max: !!float 100
+  prefix: ''
+  suffix: '%'
+field_type: decimal

@@ -1,0 +1,63 @@
+<?php
+
+/**
+ * @file
+ * Contains cpmf_message.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\message\Entity\Message;
+
+/*
+ * Implements hook_user_login().
+ */
+function cpmf_message_user_login($account) {
+  $message = Message::create(['template' => 'logged_in', 'uid' => $account->id()]);
+  $message->set('field_user_reference', $account->id());
+  $message->save();
+}
+
+/*
+ * Implements hook_user_logout().
+ */
+function cpmf_message_user_logout($account) {
+  $message = Message::create(['template' => 'logged_out', 'uid' => $account->id()]);
+  $message->set('field_user_reference', $account->id());
+  $message->save();
+}
+
+/*
+ * Implements hook_node_update().
+ */
+function cpmf_message_node_update($node) {
+  $message = Message::create(['template' => 'edited_content', 'uid' => $node->getOwnerId()]);
+  $message->set('field_node_reference', $node);
+  $message->set('field_user_reference', $node->getOwner());
+  $message->save();
+}
+
+/*
+ * Implements hook_node_insert().
+ */
+function cpmf_message_node_insert($node) {
+  $message = Message::create(['template' => 'added_content', 'uid' => $node->getOwnerId()]);
+  $message->set('field_node_reference', $node);
+  $message->set('field_user_reference', $node->getOwner());
+  $message->save();
+}
+
+/**
+ * Implements hook_help().
+ */
+function cpmf_message_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the cpmf_message module.
+    case 'help.page.cpmf_message':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Message functionality for CPMF') . '</p>';
+      return $output;
+
+    default:
+  }
+}

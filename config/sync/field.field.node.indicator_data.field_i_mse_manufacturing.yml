@@ -1,0 +1,31 @@
+uuid: 7f926928-454e-4019-9648-cf08e8c11fd8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_i_mse_manufacturing
+    - node.type.indicator_data
+  module:
+    - disable_field
+third_party_settings:
+  disable_field:
+    add_disable: none
+    add_disable_roles: {  }
+    edit_disable: none
+    edit_disable_roles: {  }
+id: node.indicator_data.field_i_mse_manufacturing
+field_name: field_i_mse_manufacturing
+entity_type: node
+bundle: indicator_data
+label: 'What is the percentage of MSMEs that were functional in the city over the past one year that are engaged in manufacturing? '
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: !!float 0
+  max: !!float 100
+  prefix: ''
+  suffix: '%'
+field_type: decimal

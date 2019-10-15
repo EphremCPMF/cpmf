@@ -1,0 +1,33 @@
+uuid: d00ee3fd-0338-4303-af46-7b73dc97d304
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_data_completeness
+    - node.type.indicator_data
+  module:
+    - computed_field
+    - disable_field
+third_party_settings:
+  disable_field:
+    add_disable: none
+    add_disable_roles: {  }
+    edit_disable: none
+    edit_disable_roles: {  }
+id: node.indicator_data.field_data_completeness
+field_name: field_data_completeness
+entity_type: node
+bundle: indicator_data
+label: 'Data completeness'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  code: '$value = cpmf_get_city_data_completeness($entity);'
+  prefix: ''
+  suffix: '%'
+field_type: computed_integer

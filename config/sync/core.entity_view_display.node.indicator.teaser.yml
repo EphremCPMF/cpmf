@@ -1,0 +1,58 @@
+uuid: d820f3ad-4fc8-432a-a3f6-9c32b6d8d45e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.indicator.body
+    - field.field.node.indicator.field_indicator_category
+    - field.field.node.indicator.field_indicator_data_field
+    - field.field.node.indicator.field_indicator_name
+    - field.field.node.indicator.field_indicator_number
+    - field.field.node.indicator.field_indicator_weight
+    - field.field.node.indicator.field_kpi_class
+    - field.field.node.indicator.field_level_of_reporting
+    - field.field.node.indicator.field_pillars
+    - field.field.node.indicator.field_reporting_frequency
+    - field.field.node.indicator.field_sdg
+    - field.field.node.indicator.field_sdg_number
+    - field.field.node.indicator.field_supplementary_kpi
+    - node.type.indicator
+  module:
+    - text
+    - user
+id: node.indicator.teaser
+targetEntityType: node
+bundle: indicator
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  field_indicator_category: true
+  field_indicator_data_field: true
+  field_indicator_name: true
+  field_indicator_number: true
+  field_indicator_weight: true
+  field_kpi_class: true
+  field_level_of_reporting: true
+  field_pillars: true
+  field_reporting_frequency: true
+  field_sdg: true
+  field_sdg_number: true
+  field_supplementary_kpi: true
+  langcode: true

@@ -1,0 +1,18 @@
+uuid: 3524e23f-a5e8-4f52-96dc-6f8775636e43
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_i_gds_has_green_plan
+field_name: field_i_gds_has_green_plan
+entity_type: node
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

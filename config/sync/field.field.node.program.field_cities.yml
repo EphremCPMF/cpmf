@@ -1,0 +1,36 @@
+uuid: 3fc2484d-ecd3-45bb-838e-8eacd3aaa6e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cities
+    - node.type.city
+    - node.type.program
+  module:
+    - disable_field
+third_party_settings:
+  disable_field:
+    add_disable: none
+    add_disable_roles: {  }
+    edit_disable: none
+    edit_disable_roles: {  }
+id: node.program.field_cities
+field_name: field_cities
+entity_type: node
+bundle: program
+label: Cities
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      city: city
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

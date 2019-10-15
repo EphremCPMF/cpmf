@@ -1,0 +1,14 @@
+{
+  "name": "drupal/cpmf_charts",
+  "type": "drupal-module",
+  "description": "Custom charting for CPMF",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/cpmf_charts",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/cpmf_charts",
+    "source": "http://cgit.drupalcode.org/cpmf_charts"
+  },
+  "require": { }
+}

@@ -1,0 +1,38 @@
+uuid: 615c3ce8-b232-4e17-aef2-640d4f7d6f5d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.indicator_target_only.field_indicator
+    - field.field.paragraph.indicator_target_only.field_indicator_target
+    - paragraphs.paragraphs_type.indicator_target_only
+  module:
+    - content_moderation
+id: paragraph.indicator_target_only.default
+targetEntityType: paragraph
+bundle: indicator_target_only
+mode: default
+content:
+  field_indicator:
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_indicator_target:
+    weight: 102
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  moderation_state:
+    type: moderation_state_default
+    weight: 100
+    settings: {  }
+    region: content
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
+  uid: true

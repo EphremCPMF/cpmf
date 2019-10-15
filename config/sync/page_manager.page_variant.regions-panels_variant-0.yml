@@ -1,0 +1,51 @@
+uuid: 3ddc0ee3-cd25-4810-8a26-f5b98879ccde
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.regions
+  module:
+    - cpmf_charts
+    - panels
+id: regions-panels_variant-0
+label: Panels
+variant: panels_variant
+variant_settings:
+  blocks:
+    7d605a21-47d4-403a-901d-7e79f173eb6e:
+      id: top_regions
+      label: 'Top Regions Chart Block'
+      provider: cpmf_charts
+      label_display: '0'
+      region: main
+      weight: 0
+      uuid: 7d605a21-47d4-403a-901d-7e79f173eb6e
+      context_mapping: {  }
+  id: panels_variant
+  uuid: ae6eda76-5ac9-4a46-9e96-7b76c6b3cddf
+  label: null
+  weight: 0
+  layout: bs_1col
+  layout_settings:
+    layout:
+      wrapper: div
+      classes:
+        row: row
+      add_layout_class: 1
+      attributes: ''
+    regions:
+      main:
+        wrapper: div
+        classes:
+          col-sm-12: col-sm-12
+        add_region_classes: 1
+        attributes: ''
+  page_title: ''
+  storage_type: page_manager
+  storage_id: regions-panels_variant-0
+  builder: standard
+page: regions
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

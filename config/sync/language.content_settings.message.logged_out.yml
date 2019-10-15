@@ -1,0 +1,11 @@
+uuid: 023367f4-f900-49f5-bdc3-73bd29a5b87e
+langcode: en
+status: true
+dependencies:
+  config:
+    - message.template.logged_out
+id: message.logged_out
+target_entity_type_id: message
+target_bundle: logged_out
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,179 @@
+cpmf-city-double-radar-chart:
+  js:
+    js/cpmf-city-double-radar-chart.js: {}
+  dependencies:
+    - cpmf_charts/cpmf-city-polar-chart
+    - cpmf_charts/chartjs
+    - core/jquery
+    - core/jquery.once
+    - core/drupalSettings
+
+cpmf-city-polar-chart:
+  js:
+    js/cpmf-city-polar-chart.js: {}
+  dependencies:
+    - cpmf_charts/chartjs
+    - core/jquery
+    - core/jquery.once
+    - core/drupalSettings
+
+cpmf-cities-overall-line-chart:
+  js:
+    js/cpmf-cities-overall-line-chart.js: {}
+  dependencies:
+    - charts_highcharts/highcharts
+    - cpmf_charts/highcharts-exporting
+    - cpmf_charts/export-csv
+    - core/jquery
+    - core/jquery.once
+    - core/drupalSettings
+
+cpmf-cities-pillar-line-chart:
+  js:
+    js/cpmf-cities-pillar-line-chart.js: {}
+  dependencies:
+    - charts_highcharts/highcharts
+    - cpmf_charts/highcharts-exporting
+    - cpmf_charts/export-csv
+    - core/jquery
+    - core/jquery.once
+    - core/drupalSettings
+
+cpmf-cities-indicator-line-chart:
+  js:
+    js/cpmf-cities-indicator-line-chart.js: {}
+  dependencies:
+    - charts_highcharts/highcharts
+    - cpmf_charts/highcharts-exporting
+    - cpmf_charts/export-csv
+    - core/jquery
+    - core/jquery.once
+    - core/drupalSettings
+
+cpmf-top-zones-chart:
+  js:
+    js/cpmf-top-zones-chart.js: {}
+  dependencies:
+    - charts_highcharts/highcharts
+    - cpmf_charts/highcharts-exporting
+    - cpmf_charts/export-csv
+    - core/jquery
+    - core/jquery.once
+    - core/drupalSettings
+
+cpmf-top-regions-chart:
+  js:
+    js/cpmf-top-regions-chart.js: {}
+  dependencies:
+    - charts_highcharts/highcharts
+    - cpmf_charts/highcharts-exporting
+    - cpmf_charts/export-csv
+    - core/jquery
+    - core/jquery.once
+    - core/drupalSettings
+
+cpmf-top-cities-chart:
+  js:
+    js/cpmf-top-cities-chart.js: {}
+  dependencies:
+    - charts_highcharts/highcharts
+    - cpmf_charts/highcharts-exporting
+    - cpmf_charts/export-csv
+    - core/jquery
+    - core/jquery.once
+    - core/drupalSettings
+
+cpmf-top-cities-by-pillar-chart:
+  js:
+    js/cpmf-top-cities-by-pillar-chart.js: {}
+  dependencies:
+    - charts_highcharts/highcharts
+    - cpmf_charts/highcharts-exporting
+    - cpmf_charts/export-csv
+    - core/jquery
+    - core/jquery.once
+    - core/drupalSettings
+
+cpmf-top-regions-by-pillar-chart:
+  js:
+    js/cpmf-top-regions-by-pillar-chart.js: {}
+  dependencies:
+    - charts_highcharts/highcharts
+    - cpmf_charts/highcharts-exporting
+    - cpmf_charts/export-csv
+    - core/jquery
+    - core/jquery.once
+    - core/drupalSettings
+
+cpmf-top-zones-by-pillar-chart:
+  js:
+    js/cpmf-top-zones-by-pillar-chart.js: {}
+  dependencies:
+    - charts_highcharts/highcharts
+    - cpmf_charts/highcharts-exporting
+    - cpmf_charts/export-csv
+    - core/jquery
+    - core/jquery.once
+    - core/drupalSettings
+
+cpmf-top-cities-by-indicator-chart:
+  js:
+    js/cpmf-top-cities-by-indicator-chart.js: {}
+  dependencies:
+    - charts_highcharts/highcharts
+    - cpmf_charts/highcharts-exporting
+    - cpmf_charts/export-csv
+    - core/jquery
+    - core/jquery.once
+    - core/drupalSettings
+
+cpmf-top-regions-by-indicator-chart:
+  js:
+    js/cpmf-top-regions-by-indicator-chart.js: {}
+  dependencies:
+    - charts_highcharts/highcharts
+    - cpmf_charts/highcharts-exporting
+    - cpmf_charts/export-csv
+    - core/jquery
+    - core/jquery.once
+    - core/drupalSettings
+
+cpmf-top-zones-by-indicator-chart:
+  js:
+    js/cpmf-top-zones-by-indicator-chart.js: {}
+  dependencies:
+    - charts_highcharts/highcharts
+    - cpmf_charts/highcharts-exporting
+    - cpmf_charts/export-csv
+    - core/jquery
+    - core/jquery.once
+    - core/drupalSettings
+
+cpmf-project-by-indicator-chart:
+  js:
+    js/cpmf-project-by-indicator-chart.js: {}
+  dependencies:
+    - charts_highcharts/highcharts
+    - cpmf_charts/highcharts-exporting
+    - cpmf_charts/export-csv
+    - core/jquery
+    - core/jquery.once
+    - core/drupalSettings
+
+export-csv:
+  js:
+    js/export-csv.js: {}
+
+jspdf:
+  js:
+    js/jspdf.min.js: {}
+
+chartjs:
+  js:
+    js/Chart.bundle.min.js: {}
+
+highcharts-exporting:
+  js:
+    js/exporting.js: {}
+  dependencies:
+    - charts_highcharts/highcharts

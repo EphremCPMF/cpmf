@@ -1,0 +1,12 @@
+uuid: 9ce0476d-f165-43da-9146-6acc4c7576ef
+langcode: en
+status: true
+dependencies: {  }
+id: regions
+label: Regions
+description: ''
+use_admin_theme: false
+path: /reports/regions
+access_logic: and
+access_conditions: {  }
+parameters: {  }

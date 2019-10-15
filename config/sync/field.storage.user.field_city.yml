@@ -1,0 +1,20 @@
+uuid: c8eaf41f-2720-4de5-bbb1-d2e95324d3d6
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - user
+id: user.field_city
+field_name: field_city
+entity_type: user
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,36 @@
+uuid: 0d9821f6-f9f1-4860-86b9-8738fd09b155
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_reporting_frequency
+field_name: field_reporting_frequency
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: annual
+      label: Annual
+    -
+      value: bi_annual
+      label: Bi-annual
+    -
+      value: tri_annual
+      label: Tri-annual
+    -
+      value: baseline_end
+      label: 'Baseline and end'
+    -
+      value: baseline_election
+      label: 'Baseline and election year'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

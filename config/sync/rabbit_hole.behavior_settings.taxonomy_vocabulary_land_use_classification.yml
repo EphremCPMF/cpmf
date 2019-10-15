@@ -1,0 +1,9 @@
+uuid: c6ec28e2-d9e9-4118-b8ca-e2568add177c
+langcode: en
+status: true
+dependencies: {  }
+id: taxonomy_vocabulary_land_use_classification
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301

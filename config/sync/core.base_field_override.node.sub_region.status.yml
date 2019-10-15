@@ -1,0 +1,22 @@
+uuid: d91c97c0-8a6b-48e6-be67-c7b3c8b7645f
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.sub_region
+id: node.sub_region.status
+field_name: status
+entity_type: node
+bundle: sub_region
+label: 'Publishing status'
+description: 'A boolean indicating the published state.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

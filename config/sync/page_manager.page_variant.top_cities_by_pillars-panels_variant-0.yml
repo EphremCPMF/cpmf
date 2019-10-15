@@ -1,0 +1,60 @@
+uuid: ef35716d-278e-46c1-a069-238669f0ed43
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.top_cities_by_pillars
+  module:
+    - cpmf_charts
+    - panels
+id: top_cities_by_pillars-panels_variant-0
+label: Panels
+variant: panels_variant
+variant_settings:
+  blocks:
+    7e3dc1e2-c970-418b-9d38-546c2611ad6c:
+      id: top_cities_by_pillar
+      label: 'Top Cities by Pillar Chart Block'
+      provider: cpmf_charts
+      label_display: '0'
+      region: main
+      weight: 0
+      uuid: 7e3dc1e2-c970-418b-9d38-546c2611ad6c
+      context_mapping: {  }
+    6cbb84c5-283c-4ff2-af59-ebec3c302db1:
+      id: cities_pillar_line
+      label: 'Cities Pillar Line Chart Block'
+      provider: cpmf_charts
+      label_display: '0'
+      region: main
+      weight: 1
+      uuid: 6cbb84c5-283c-4ff2-af59-ebec3c302db1
+      context_mapping: {  }
+  id: panels_variant
+  uuid: aad8a819-7b99-4f54-bf8f-43c95b3126d4
+  label: null
+  weight: 0
+  layout: bs_1col
+  layout_settings:
+    layout:
+      wrapper: div
+      classes:
+        row: row
+      add_layout_class: 1
+      attributes: ''
+    regions:
+      main:
+        wrapper: div
+        classes:
+          col-sm-12: col-sm-12
+        add_region_classes: 1
+        attributes: ''
+  page_title: 'Cities by Pillar'
+  storage_type: page_manager
+  storage_id: top_cities_by_pillars-panels_variant-0
+  builder: standard
+page: top_cities_by_pillars
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

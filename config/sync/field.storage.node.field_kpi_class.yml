@@ -1,0 +1,33 @@
+uuid: 1a84c2b7-43d1-437e-a521-c77982535ccc
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_kpi_class
+field_name: field_kpi_class
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: impact
+      label: Impact
+    -
+      value: outcome
+      label: Outcome
+    -
+      value: output
+      label: Output
+    -
+      value: process
+      label: Process
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

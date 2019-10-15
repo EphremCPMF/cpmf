@@ -1,0 +1,1823 @@
+uuid: 29a51881-d220-4aac-93b7-6893c4f79f9d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.indicator_data.field_city
+    - field.field.node.indicator_data.field_data_completeness
+    - field.field.node.indicator_data.field_i_fin_audited
+    - field.field.node.indicator_data.field_i_fin_budget_utilization
+    - field.field.node.indicator_data.field_i_fin_capital_expenditure
+    - field.field.node.indicator_data.field_i_fin_local_revenue
+    - field.field.node.indicator_data.field_i_fin_ops_expenditure
+    - field.field.node.indicator_data.field_i_fin_per_capita_budget
+    - field.field.node.indicator_data.field_i_fin_per_capita_budget_ex
+    - field.field.node.indicator_data.field_i_fin_revenue_collection
+    - field.field.node.indicator_data.field_i_gds_campaigns_delivered
+    - field.field.node.indicator_data.field_i_gds_centers
+    - field.field.node.indicator_data.field_i_gds_decision_makers
+    - field.field.node.indicator_data.field_i_gds_green_area
+    - field.field.node.indicator_data.field_i_gds_green_budget_pct
+    - field.field.node.indicator_data.field_i_gds_green_developed
+    - field.field.node.indicator_data.field_i_gds_has_green_plan
+    - field.field.node.indicator_data.field_i_gds_has_waste_system
+    - field.field.node.indicator_data.field_i_gds_has_watershed_plan
+    - field.field.node.indicator_data.field_i_gds_indoor_spaces
+    - field.field.node.indicator_data.field_i_gds_landfills
+    - field.field.node.indicator_data.field_i_gds_outdoor_spaces
+    - field.field.node.indicator_data.field_i_gds_parks
+    - field.field.node.indicator_data.field_i_gds_per_capita_budget
+    - field.field.node.indicator_data.field_i_gds_pm_levels
+    - field.field.node.indicator_data.field_i_gds_solid_collection
+    - field.field.node.indicator_data.field_i_gds_solid_dumps
+    - field.field.node.indicator_data.field_i_gds_solid_landfill
+    - field.field.node.indicator_data.field_i_gds_total_budget
+    - field.field.node.indicator_data.field_i_gds_trees_per_100k
+    - field.field.node.indicator_data.field_i_gds_waste_collected
+    - field.field.node.indicator_data.field_i_gds_water_collection
+    - field.field.node.indicator_data.field_i_gds_watershed_plans
+    - field.field.node.indicator_data.field_i_hda_finance_strategy
+    - field.field.node.indicator_data.field_i_hda_framework_strategy
+    - field.field.node.indicator_data.field_i_hda_price_income_ratio
+    - field.field.node.indicator_data.field_i_hda_private_ease_improve
+    - field.field.node.indicator_data.field_i_hda_private_firms
+    - field.field.node.indicator_data.field_i_hda_pro_strategy
+    - field.field.node.indicator_data.field_i_hda_standards_designs
+    - field.field.node.indicator_data.field_i_hda_study
+    - field.field.node.indicator_data.field_i_hda_units_constructed
+    - field.field.node.indicator_data.field_i_isc_code_compliance
+    - field.field.node.indicator_data.field_i_isc_deaths_etc
+    - field.field.node.indicator_data.field_i_isc_fire_facilities
+    - field.field.node.indicator_data.field_i_isc_fire_vehicles
+    - field.field.node.indicator_data.field_i_isc_gender_inclusion
+    - field.field.node.indicator_data.field_i_isc_officials_trained
+    - field.field.node.indicator_data.field_i_isc_op_emergency
+    - field.field.node.indicator_data.field_i_isc_piped_water
+    - field.field.node.indicator_data.field_i_isc_police_officers
+    - field.field.node.indicator_data.field_i_isc_reliable_electricity
+    - field.field.node.indicator_data.field_i_isc_response_time_avg
+    - field.field.node.indicator_data.field_i_isc_risk_reduction
+    - field.field.node.indicator_data.field_i_isc_risk_reduction_adopt
+    - field.field.node.indicator_data.field_i_isc_violent_crimes
+    - field.field.node.indicator_data.field_i_isc_women_harassed
+    - field.field.node.indicator_data.field_i_mse_absolute_poverty
+    - field.field.node.indicator_data.field_i_mse_access_finance
+    - field.field.node.indicator_data.field_i_mse_below_poverty_line
+    - field.field.node.indicator_data.field_i_mse_ben_cash_transfers
+    - field.field.node.indicator_data.field_i_mse_ben_employed
+    - field.field.node.indicator_data.field_i_mse_ben_setup
+    - field.field.node.indicator_data.field_i_mse_ben_training
+    - field.field.node.indicator_data.field_i_mse_ben_unemployed
+    - field.field.node.indicator_data.field_i_mse_ben_wage
+    - field.field.node.indicator_data.field_i_mse_business_permits
+    - field.field.node.indicator_data.field_i_mse_children_stunted
+    - field.field.node.indicator_data.field_i_mse_food_insecure_houses
+    - field.field.node.indicator_data.field_i_mse_informal_employment
+    - field.field.node.indicator_data.field_i_mse_jobs_created
+    - field.field.node.indicator_data.field_i_mse_jobs_in_manufacture
+    - field.field.node.indicator_data.field_i_mse_manufacturing
+    - field.field.node.indicator_data.field_i_mse_market_linkages
+    - field.field.node.indicator_data.field_i_mse_markets
+    - field.field.node.indicator_data.field_i_mse_micro_graduating
+    - field.field.node.indicator_data.field_i_mse_mse_graduating
+    - field.field.node.indicator_data.field_i_mse_mses
+    - field.field.node.indicator_data.field_i_mse_new_jobs
+    - field.field.node.indicator_data.field_i_mse_operators_trained
+    - field.field.node.indicator_data.field_i_mse_orgs_equipped
+    - field.field.node.indicator_data.field_i_mse_orgs_trained
+    - field.field.node.indicator_data.field_i_mse_per_capita_budget
+    - field.field.node.indicator_data.field_i_mse_total_budget
+    - field.field.node.indicator_data.field_i_mse_trainers_trained
+    - field.field.node.indicator_data.field_i_mse_unemployment_rate
+    - field.field.node.indicator_data.field_i_mse_youth_unemployment
+    - field.field.node.indicator_data.field_i_ugg_adopted_standards
+    - field.field.node.indicator_data.field_i_ugg_civil_participation
+    - field.field.node.indicator_data.field_i_ugg_conducted_evaluation
+    - field.field.node.indicator_data.field_i_ugg_engaged_civic
+    - field.field.node.indicator_data.field_i_ugg_pros_trained
+    - field.field.node.indicator_data.field_i_ugg_registered_voters
+    - field.field.node.indicator_data.field_i_ugg_voter_participation
+    - field.field.node.indicator_data.field_i_ugg_women_government
+    - field.field.node.indicator_data.field_i_ugg_women_officials
+    - field.field.node.indicator_data.field_i_uis_access_renewable
+    - field.field.node.indicator_data.field_i_uis_access_transport
+    - field.field.node.indicator_data.field_i_uis_access_transport_agg
+    - field.field.node.indicator_data.field_i_uis_access_water
+    - field.field.node.indicator_data.field_i_uis_drainage_length
+    - field.field.node.indicator_data.field_i_uis_electricity
+    - field.field.node.indicator_data.field_i_uis_felt_improved
+    - field.field.node.indicator_data.field_i_uis_has_projects
+    - field.field.node.indicator_data.field_i_uis_id_plans
+    - field.field.node.indicator_data.field_i_uis_indoor_sanitation
+    - field.field.node.indicator_data.field_i_uis_length_masstransport
+    - field.field.node.indicator_data.field_i_uis_length_water_pipes
+    - field.field.node.indicator_data.field_i_uis_num_projects
+    - field.field.node.indicator_data.field_i_uis_percapita_budget
+    - field.field.node.indicator_data.field_i_uis_public_toilets
+    - field.field.node.indicator_data.field_i_uis_road_length
+    - field.field.node.indicator_data.field_i_uis_street_lights
+    - field.field.node.indicator_data.field_i_uis_total_budget
+    - field.field.node.indicator_data.field_i_uis_transport_plans
+    - field.field.node.indicator_data.field_i_uis_transport_plans_prep
+    - field.field.node.indicator_data.field_i_uis_uid_index
+    - field.field.node.indicator_data.field_i_uis_water_treated
+    - field.field.node.indicator_data.field_i_upd_has_benchmarks
+    - field.field.node.indicator_data.field_i_upd_has_comp_plan
+    - field.field.node.indicator_data.field_i_upd_has_reg_system
+    - field.field.node.indicator_data.field_i_upd_has_standards
+    - field.field.node.indicator_data.field_i_upd_has_supply_plan
+    - field.field.node.indicator_data.field_i_upd_has_use_plan
+    - field.field.node.indicator_data.field_i_upd_land_rights_men
+    - field.field.node.indicator_data.field_i_upd_land_rights_women
+    - field.field.node.indicator_data.field_i_upd_land_use_ratios
+    - field.field.node.indicator_data.field_i_upd_officials_trained
+    - field.field.node.indicator_data.field_i_upd_officials_trained_up
+    - field.field.node.indicator_data.field_i_upd_percentage_in_slums
+    - field.field.node.indicator_data.field_i_upd_planning_manual
+    - field.field.node.indicator_data.field_i_upd_plans_needs
+    - field.field.node.indicator_data.field_i_upd_ratio_consumption
+    - field.field.node.indicator_data.field_i_upd_share_built_up
+    - field.field.node.indicator_data.field_i_upd_slum_strategies
+    - field.field.node.indicator_data.field_i_upd_slum_strategies_done
+    - field.field.node.indicator_data.field_i_upd_slums_surveyed
+    - field.field.node.indicator_data.field_i_upd_structural_plans
+    - field.field.node.indicator_data.field_i_upd_use_plan_implemented
+    - field.field.node.indicator_data.field_i_utl_forums
+    - field.field.node.indicator_data.field_i_utl_forums_established
+    - field.field.node.indicator_data.field_i_utl_ict_improvements
+    - field.field.node.indicator_data.field_i_utl_implementers
+    - field.field.node.indicator_data.field_i_utl_leaders
+    - field.field.node.indicator_data.field_i_utl_mel_operational
+    - field.field.node.indicator_data.field_i_utl_mis_operational
+    - field.field.node.indicator_data.field_overall
+    - field.field.node.indicator_data.field_pillar_fin
+    - field.field.node.indicator_data.field_pillar_gds
+    - field.field.node.indicator_data.field_pillar_hda
+    - field.field.node.indicator_data.field_pillar_isc
+    - field.field.node.indicator_data.field_pillar_mse
+    - field.field.node.indicator_data.field_pillar_ugg
+    - field.field.node.indicator_data.field_pillar_uis
+    - field.field.node.indicator_data.field_pillar_upd
+    - field.field.node.indicator_data.field_pillar_utl
+    - field.field.node.indicator_data.field_ranking
+    - field.field.node.indicator_data.field_total_pillar_score
+    - field.field.node.indicator_data.field_year
+    - node.type.indicator_data
+  module:
+    - computed_field
+    - entity_reference_revisions
+    - user
+id: node.indicator_data.default
+targetEntityType: node
+bundle: indicator_data
+mode: default
+content:
+  content_moderation_control:
+    weight: -20
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_city:
+    weight: 104
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_data_completeness:
+    weight: 120
+    label: above
+    settings:
+      cache_unit: -1
+      cache_duration: 1
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: computed_integer
+    region: content
+  field_i_fin_audited:
+    weight: 300
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_i_fin_budget_utilization:
+    weight: 293
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_i_fin_capital_expenditure:
+    weight: 295
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_i_fin_local_revenue:
+    weight: 298
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_i_fin_ops_expenditure:
+    weight: 297
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_i_fin_per_capita_budget:
+    weight: 294
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_i_fin_per_capita_budget_ex:
+    weight: 296
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_i_fin_revenue_collection:
+    weight: 299
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_i_gds_campaigns_delivered:
+    weight: 250
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_i_gds_centers:
+    weight: 260
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_i_gds_decision_makers:
+    weight: 242
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_i_gds_green_area:
+    weight: 257
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_i_gds_green_budget_pct:
+    weight: 246
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_i_gds_green_developed:
+    weight: 259
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_i_gds_has_green_plan:
+    weight: 243
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_i_gds_has_waste_system:
+    weight: 249
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_i_gds_has_watershed_plan:
+    weight: 244
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_i_gds_indoor_spaces:
+    weight: 261
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_i_gds_landfills:
+    weight: 251
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_i_gds_outdoor_spaces:
+    weight: 262
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_i_gds_parks:
+    weight: 258
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_i_gds_per_capita_budget:
+    weight: 326
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_i_gds_pm_levels:
+    weight: 327
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_i_gds_solid_collection:
+    weight: 252
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_i_gds_solid_dumps:
+    weight: 255
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_i_gds_solid_landfill:
+    weight: 254
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_i_gds_total_budget:
+    weight: 247
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_i_gds_trees_per_100k:
+    weight: 335
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_i_gds_waste_collected:
+    weight: 256
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_i_gds_water_collection:
+    weight: 253
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_i_gds_watershed_plans:
+    weight: 245
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_i_hda_finance_strategy:
+    weight: 217
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_i_hda_framework_strategy:
+    weight: 216
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_i_hda_price_income_ratio:
+    weight: 334
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_i_hda_private_ease_improve:
+    weight: 222
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_i_hda_private_firms:
+    weight: 214
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_i_hda_pro_strategy:
+    weight: 218
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_i_hda_standards_designs:
+    weight: 215
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_i_hda_study:
+    weight: 219
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_i_hda_units_constructed:
+    weight: 213
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_i_isc_code_compliance:
+    weight: 287
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_i_isc_deaths_etc:
+    weight: 332
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_i_isc_fire_facilities:
+    weight: 285
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_i_isc_fire_vehicles:
+    weight: 284
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_i_isc_gender_inclusion:
+    weight: 279
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_i_isc_officials_trained:
+    weight: 283
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_i_isc_op_emergency:
+    weight: 280
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_i_isc_piped_water:
+    weight: 328
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_i_isc_police_officers:
+    weight: 288
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_i_isc_reliable_electricity:
+    weight: 329
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_i_isc_response_time_avg:
+    weight: 336
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_i_isc_risk_reduction:
+    weight: 278
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_i_isc_risk_reduction_adopt:
+    weight: 330
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_i_isc_violent_crimes:
+    weight: 289
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_i_isc_women_harassed:
+    weight: 331
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_i_mse_absolute_poverty:
+    weight: 163
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_i_mse_access_finance:
+    weight: 143
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_i_mse_below_poverty_line:
+    weight: 166
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_i_mse_ben_cash_transfers:
+    weight: 156
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_i_mse_ben_employed:
+    weight: 153
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_i_mse_ben_setup:
+    weight: 154
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_i_mse_ben_training:
+    weight: 158
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_i_mse_ben_unemployed:
+    weight: 155
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_i_mse_ben_wage:
+    weight: 157
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_i_mse_business_permits:
+    weight: 141
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_i_mse_children_stunted:
+    weight: 160
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_i_mse_food_insecure_houses:
+    weight: 159
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_i_mse_informal_employment:
+    weight: 164
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_i_mse_jobs_created:
+    weight: 161
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_i_mse_jobs_in_manufacture:
+    weight: 311
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_i_mse_manufacturing:
+    weight: 142
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_i_mse_market_linkages:
+    weight: 152
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_i_mse_markets:
+    weight: 151
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_i_mse_micro_graduating:
+    weight: 139
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_i_mse_mse_graduating:
+    weight: 140
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_i_mse_mses:
+    weight: 138
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_i_mse_new_jobs:
+    weight: 137
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_i_mse_operators_trained:
+    weight: 149
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_i_mse_orgs_equipped:
+    weight: 150
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_i_mse_orgs_trained:
+    weight: 147
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_i_mse_per_capita_budget:
+    weight: 146
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_i_mse_total_budget:
+    weight: 145
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_i_mse_trainers_trained:
+    weight: 148
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_i_mse_unemployment_rate:
+    weight: 162
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_i_mse_youth_unemployment:
+    weight: 165
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_i_ugg_adopted_standards:
+    weight: 179
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_i_ugg_civil_participation:
+    weight: 312
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_i_ugg_conducted_evaluation:
+    weight: 180
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_i_ugg_engaged_civic:
+    weight: 176
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_i_ugg_pros_trained:
+    weight: 181
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_i_ugg_registered_voters:
+    weight: 177
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_i_ugg_voter_participation:
+    weight: 178
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_i_ugg_women_government:
+    weight: 175
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_i_ugg_women_officials:
+    weight: 174
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_i_uis_access_renewable:
+    weight: 322
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_i_uis_access_transport:
+    weight: 323
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_i_uis_access_transport_agg:
+    weight: 325
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_i_uis_access_water:
+    weight: 239
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_i_uis_drainage_length:
+    weight: 234
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_i_uis_electricity:
+    weight: 241
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_i_uis_felt_improved:
+    weight: 230
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_i_uis_has_projects:
+    weight: 224
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_i_uis_id_plans:
+    weight: 223
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_i_uis_indoor_sanitation:
+    weight: 240
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_i_uis_length_masstransport:
+    weight: 321
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_i_uis_length_water_pipes:
+    weight: 319
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_i_uis_num_projects:
+    weight: 225
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_i_uis_percapita_budget:
+    weight: 227
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_i_uis_public_toilets:
+    weight: 231
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_i_uis_road_length:
+    weight: 233
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_i_uis_street_lights:
+    weight: 235
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_i_uis_total_budget:
+    weight: 226
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_i_uis_transport_plans:
+    weight: 317
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_i_uis_transport_plans_prep:
+    weight: 318
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_i_uis_uid_index:
+    weight: 320
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_i_uis_water_treated:
+    weight: 324
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_i_upd_has_benchmarks:
+    weight: 203
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_i_upd_has_comp_plan:
+    weight: 205
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_i_upd_has_reg_system:
+    weight: 194
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_i_upd_has_standards:
+    weight: 191
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_i_upd_has_supply_plan:
+    weight: 204
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_i_upd_has_use_plan:
+    weight: 192
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_i_upd_land_rights_men:
+    weight: 301
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_i_upd_land_rights_women:
+    weight: 302
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_i_upd_land_use_ratios:
+    type: entity_reference_revisions_entity_view
+    weight: 333
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_i_upd_officials_trained:
+    weight: 195
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_i_upd_officials_trained_up:
+    weight: 201
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_i_upd_percentage_in_slums:
+    weight: 315
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_i_upd_planning_manual:
+    weight: 199
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_i_upd_plans_needs:
+    weight: 314
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_i_upd_ratio_consumption:
+    weight: 313
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_i_upd_share_built_up:
+    weight: 316
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_i_upd_slum_strategies:
+    weight: 197
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_i_upd_slum_strategies_done:
+    weight: 198
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_i_upd_slums_surveyed:
+    weight: 196
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_i_upd_structural_plans:
+    weight: 200
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_i_upd_use_plan_implemented:
+    weight: 193
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_i_utl_forums:
+    weight: 132
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_i_utl_forums_established:
+    weight: 136
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_i_utl_ict_improvements:
+    weight: 135
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_i_utl_implementers:
+    weight: 131
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_i_utl_leaders:
+    weight: 130
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_i_utl_mel_operational:
+    weight: 134
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_i_utl_mis_operational:
+    weight: 133
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_overall:
+    weight: 264
+    label: above
+    settings:
+      cache_unit: -1
+      cache_duration: 1
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: computed_decimal
+    region: content
+  field_pillar_fin:
+    weight: 188
+    label: above
+    settings:
+      cache_unit: -1
+      cache_duration: 1
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: computed_decimal
+    region: content
+  field_pillar_gds:
+    weight: 186
+    label: above
+    settings:
+      cache_unit: -1
+      cache_duration: 1
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: computed_decimal
+    region: content
+  field_pillar_hda:
+    weight: 184
+    label: above
+    settings:
+      cache_unit: -1
+      cache_duration: 1
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: computed_decimal
+    region: content
+  field_pillar_isc:
+    weight: 187
+    label: above
+    settings:
+      cache_unit: -1
+      cache_duration: 1
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: computed_decimal
+    region: content
+  field_pillar_mse:
+    weight: 170
+    label: above
+    settings:
+      cache_unit: -1
+      cache_duration: 1
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: computed_decimal
+    region: content
+  field_pillar_ugg:
+    weight: 182
+    label: above
+    settings:
+      cache_unit: -1
+      cache_duration: 1
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: computed_decimal
+    region: content
+  field_pillar_uis:
+    weight: 185
+    label: above
+    settings:
+      cache_unit: -1
+      cache_duration: 1
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: computed_decimal
+    region: content
+  field_pillar_upd:
+    weight: 183
+    label: above
+    settings:
+      cache_unit: -1
+      cache_duration: 1
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: computed_decimal
+    region: content
+  field_pillar_utl:
+    weight: 144
+    label: above
+    settings:
+      cache_unit: -1
+      cache_duration: 1
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: computed_decimal
+    region: content
+  field_ranking:
+    weight: 265
+    label: above
+    settings:
+      cache_unit: -1
+      cache_duration: 1
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: computed_integer
+    region: content
+  field_total_pillar_score:
+    weight: 266
+    label: above
+    settings:
+      cache_unit: -1
+      cache_duration: 1
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: computed_decimal
+    region: content
+  field_year:
+    weight: 103
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  langcode: true

@@ -1,0 +1,6 @@
+status: '1'
+pattern: '[node:field_city:entity:title] - [node:field_year:entity:name]'
+php: 0
+dependencies:
+  config:
+    - node.type.indicator_data

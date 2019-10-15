@@ -1,0 +1,42 @@
+uuid: 8fa0895c-ee81-4610-8b02-9fbb858e3cca
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.5_year_baselines_and_targets.field_targets
+    - paragraphs.paragraphs_type.5_year_baselines_and_targets
+  module:
+    - content_moderation
+    - paragraphs
+id: paragraph.5_year_baselines_and_targets.default
+targetEntityType: paragraph
+bundle: 5_year_baselines_and_targets
+mode: default
+content:
+  field_targets:
+    type: paragraphs
+    weight: 102
+    settings:
+      title: Target
+      title_plural: Targets
+      edit_mode: closed
+      closed_mode: summary
+      autocollapse: all
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: indicator_target_only
+      features:
+        duplicate: duplicate
+        collapse_edit_all: collapse_edit_all
+    third_party_settings: {  }
+    region: content
+  moderation_state:
+    type: moderation_state_default
+    weight: 100
+    settings: {  }
+    region: content
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
+  uid: true

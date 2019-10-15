@@ -1,0 +1,29 @@
+uuid: 7968f8bf-3799-4ae6-b13a-58a435139d14
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_i_isc_risk_reduction
+    - node.type.indicator_data
+  module:
+    - disable_field
+third_party_settings:
+  disable_field:
+    add_disable: none
+    add_disable_roles: {  }
+    edit_disable: none
+    edit_disable_roles: {  }
+id: node.indicator_data.field_i_isc_risk_reduction
+field_name: field_i_isc_risk_reduction
+entity_type: node
+bundle: indicator_data
+label: 'Does the city have an operational disaster/risk reduction/resilience assessment & mitigation strategies that are aligned with accepted international frameworks that include vulnerable and marginalized groups in their design, implementation & monitoring?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

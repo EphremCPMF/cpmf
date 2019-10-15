@@ -1,0 +1,20 @@
+uuid: 9ec00736-4e1d-4d8c-8354-90e73ae8a9b6
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_i_mse_ben_training
+field_name: field_i_mse_ben_training
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

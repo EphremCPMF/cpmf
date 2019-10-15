@@ -1,0 +1,23 @@
+uuid: 8270d3a6-acfc-40e8-a086-57916e900f8c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_level_of_reporting
+    - node.type.indicator
+  module:
+    - options
+id: node.indicator.field_level_of_reporting
+field_name: field_level_of_reporting
+entity_type: node
+bundle: indicator
+label: 'Level of Reporting/Aggregation'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: city
+default_value_callback: ''
+settings: {  }
+field_type: list_string

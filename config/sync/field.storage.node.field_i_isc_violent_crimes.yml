@@ -1,0 +1,20 @@
+uuid: ce1713b4-37e4-4731-9f48-baa18c876213
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_i_isc_violent_crimes
+field_name: field_i_isc_violent_crimes
+entity_type: node
+type: decimal
+settings:
+  precision: 10
+  scale: 2
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

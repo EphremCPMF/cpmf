@@ -1,0 +1,7 @@
+status: '1'
+pattern: '[node:field_pillars:entity:field_pillar_number].[node:field_indicator_number]: [node:field_indicator_name]'
+php: 0
+escape: 0
+dependencies:
+  config:
+    - node.type.indicator

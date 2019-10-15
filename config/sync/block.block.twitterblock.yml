@@ -1,0 +1,30 @@
+uuid: 1a16286e-9acc-4bb1-b813-9d8395e0a472
+langcode: en
+status: false
+dependencies:
+  module:
+    - block_class
+    - tweets
+  theme:
+    - cpmp
+third_party_settings:
+  block_class:
+    classes: well
+id: twitterblock
+theme: cpmp
+region: content
+weight: 0
+provider: null
+plugin: twitter_block
+settings:
+  id: twitter_block
+  label: Twitter
+  provider: tweets
+  label_display: visible
+  access_token: 183240070-bxgMw5EuEc5rLSlgEjGm9txrOlq5N83W7sTo4c
+  token_secret: DOefzUAzDkD9OlIxJVnmJktjHP3qt6PdpIG8C0PupY
+  consumer_key: 1bX5K7sRUm1aANSOqi8A
+  consumer_secret: hXuzXMYlvsQukHpCmYT1DBZSq4Hac137VJ2qkFNZrhY
+  tweets_username: Urbangateway
+  tweets_limit: '3'
+visibility: {  }

@@ -1,0 +1,27 @@
+uuid: e0391c89-0726-47be-862e-5b1a759f7295
+langcode: en
+status: true
+dependencies: {  }
+id: data_editor
+label: 'Data Editor'
+weight: -8
+is_admin: null
+permissions:
+  - 'access content overview'
+  - 'access environment indicator'
+  - 'access toolbar'
+  - 'access user profiles'
+  - 'create file media'
+  - 'create image media'
+  - 'create indicator_data content'
+  - 'delete any indicator_data content'
+  - 'delete own file media'
+  - 'delete own image media'
+  - 'edit any indicator_data content'
+  - 'edit own file media'
+  - 'edit own image media'
+  - 'use indicator_data_workflow transition create_new_draft'
+  - 'use indicator_data_workflow transition return_to_draft'
+  - 'use indicator_data_workflow transition submit_for_review'
+  - 'use text format restricted_html'
+  - 'view any unpublished content'

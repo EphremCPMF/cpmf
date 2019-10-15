@@ -1,0 +1,22 @@
+uuid: eebef9c7-37ea-41c1-8d75-dc2b03c0cac9
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.pillar
+id: node.pillar.sticky
+field_name: sticky
+entity_type: node
+bundle: pillar
+label: 'Sticky at top of lists'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,26 @@
+<div id="{{ id }}" {{ attributes.addClass(classes) }}>
+  {% for key, row in rows -%}
+      {% set first_open = '' %}
+      {% if (key == 0) %}
+          {% set first_open = 'in' %}
+      {% endif %}
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a class="accordion-toggle"
+             data-toggle="collapse"
+             data-parent="#{{ id }}"
+             href="#{{ id }}-collapse-{{ key }}">
+              {{ row.content['#row'].node__field_pillar_number_field_pillar_number_value }}. {{row.title}}
+          </a>
+        </h4>
+      </div>
+
+      <div id="{{ id }}-collapse-{{ key }}" class="panel-collapse collapse {{ first_open }}">
+        <div class="panel-body">
+          {{row.content}}
+        </div>
+      </div>
+    </div>
+  {%- endfor %}
+</div>

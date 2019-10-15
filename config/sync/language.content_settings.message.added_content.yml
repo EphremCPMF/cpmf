@@ -1,0 +1,11 @@
+uuid: 99fbf771-21aa-4ec0-b407-c43fd621d307
+langcode: en
+status: true
+dependencies:
+  config:
+    - message.template.added_content
+id: message.added_content
+target_entity_type_id: message
+target_bundle: added_content
+default_langcode: site_default
+language_alterable: false

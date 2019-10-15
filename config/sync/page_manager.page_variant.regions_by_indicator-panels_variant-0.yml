@@ -1,0 +1,51 @@
+uuid: 5ff31ead-6cba-4b45-ab72-8911e3a5dbec
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.regions_by_indicator
+  module:
+    - cpmf_charts
+    - panels
+id: regions_by_indicator-panels_variant-0
+label: Panels
+variant: panels_variant
+variant_settings:
+  blocks:
+    c493cd81-430e-437a-aab7-6fa6f815e9ae:
+      id: top_regions_by_indicator
+      label: 'Top Regions by Indicator Chart Block'
+      provider: cpmf_charts
+      label_display: '0'
+      region: main
+      weight: 0
+      uuid: c493cd81-430e-437a-aab7-6fa6f815e9ae
+      context_mapping: {  }
+  id: panels_variant
+  uuid: 6dc94e04-1cee-488f-918d-09a0997f89df
+  label: null
+  weight: 0
+  layout: bs_1col
+  layout_settings:
+    layout:
+      wrapper: div
+      classes:
+        row: row
+      add_layout_class: 1
+      attributes: ''
+    regions:
+      main:
+        wrapper: div
+        classes:
+          col-sm-12: col-sm-12
+        add_region_classes: 1
+        attributes: ''
+  page_title: 'Regions by Indicator'
+  storage_type: page_manager
+  storage_id: regions_by_indicator-panels_variant-0
+  builder: standard
+page: regions_by_indicator
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

@@ -1,0 +1,123 @@
+<?php
+
+/**
+ * @file
+ * Contains cpmf_charts.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_chart_alter().
+ */
+function cpmf_charts_chart_alter(&$chart, $chart_id) {
+}
+
+/**
+ * Implements hook_chart_CHART_ID_alter().
+ */
+function cpmf_charts_chart_top_cities_chart_alter(&$chart) {
+}
+
+/**
+ * Implements hook_chart_definition_alter().
+ */
+function cpmf_charts_chart_definition_alter(&$definition, $chart) {
+}
+/**
+ * Implements hook_theme().
+ */
+function cpmf_charts_theme($existing, $type, $theme, $path) {
+  return [
+    'top_zones_chart_theme' => [
+      'variables' => [],
+      'template' => 'top_zones_chart_theme',
+    ],
+    'top_regions_chart_theme' => [
+      'variables' => [],
+      'template' => 'top_regions_chart_theme',
+    ],
+    'top_cities_chart_theme' => [
+      'variables' => [],
+      'template' => 'top_cities_chart_theme',
+    ],
+    'cities_overall_line_chart_theme' => [
+      'variables' => [],
+      'template' => 'cities_overall_line_chart_theme',
+    ],
+    'cities_pillar_line_chart_theme' => [
+      'variables' => [],
+      'template' => 'cities_pillar_line_chart_theme',
+    ],
+    'cities_indicator_line_chart_theme' => [
+      'variables' => [],
+      'template' => 'cities_indicator_line_chart_theme',
+    ],
+    'city_double_radar_chart_theme' => [
+      'variables' => [
+        'cities_select_form' => \Drupal::formBuilder()->getForm('Drupal\cpmf_charts\Form\CitiesSelectForm'),
+      ],
+    ],
+    'city_polar_chart_theme' => [
+      'variables' => [
+        'city_select_form' => \Drupal::formBuilder()->getForm('Drupal\cpmf_charts\Form\CitySelectForm'),
+      ],
+    ],
+    'top_cities_by_pillar_chart_theme' => [
+      'variables' => [
+        'pillar_select_form' => \Drupal::formBuilder()->getForm('Drupal\cpmf_charts\Form\PillarSelectForm')
+      ],
+    ],
+    'top_cities_by_indicator_chart_theme' => [
+      'variables' => [
+        'indicator_select_form' => \Drupal::formBuilder()->getForm('Drupal\cpmf_charts\Form\IndicatorSelectForm')
+      ],
+    ],
+    'top_cities_by_region_chart_theme' => [
+      'variables' => [
+        'region_select_form' => \Drupal::formBuilder()->getForm('Drupal\cpmf_charts\Form\RegionSelectForm')
+      ],
+    ],
+    'top_regions_by_pillar_chart_theme' => [
+      'variables' => [
+        'pillar_select_form' => \Drupal::formBuilder()->getForm('Drupal\cpmf_charts\Form\PillarSelectForm')
+      ],
+    ],
+    'top_regions_by_indicator_chart_theme' => [
+      'variables' => [
+        'indicator_select_form' => \Drupal::formBuilder()->getForm('Drupal\cpmf_charts\Form\IndicatorSelectForm')
+      ],
+    ],
+    'top_zones_by_pillar_chart_theme' => [
+      'variables' => [
+        'pillar_select_form' => \Drupal::formBuilder()->getForm('Drupal\cpmf_charts\Form\PillarSelectForm')
+      ],
+    ],
+    'top_zones_by_indicator_chart_theme' => [
+      'variables' => [
+        'indicator_select_form' => \Drupal::formBuilder()->getForm('Drupal\cpmf_charts\Form\IndicatorSelectForm')
+      ],
+    ],
+    'project_by_indicator_chart_theme' => [
+      'variables' => [
+        'indicator_select_form' => \Drupal::formBuilder()->getForm('Drupal\cpmf_charts\Form\ProjectIndicatorSelectForm')
+      ],
+    ],
+  ];
+}
+
+/**
+ * Implements hook_help().
+ */
+function cpmf_charts_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the cpmf_charts module.
+    case 'help.page.cpmf_charts':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Custom charting for CPMF') . '</p>';
+      return $output;
+
+    default:
+  }
+}

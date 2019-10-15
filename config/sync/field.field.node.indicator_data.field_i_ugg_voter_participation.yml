@@ -1,0 +1,23 @@
+uuid: d3f0bebb-df8b-475e-90e0-31d915e22378
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_i_ugg_voter_participation
+    - node.type.indicator_data
+id: node.indicator_data.field_i_ugg_voter_participation
+field_name: field_i_ugg_voter_participation
+entity_type: node
+bundle: indicator_data
+label: 'Percentage of registered voters who participated in the last local government election'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: !!float 0
+  max: !!float 100
+  prefix: ''
+  suffix: '%'
+field_type: decimal

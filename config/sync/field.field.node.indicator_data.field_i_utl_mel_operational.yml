@@ -1,0 +1,21 @@
+uuid: ef2aa09f-2697-4bd6-9c5d-2f2918f57629
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_i_utl_mel_operational
+    - node.type.indicator_data
+id: node.indicator_data.field_i_utl_mel_operational
+field_name: field_i_utl_mel_operational
+entity_type: node
+bundle: indicator_data
+label: 'Whether city''s MEL systems is operational or not'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

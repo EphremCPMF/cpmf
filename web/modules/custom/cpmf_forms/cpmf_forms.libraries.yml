@@ -1,0 +1,5 @@
+cpmf-forms:
+  js:
+    js/cpmf-forms.js: {}
+  dependencies:
+    - core/jquery

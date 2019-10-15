@@ -1,0 +1,31 @@
+uuid: 8044ed7c-b277-48e3-96c0-a975d4826412
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_i_gds_trees_per_100k
+    - node.type.indicator_data
+  module:
+    - disable_field
+third_party_settings:
+  disable_field:
+    add_disable: none
+    add_disable_roles: {  }
+    edit_disable: none
+    edit_disable_roles: {  }
+id: node.indicator_data.field_i_gds_trees_per_100k
+field_name: field_i_gds_trees_per_100k
+entity_type: node
+bundle: indicator_data
+label: "How many trees were planted per 100,000 population in the city over the past one year?\t"
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

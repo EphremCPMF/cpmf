@@ -1,0 +1,46 @@
+<?php
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function remove_field_label_length_limit_form_field_config_edit_form_alter(&$form, &$form_state, $form_id) {
+  if (isset($form['label'])) {
+    $form['label']['#maxlength'] = 1024;
+  }
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function remove_field_label_length_limit_form_field_ui_field_storage_add_form_alter(&$form, &$form_state, $form_id) {
+  if (isset($form['new_storage_wrapper']['label'])) {
+    $form['new_storage_wrapper']['label']['#maxlength'] = 1024;
+  }
+  if (isset($form['existing_storage_label'])) {
+    $form['existing_storage_label']['#maxlength'] = 1024;
+  }
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function remove_field_label_length_limit_form_views_ui_config_item_form_alter(&$form, &$form_state, $form_id) {
+  if (isset($form['options']['label'])) {
+    $form['options']['label']['#maxlength'] = 1024;
+  }
+}
+
+/**
+ * Implements hook_module_implements_alter().
+ */
+function remove_field_label_length_limit_module_implements_alter(&$implementations, $hook) {
+  if ($hook !== 'form_alter') {
+    return;
+  }
+  if (!isset($implementations['remove_field_label_length_limit'])) {
+    return;
+  }
+  $implementation = $implementations['remove_field_label_length_limit'];
+  unset($implementations['remove_field_label_length_limit']);
+  $implementations['remove_field_label_length_limit'] = $implementation;
+}

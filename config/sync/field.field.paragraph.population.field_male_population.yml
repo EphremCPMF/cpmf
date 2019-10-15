@@ -1,0 +1,31 @@
+uuid: 35129ad6-378e-4249-a57b-ff7606b58c34
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_male_population
+    - paragraphs.paragraphs_type.population
+  module:
+    - disable_field
+third_party_settings:
+  disable_field:
+    add_disable: none
+    add_disable_roles: {  }
+    edit_disable: none
+    edit_disable_roles: {  }
+id: paragraph.population.field_male_population
+field_name: field_male_population
+entity_type: paragraph
+bundle: population
+label: 'Male population'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -1,0 +1,27 @@
+uuid: 60969721-cb99-4151-9fa7-dcb7391fd791
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.2_5_year_targets.field_targets
+    - paragraphs.paragraphs_type.2_5_year_targets
+  module:
+    - entity_reference_revisions
+id: paragraph.2_5_year_targets.default
+targetEntityType: paragraph
+bundle: 2_5_year_targets
+mode: default
+content:
+  field_targets:
+    weight: 0
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true

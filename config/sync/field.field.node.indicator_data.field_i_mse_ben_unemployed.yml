@@ -1,0 +1,23 @@
+uuid: 7d46ab58-9917-4ec6-ad6a-f13083937e3e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_i_mse_ben_unemployed
+    - node.type.indicator_data
+id: node.indicator_data.field_i_mse_ben_unemployed
+field_name: field_i_mse_ben_unemployed
+entity_type: node
+bundle: indicator_data
+label: 'Number of beneficiaries of food security unemployed 1 year after leaving the programme'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

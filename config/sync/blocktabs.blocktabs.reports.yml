@@ -1,0 +1,14 @@
+uuid: e1f6b4a5-bbf8-4c17-9d39-f7921757ea71
+langcode: en
+status: true
+dependencies: {  }
+name: reports
+label: Reports
+tabs:
+  d19c2c28-dd6c-4430-a0b9-b787b22e8236:
+    uuid: d19c2c28-dd6c-4430-a0b9-b787b22e8236
+    id: block_tab
+    title: 'Top Cities'
+    weight: 1
+    data:
+      block_id: top_cities_by_pillar

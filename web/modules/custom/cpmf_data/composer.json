@@ -1,0 +1,14 @@
+{
+  "name": "drupal/cpmf_data",
+  "type": "drupal-module",
+  "description": "Data manipulation for CPMF",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/cpmf_data",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/cpmf_data",
+    "source": "http://cgit.drupalcode.org/cpmf_data"
+  },
+  "require": { }
+}

@@ -1,0 +1,20 @@
+uuid: a0939f96-3e8f-4d01-9ac0-9700cd4ebe9a
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.indicator_data
+  module:
+    - path
+id: node.indicator_data.path
+field_name: path
+entity_type: node
+bundle: indicator_data
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

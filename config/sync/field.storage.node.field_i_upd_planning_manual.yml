@@ -1,0 +1,18 @@
+uuid: 7233fe91-c123-4988-9e2d-892f2b8b2254
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_i_upd_planning_manual
+field_name: field_i_upd_planning_manual
+entity_type: node
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

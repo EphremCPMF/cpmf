@@ -1,0 +1,23 @@
+uuid: 49c6e76c-308d-4fbd-ba30-9ef8d79ddb1e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_i_mse_ben_wage
+    - node.type.indicator_data
+id: node.indicator_data.field_i_mse_ben_wage
+field_name: field_i_mse_ben_wage
+entity_type: node
+bundle: indicator_data
+label: 'Numbers of beneficiaries receiving guidance on wage and/or self-employment'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

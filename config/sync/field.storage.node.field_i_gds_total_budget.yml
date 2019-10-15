@@ -1,0 +1,20 @@
+uuid: 93222012-8a75-4475-906a-b36cc6a460f2
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_i_gds_total_budget
+field_name: field_i_gds_total_budget
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

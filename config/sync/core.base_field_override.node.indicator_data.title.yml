@@ -1,0 +1,18 @@
+uuid: bc83f145-00f1-45fb-acf8-1397846aad75
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.indicator_data
+id: node.indicator_data.title
+field_name: title
+entity_type: node
+bundle: indicator_data
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

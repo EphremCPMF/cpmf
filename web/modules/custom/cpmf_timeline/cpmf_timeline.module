@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains turkana_timeline.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function cpmf_timeline_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the cpmf_timeline module.
+    case 'help.page.cpmf_timeline':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Timeline') . '</p>';
+      return $output;
+
+    default:
+  }
+}

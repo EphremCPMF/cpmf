@@ -1,0 +1,18 @@
+uuid: ba4ca80e-54db-4af4-8831-bc128481a4e5
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.pillar
+id: node.pillar.title
+field_name: title
+entity_type: node
+bundle: pillar
+label: Title
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

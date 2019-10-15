@@ -1,0 +1,20 @@
+uuid: fe38dd56-a6a1-42e4-a16a-dc96866b68c2
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.city
+id: node.city.menu_link
+field_name: menu_link
+entity_type: node
+bundle: city
+label: 'Menu link'
+description: 'Computed menu link for the node (only available during node saving).'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

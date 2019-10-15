@@ -1,0 +1,31 @@
+uuid: c53536a7-b271-4dbf-8431-989db84b7d12
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_i_uis_transport_plans_prep
+    - node.type.indicator_data
+  module:
+    - disable_field
+third_party_settings:
+  disable_field:
+    add_disable: none
+    add_disable_roles: {  }
+    edit_disable: none
+    edit_disable_roles: {  }
+id: node.indicator_data.field_i_uis_transport_plans_prep
+field_name: field_i_uis_transport_plans_prep
+entity_type: node
+bundle: indicator_data
+label: 'Has the city prepared public transport and mobility strategy and plans?'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

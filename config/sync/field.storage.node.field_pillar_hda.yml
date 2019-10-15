@@ -1,0 +1,21 @@
+uuid: c83b6189-3497-4c4b-91dc-dce915b8801a
+langcode: en
+status: true
+dependencies:
+  module:
+    - computed_field
+    - node
+id: node.field_pillar_hda
+field_name: field_pillar_hda
+entity_type: node
+type: computed_decimal
+settings:
+  precision: '10'
+  scale: '2'
+module: computed_field
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

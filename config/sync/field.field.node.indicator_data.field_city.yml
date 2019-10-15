@@ -1,0 +1,41 @@
+uuid: 473007d7-11d5-42f4-bdcb-c8ccc71bec60
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_city
+    - node.type.city
+    - node.type.indicator_data
+  module:
+    - disable_field
+third_party_settings:
+  disable_field:
+    add_disable: none
+    add_disable_roles: {  }
+    edit_disable: roles
+    edit_disable_roles:
+      data_editor: data_editor
+      content_editor: content_editor
+      translator: translator
+      publisher: publisher
+id: node.indicator_data.field_city
+field_name: field_city
+entity_type: node
+bundle: indicator_data
+label: City
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: unpublished
+  handler_settings:
+    target_bundles:
+      city: city
+    sort:
+      field: title
+      direction: ASC
+    auto_create: 0
+    auto_create_bundle: ''
+field_type: entity_reference

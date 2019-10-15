@@ -1,0 +1,23 @@
+uuid: 2b2781c6-dd60-40d0-b87e-5cdc7ffe140f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sdg
+    - node.type.indicator
+id: node.indicator.field_sdg
+field_name: field_sdg
+entity_type: node
+bundle: indicator
+label: SDG
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

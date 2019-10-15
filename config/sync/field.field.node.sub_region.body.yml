@@ -1,0 +1,22 @@
+uuid: 95df1629-9abf-4f30-a313-96c13d6f37a8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.sub_region
+  module:
+    - text
+id: node.sub_region.body
+field_name: body
+entity_type: node
+bundle: sub_region
+label: Description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

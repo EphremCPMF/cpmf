@@ -1,0 +1,20 @@
+uuid: 90f31613-d095-4b9d-b62e-49b9dbb8d864
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_i_hda_private_firms
+field_name: field_i_hda_private_firms
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

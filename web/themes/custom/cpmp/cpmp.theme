@@ -1,0 +1,22 @@
+<?php
+/**
+ * @file
+ * Bootstrap sub-theme.
+ *
+ * Place your custom PHP code in this file.
+ */
+
+/**
+ * Implements hook_preprocess_HOOK() for block.html.twig.
+ */
+function cpmp_preprocess_block(&$vars) {
+  if ($vars['derivative_plugin_id'] == 'project_by_indicator') {
+    //-- This stops the block being cache in drupal 8
+    $vars['#cache']['max-age'] = 0;
+  }
+}
+
+function cpmp_preprocess_page(&$variables) {
+  $variables['active_year'] = cpmf_data_get_active_year('year');
+  $variables['year_select_form'] = \Drupal::formBuilder()->getForm('Drupal\cpmf_forms\Form\YearSelectForm');
+}

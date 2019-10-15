@@ -1,0 +1,9 @@
+uuid: 71b52d85-c489-40e7-b191-3ffee1abe2e9
+langcode: en
+status: true
+dependencies: {  }
+name: 'Land use classification'
+vid: land_use_classification
+description: ''
+hierarchy: 0
+weight: 0

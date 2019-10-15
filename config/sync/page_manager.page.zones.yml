@@ -1,0 +1,12 @@
+uuid: 5ac0bc2b-a794-4958-9e8e-e7f5406e36e4
+langcode: en
+status: true
+dependencies: {  }
+id: zones
+label: Zones
+description: ''
+use_admin_theme: false
+path: /reports/zones
+access_logic: and
+access_conditions: {  }
+parameters: {  }

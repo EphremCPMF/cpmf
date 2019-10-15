@@ -1,0 +1,31 @@
+uuid: 6a6c9041-afa0-45a0-9533-c2817ed05726
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_i_uis_total_budget
+    - node.type.indicator_data
+  module:
+    - disable_field
+third_party_settings:
+  disable_field:
+    add_disable: none
+    add_disable_roles: {  }
+    edit_disable: none
+    edit_disable_roles: {  }
+id: node.indicator_data.field_i_uis_total_budget
+field_name: field_i_uis_total_budget
+entity_type: node
+bundle: indicator_data
+label: 'What is the total recurrent and capital budget allocated by the city for urban infrastructure and services development for the current budget year?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ' Birr'
+field_type: integer

@@ -1,0 +1,20 @@
+uuid: 38432b49-611d-4166-9204-b205ca0ecf07
+langcode: en
+status: true
+dependencies:
+  theme:
+    - cpmp
+_core:
+  default_config_hash: 1TQP4b3ZnlzvIH9bj6cpCz_SyUHdJjLQkZnHpikjjhw
+id: cpmp_page_title
+theme: cpmp
+region: header
+weight: -3
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

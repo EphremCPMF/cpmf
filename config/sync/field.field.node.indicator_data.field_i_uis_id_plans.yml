@@ -1,0 +1,29 @@
+uuid: e5f47b5b-6732-4811-9d4f-71f3224c3fdb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_i_uis_id_plans
+    - node.type.indicator_data
+  module:
+    - disable_field
+third_party_settings:
+  disable_field:
+    add_disable: none
+    add_disable_roles: {  }
+    edit_disable: none
+    edit_disable_roles: {  }
+id: node.indicator_data.field_i_uis_id_plans
+field_name: field_i_uis_id_plans
+entity_type: node
+bundle: indicator_data
+label: 'Has the city completed infrastructure and service deficits identification plans?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

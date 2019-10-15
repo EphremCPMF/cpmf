@@ -1,0 +1,28 @@
+uuid: d8388a97-48a1-4ea0-b796-2ac2dc4a9b99
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+    - node_save_redirect
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - footer
+    parent: 'footer:'
+  node_save_redirect:
+    save_type: '0'
+    save_location: ''
+    save_destination: 0
+    edit_type: '0'
+    edit_location: ''
+    edit_destination: 0
+_core:
+  default_config_hash: KuyA4NHPXcmKAjRtwa0vQc2ZcyrUJy6IlS2TAyMNRbc
+name: Page
+type: page
+description: 'Use <em>basic pages</em> for your static content, such as an ''About us'' page.'
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

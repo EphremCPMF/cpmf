@@ -1,0 +1,38 @@
+uuid: 7f093bd7-ed66-4118-95c5-fb1d56737a38
+langcode: en
+status: true
+dependencies: {  }
+id: translator
+label: Translator
+weight: -5
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'access environment indicator'
+  - 'access toolbar'
+  - 'access user profiles'
+  - 'create content translations'
+  - 'delete content translations'
+  - 'edit any city content'
+  - 'translate any entity'
+  - 'translate city node'
+  - 'translate configuration'
+  - 'translate indicator node'
+  - 'translate interface'
+  - 'translate land_use_classification taxonomy_term'
+  - 'translate menu_link_content'
+  - 'translate milestone node'
+  - 'translate page node'
+  - 'translate pillar node'
+  - 'translate program node'
+  - 'translate project node'
+  - 'translate region node'
+  - 'translate slide node'
+  - 'translate sub_region node'
+  - 'translate year taxonomy_term'
+  - 'update content translations'
+  - 'use text format restricted_html'
+  - 'view all media revisions'
+  - 'view any unpublished content'
+  - 'view the administration theme'

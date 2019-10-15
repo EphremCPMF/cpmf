@@ -1,0 +1,20 @@
+uuid: 92be7836-2b2d-4768-96fe-d83ec52e7897
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_i_uis_access_transport_agg
+field_name: field_i_uis_access_transport_agg
+entity_type: node
+type: decimal
+settings:
+  precision: 10
+  scale: 2
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

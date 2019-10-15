@@ -1,0 +1,21 @@
+uuid: 07b9dc11-b5b7-42c0-9fb4-48ebaed4058b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date
+    - node.type.milestone
+  module:
+    - datetime
+id: node.milestone.field_date
+field_name: field_date
+entity_type: node
+bundle: milestone
+label: Date
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

@@ -1,0 +1,221 @@
+uuid: cf5ceea3-724f-4f54-ba2a-8f6f05ce7881
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.project.body
+    - field.field.node.project.field_cities
+    - field.field.node.project.field_document
+    - field.field.node.project.field_indicators
+    - field.field.node.project.field_program
+    - field.field.node.project.field_project_number
+    - field.field.node.project.field_project_score
+    - field.field.node.project.field_project_weight
+    - node.type.project
+  module:
+    - computed_field
+    - panelizer
+    - text
+    - user
+third_party_settings:
+  panelizer:
+    enable: true
+    custom: false
+    allow: false
+    default: default
+    displays:
+      default:
+        blocks:
+          918c623d-4cc1-43d1-9006-8f83f7ef9c86:
+            id: 'views_block:project_description-block_4'
+            label: ''
+            provider: views
+            label_display: visible
+            views_label: ''
+            items_per_page: none
+            region: top
+            weight: -2
+            uuid: 918c623d-4cc1-43d1-9006-8f83f7ef9c86
+            context_mapping: {  }
+          974bf7d7-1bae-4228-a14b-dfc64f3f9321:
+            id: 'views_block:project_description-block_3'
+            label: ''
+            provider: views
+            label_display: visible
+            views_label: ''
+            items_per_page: none
+            region: top
+            weight: -1
+            uuid: 974bf7d7-1bae-4228-a14b-dfc64f3f9321
+            context_mapping: {  }
+          a651b8fc-a393-4d00-adaa-a71ed6e7810a:
+            id: 'views_block:project_indicators-block_1'
+            label: ''
+            provider: views
+            label_display: visible
+            views_label: ''
+            items_per_page: none
+            region: top
+            weight: 2
+            uuid: a651b8fc-a393-4d00-adaa-a71ed6e7810a
+            context_mapping: {  }
+          ed0bbad0-657c-4192-8afc-e4cb20d17738:
+            id: 'views_block:project_description-block_1'
+            label: ''
+            provider: views
+            label_display: '0'
+            views_label: ''
+            items_per_page: none
+            region: top
+            weight: 0
+            uuid: ed0bbad0-657c-4192-8afc-e4cb20d17738
+            context_mapping: {  }
+          c150ad56-4118-4d8b-a08a-d329eeffb31c:
+            id: 'views_block:project_description-block_5'
+            label: ''
+            provider: views
+            label_display: visible
+            views_label: ''
+            items_per_page: none
+            region: top
+            weight: 1
+            uuid: c150ad56-4118-4d8b-a08a-d329eeffb31c
+            context_mapping: {  }
+          d1d1cfc6-fbb8-4728-991d-02b858267e30:
+            id: project_by_indicator
+            label: 'Project by Indicator Chart Block'
+            provider: cpmf_charts
+            label_display: '0'
+            region: top
+            weight: 4
+            uuid: d1d1cfc6-fbb8-4728-991d-02b858267e30
+            context_mapping: {  }
+          78df5ed7-9d1d-495a-bf35-41baa355a21f:
+            id: project_indicator_select
+            label: 'Project Indicator Select Block'
+            provider: cpmf_charts
+            label_display: '0'
+            region: top
+            weight: 3
+            uuid: 78df5ed7-9d1d-495a-bf35-41baa355a21f
+            context_mapping: {  }
+          1c50147a-8cd7-4380-a2cb-db611666e0f2:
+            id: 'views_block:node_pdf_link-block_1'
+            label: ''
+            provider: views
+            label_display: '0'
+            views_label: ''
+            items_per_page: none
+            region: top
+            weight: -4
+            uuid: 1c50147a-8cd7-4380-a2cb-db611666e0f2
+            context_mapping: {  }
+          e713bf78-f1f0-4a86-b748-261da5a5f039:
+            id: 'views_block:project_statistics-block_1'
+            label: ''
+            provider: views
+            label_display: '0'
+            views_label: ''
+            items_per_page: none
+            region: top
+            weight: -3
+            uuid: e713bf78-f1f0-4a86-b748-261da5a5f039
+            context_mapping: {  }
+        id: panels_variant
+        label: Default
+        uuid: 8e0b2472-7a46-4eb3-bafb-6e0acda0e31a
+        weight: 0
+        layout: bs_2col_stacked
+        layout_settings: {  }
+        page_title: '[node:field_project_number]. [node:title]'
+        storage_type: panelizer_default
+        storage_id: 'node:project:default:default'
+        builder: standard
+        pattern: panelizer
+        static_context: {  }
+id: node.project.default
+targetEntityType: node
+bundle: project
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_cities:
+    weight: 110
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_document:
+    weight: 105
+    label: above
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_indicators:
+    weight: 104
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_program:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_project_number:
+    weight: 103
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_project_score:
+    weight: 111
+    label: above
+    settings:
+      cache_unit: -1
+      cache_duration: 1
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: computed_integer
+    region: content
+  field_project_weight:
+    weight: 108
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  langcode: true

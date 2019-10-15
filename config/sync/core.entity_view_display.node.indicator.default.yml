@@ -1,0 +1,135 @@
+uuid: f97ef5b7-8e47-4288-b718-521b9b942371
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.indicator.body
+    - field.field.node.indicator.field_indicator_category
+    - field.field.node.indicator.field_indicator_data_field
+    - field.field.node.indicator.field_indicator_name
+    - field.field.node.indicator.field_indicator_number
+    - field.field.node.indicator.field_indicator_weight
+    - field.field.node.indicator.field_kpi_class
+    - field.field.node.indicator.field_level_of_reporting
+    - field.field.node.indicator.field_pillars
+    - field.field.node.indicator.field_reporting_frequency
+    - field.field.node.indicator.field_sdg
+    - field.field.node.indicator.field_sdg_number
+    - field.field.node.indicator.field_supplementary_kpi
+    - node.type.indicator
+  module:
+    - entity_print
+    - options
+    - panelizer
+    - text
+    - user
+third_party_settings:
+  entity_print:
+    pdf_label: 'View PDF'
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
+id: node.indicator.default
+targetEntityType: node
+bundle: indicator
+mode: default
+content:
+  body:
+    label: above
+    type: text_default
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_indicator_number:
+    weight: 2
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_indicator_weight:
+    weight: 10
+    label: inline
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_kpi_class:
+    weight: 4
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_level_of_reporting:
+    weight: 5
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_pillars:
+    weight: 1
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_reporting_frequency:
+    weight: 6
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_sdg:
+    weight: 7
+    label: inline
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_sdg_number:
+    weight: 9
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_supplementary_kpi:
+    weight: 8
+    label: inline
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  field_indicator_category: true
+  field_indicator_data_field: true
+  field_indicator_name: true
+  langcode: true

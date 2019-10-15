@@ -1,0 +1,20 @@
+uuid: 094b5e22-851c-4cf1-9105-b902d15d97e5
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_i_uis_percapita_budget
+field_name: field_i_uis_percapita_budget
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,23 @@
+uuid: 75d751ef-4687-4e95-ae22-1019b9cea110
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_i_ugg_women_government
+    - node.type.indicator_data
+id: node.indicator_data.field_i_ugg_women_government
+field_name: field_i_ugg_women_government
+entity_type: node
+bundle: indicator_data
+label: 'Percentage of women employed in city''s government jobs'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: !!float 0
+  max: !!float 100
+  prefix: ''
+  suffix: '%'
+field_type: decimal

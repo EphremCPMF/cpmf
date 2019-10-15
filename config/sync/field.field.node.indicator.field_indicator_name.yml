@@ -1,0 +1,27 @@
+uuid: 4217cc5c-36f6-40fd-9587-1fa5f63c45f5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_indicator_name
+    - node.type.indicator
+  module:
+    - disable_field
+third_party_settings:
+  disable_field:
+    add_disable: none
+    add_disable_roles: {  }
+    edit_disable: none
+    edit_disable_roles: {  }
+id: node.indicator.field_indicator_name
+field_name: field_indicator_name
+entity_type: node
+bundle: indicator
+label: 'Indicator name'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

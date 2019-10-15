@@ -1,0 +1,21 @@
+uuid: 9845cb7b-5c6d-4098-a66d-5dabc602199b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_i_ugg_adopted_standards
+    - node.type.indicator_data
+id: node.indicator_data.field_i_ugg_adopted_standards
+field_name: field_i_ugg_adopted_standards
+entity_type: node
+bundle: indicator_data
+label: 'Whether the city has formulated and adopted standards for municipal services '
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

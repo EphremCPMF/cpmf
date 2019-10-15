@@ -1,0 +1,20 @@
+uuid: f24e8aae-3625-43d8-83aa-eadd5d91f71a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_i_ugg_engaged_civic
+field_name: field_i_ugg_engaged_civic
+entity_type: node
+type: decimal
+settings:
+  precision: 10
+  scale: 2
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

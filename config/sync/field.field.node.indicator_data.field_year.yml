@@ -1,0 +1,44 @@
+uuid: 20a2b5e8-b54f-4354-943b-5504328d1de0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_year
+    - node.type.indicator_data
+    - taxonomy.vocabulary.year
+  content:
+    - 'taxonomy_term:year:9e153979-eb15-46a4-bff2-03f027a12d24'
+  module:
+    - disable_field
+third_party_settings:
+  disable_field:
+    add_disable: none
+    add_disable_roles: {  }
+    edit_disable: roles
+    edit_disable_roles:
+      data_editor: data_editor
+      content_editor: content_editor
+      translator: translator
+      publisher: publisher
+id: node.indicator_data.field_year
+field_name: field_year
+entity_type: node
+bundle: indicator_data
+label: Year
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: 9e153979-eb15-46a4-bff2-03f027a12d24
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      year: year
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

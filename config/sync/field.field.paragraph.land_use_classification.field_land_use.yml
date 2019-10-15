@@ -1,0 +1,37 @@
+uuid: 6ea2c92a-1bbd-424a-8bab-e415e5ee1a3b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_land_use
+    - paragraphs.paragraphs_type.land_use_classification
+    - taxonomy.vocabulary.land_use_classification
+  module:
+    - disable_field
+third_party_settings:
+  disable_field:
+    add_disable: none
+    add_disable_roles: {  }
+    edit_disable: none
+    edit_disable_roles: {  }
+id: paragraph.land_use_classification.field_land_use
+field_name: field_land_use
+entity_type: paragraph
+bundle: land_use_classification
+label: 'Land use'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      land_use_classification: land_use_classification
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

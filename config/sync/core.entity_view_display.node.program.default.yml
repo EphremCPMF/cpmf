@@ -1,0 +1,230 @@
+uuid: 63b6abb0-964f-4010-b96a-0edda32fefe5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.program.body
+    - field.field.node.program.field_cities
+    - field.field.node.program.field_document
+    - field.field.node.program.field_pillar
+    - field.field.node.program.field_program_number
+    - field.field.node.program.field_program_score
+    - field.field.node.program.field_projects
+    - field.field.node.program.field_regions
+    - node.type.program
+  module:
+    - computed_field
+    - panelizer
+    - text
+    - user
+third_party_settings:
+  panelizer:
+    enable: true
+    custom: false
+    allow: false
+    default: default
+    displays:
+      default:
+        blocks:
+          da53aa0c-8b29-4c10-a211-608a4be7f4e4:
+            id: 'views_block:program_description-block_1'
+            label: ''
+            provider: views
+            label_display: '0'
+            views_label: ''
+            items_per_page: none
+            region: top
+            weight: 2
+            uuid: da53aa0c-8b29-4c10-a211-608a4be7f4e4
+            context_mapping: {  }
+          76b788cb-f6f5-4558-b5f0-8839cd2b5db1:
+            id: 'views_block:program_projects-block_1'
+            label: ''
+            provider: views
+            label_display: visible
+            views_label: ''
+            items_per_page: none
+            region: top
+            weight: 1
+            uuid: 76b788cb-f6f5-4558-b5f0-8839cd2b5db1
+            context_mapping: {  }
+          e787d17b-118e-4d57-ad2c-f5ef1df8c79c:
+            id: 'views_block:program_description-block_3'
+            label: ''
+            provider: views
+            label_display: visible
+            views_label: ''
+            items_per_page: none
+            region: top
+            weight: 0
+            uuid: e787d17b-118e-4d57-ad2c-f5ef1df8c79c
+            context_mapping: {  }
+          49402572-b7e0-4a9a-bcbe-16cd21d4d1ad:
+            id: 'views_block:program_description-block_4'
+            label: ''
+            provider: views
+            label_display: visible
+            views_label: ''
+            items_per_page: none
+            region: top
+            weight: -1
+            uuid: 49402572-b7e0-4a9a-bcbe-16cd21d4d1ad
+            context_mapping: {  }
+          15e94975-1dad-4e82-a466-882869b598fb:
+            id: 'views_block:program_description-block_5'
+            label: ''
+            provider: views
+            label_display: visible
+            views_label: ''
+            items_per_page: none
+            region: top
+            weight: 3
+            uuid: 15e94975-1dad-4e82-a466-882869b598fb
+            context_mapping: {  }
+          2a0dd446-478b-481c-8d5b-91be6286a0dc:
+            id: 'views_block:node_pdf_link-block_1'
+            label: ''
+            provider: views
+            label_display: '0'
+            views_label: ''
+            items_per_page: none
+            region: top
+            weight: -3
+            uuid: 2a0dd446-478b-481c-8d5b-91be6286a0dc
+            context_mapping: {  }
+          5714dd20-a918-4a48-80f3-c62f8008bb74:
+            id: 'views_block:program_statistics-block_1'
+            label: ''
+            provider: views
+            label_display: '0'
+            views_label: ''
+            items_per_page: none
+            region: top
+            weight: -2
+            uuid: 5714dd20-a918-4a48-80f3-c62f8008bb74
+            context_mapping: {  }
+        id: panels_variant
+        label: Default
+        uuid: a83da70e-76d4-4878-8e16-9bf455a48cbc
+        weight: 0
+        layout: bs_2col_stacked
+        layout_settings:
+          layout:
+            wrapper: div
+            classes:
+              row: row
+            add_layout_class: 1
+            attributes: ''
+          regions:
+            top:
+              wrapper: div
+              classes:
+                col-sm-12: col-sm-12
+              add_region_classes: 1
+              attributes: ''
+            left:
+              wrapper: div
+              classes:
+                col-sm-6: col-sm-6
+              add_region_classes: 1
+              attributes: ''
+            right:
+              wrapper: div
+              classes:
+                col-sm-6: col-sm-6
+              add_region_classes: 1
+              attributes: ''
+            bottom:
+              wrapper: div
+              classes:
+                col-sm-12: col-sm-12
+              add_region_classes: 1
+              attributes: ''
+        page_title: '[node:field_program_number]. [node:title]'
+        storage_type: panelizer_default
+        storage_id: 'node:program:default:default'
+        builder: standard
+        pattern: panelizer
+        static_context: {  }
+id: node.program.default
+targetEntityType: node
+bundle: program
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_cities:
+    weight: 108
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_document:
+    weight: 105
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_pillar:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_program_number:
+    weight: 103
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_program_score:
+    weight: 109
+    label: above
+    settings:
+      cache_unit: -1
+      cache_duration: 1
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: computed_integer
+    region: content
+  field_projects:
+    weight: 107
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_regions:
+    weight: 106
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  langcode: true

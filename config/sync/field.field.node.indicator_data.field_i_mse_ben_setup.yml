@@ -1,0 +1,23 @@
+uuid: b9e9247d-2b5e-4f76-8780-6637f2274f77
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_i_mse_ben_setup
+    - node.type.indicator_data
+id: node.indicator_data.field_i_mse_ben_setup
+field_name: field_i_mse_ben_setup
+entity_type: node
+bundle: indicator_data
+label: 'Number of beneficiaries participating in the food security & safety net programme setting up a business '
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

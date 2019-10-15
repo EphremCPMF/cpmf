@@ -1,0 +1,9 @@
+uuid: aa21ed0a-296a-4674-bb28-70bca517b625
+langcode: en
+status: true
+dependencies: {  }
+id: indicator_target_only
+label: Target
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

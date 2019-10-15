@@ -1,0 +1,20 @@
+uuid: 937821db-8234-4734-ba3a-9a12ef1a1d2b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_i_gds_decision_makers
+field_name: field_i_gds_decision_makers
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

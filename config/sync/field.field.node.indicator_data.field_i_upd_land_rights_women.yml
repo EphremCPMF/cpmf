@@ -1,0 +1,23 @@
+uuid: e8b18e07-cb00-4696-af04-7adeaa469cf3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_i_upd_land_rights_women
+    - node.type.indicator_data
+id: node.indicator_data.field_i_upd_land_rights_women
+field_name: field_i_upd_land_rights_women
+entity_type: node
+bundle: indicator_data
+label: 'What is the percentage of women with legally recognized documentation or evidence of secure rights to land?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: !!float 0
+  max: !!float 100
+  prefix: ''
+  suffix: '%'
+field_type: decimal

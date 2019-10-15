@@ -1,0 +1,31 @@
+uuid: 2187f439-fae0-4383-9def-8821417eb591
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_i_isc_fire_vehicles
+    - node.type.indicator_data
+  module:
+    - disable_field
+third_party_settings:
+  disable_field:
+    add_disable: none
+    add_disable_roles: {  }
+    edit_disable: none
+    edit_disable_roles: {  }
+id: node.indicator_data.field_i_isc_fire_vehicles
+field_name: field_i_isc_fire_vehicles
+entity_type: node
+bundle: indicator_data
+label: 'What is the number of firefighter’s vehicles per 100,000 population in the city?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: !!float 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

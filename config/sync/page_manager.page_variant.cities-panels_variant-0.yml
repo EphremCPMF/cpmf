@@ -1,0 +1,60 @@
+uuid: 5e7dfe13-82f6-48d6-8413-c0558d931930
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.cities
+  module:
+    - cpmf_charts
+    - panels
+id: cities-panels_variant-0
+label: Panels
+variant: panels_variant
+variant_settings:
+  blocks:
+    e7775cfd-ecb9-4ef5-8c8f-3b58959d62d8:
+      id: top_cities
+      label: 'Top Cities Chart Block'
+      provider: cpmf_charts
+      label_display: '0'
+      region: main
+      weight: 0
+      uuid: e7775cfd-ecb9-4ef5-8c8f-3b58959d62d8
+      context_mapping: {  }
+    edfc956b-24df-43e8-a6d7-cf5e264b725b:
+      id: cities_overall_line
+      label: 'Cities Overall Line Chart Block'
+      provider: cpmf_charts
+      label_display: '0'
+      region: main
+      weight: 1
+      uuid: edfc956b-24df-43e8-a6d7-cf5e264b725b
+      context_mapping: {  }
+  id: panels_variant
+  uuid: e3ad7bb5-00e7-4fa1-b12d-377618aacaa9
+  label: null
+  weight: 0
+  layout: bs_1col
+  layout_settings:
+    layout:
+      wrapper: div
+      classes:
+        row: row
+      add_layout_class: 1
+      attributes: ''
+    regions:
+      main:
+        wrapper: div
+        classes:
+          col-sm-12: col-sm-12
+        add_region_classes: 1
+        attributes: ''
+  page_title: Cities
+  storage_type: page_manager
+  storage_id: cities-panels_variant-0
+  builder: standard
+page: cities
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

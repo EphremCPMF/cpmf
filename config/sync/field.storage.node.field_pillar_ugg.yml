@@ -1,0 +1,21 @@
+uuid: e448c0c9-d5c4-49d9-9fa4-d151e484d1d9
+langcode: en
+status: true
+dependencies:
+  module:
+    - computed_field
+    - node
+id: node.field_pillar_ugg
+field_name: field_pillar_ugg
+entity_type: node
+type: computed_decimal
+settings:
+  precision: '10'
+  scale: '2'
+module: computed_field
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

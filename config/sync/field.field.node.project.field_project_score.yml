@@ -1,0 +1,33 @@
+uuid: a83ed034-47eb-40dd-b7b8-a79a5c16d4d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_project_score
+    - node.type.project
+  module:
+    - computed_field
+    - disable_field
+third_party_settings:
+  disable_field:
+    add_disable: none
+    add_disable_roles: {  }
+    edit_disable: none
+    edit_disable_roles: {  }
+id: node.project.field_project_score
+field_name: field_project_score
+entity_type: node
+bundle: project
+label: 'Project Score'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  code: '$value = 0;'
+  prefix: ''
+  suffix: ''
+field_type: computed_integer

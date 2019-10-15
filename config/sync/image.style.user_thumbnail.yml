@@ -1,0 +1,23 @@
+uuid: b8ca70ab-0d4b-4094-8e18-66b4adba519c
+langcode: en
+status: true
+dependencies: {  }
+name: user_thumbnail
+label: 'User Thumbnail'
+effects:
+  475be738-f857-4aaa-a9fa-302223ce22a2:
+    uuid: 475be738-f857-4aaa-a9fa-302223ce22a2
+    id: image_scale
+    weight: 1
+    data:
+      width: 25
+      height: null
+      upscale: false
+  39cde631-1344-4310-ab3d-6215de965b51:
+    uuid: 39cde631-1344-4310-ab3d-6215de965b51
+    id: image_crop
+    weight: 2
+    data:
+      width: 25
+      height: 25
+      anchor: center-center

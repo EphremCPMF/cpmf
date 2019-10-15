@@ -1,0 +1,27 @@
+uuid: 06e3198b-a52d-42fc-9518-6f05dc21aa99
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_field_name_code
+    - node.type.pillar
+  module:
+    - disable_field
+third_party_settings:
+  disable_field:
+    add_disable: none
+    add_disable_roles: {  }
+    edit_disable: none
+    edit_disable_roles: {  }
+id: node.pillar.field_field_name_code
+field_name: field_field_name_code
+entity_type: node
+bundle: pillar
+label: 'Field name code'
+description: 'This is a unique 3-letter code for the pillar, e.g. utl (for Urban Transformational Leadership)'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

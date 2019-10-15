@@ -1,0 +1,5 @@
+name: CPMF Charts
+type: module
+description: Custom charting for CPMF
+core: 8.x
+package: CPMF

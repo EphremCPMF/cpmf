@@ -1,0 +1,8 @@
+@iterations: 100;
+.score-loop (@i) when (@i > 0) {
+  .score-@{i} .progress-bar {
+    width: ~"@{i}%";
+  }
+  .score-loop(@i - 1);
+}
+.score-loop (@iterations);

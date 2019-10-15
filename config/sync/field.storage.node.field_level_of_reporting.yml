@@ -1,0 +1,33 @@
+uuid: b6929607-bd0b-4994-a749-e021a1d6ad12
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_level_of_reporting
+field_name: field_level_of_reporting
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: city
+      label: City
+    -
+      value: zone
+      label: Zone
+    -
+      value: region
+      label: Region
+    -
+      value: national
+      label: National
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

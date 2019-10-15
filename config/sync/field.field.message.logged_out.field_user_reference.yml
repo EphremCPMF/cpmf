@@ -1,0 +1,28 @@
+uuid: 3c1e7d97-90b7-4e16-a47e-e7f966b19e62
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.message.field_user_reference
+    - message.template.logged_out
+id: message.logged_out.field_user_reference
+field_name: field_user_reference
+entity_type: message
+bundle: logged_out
+label: 'User Reference'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: false
+    filter:
+      type: _none
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

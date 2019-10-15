@@ -1,0 +1,51 @@
+uuid: c24300cb-113d-445f-9b76-5c982211d8e2
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.regions_by_pillar
+  module:
+    - cpmf_charts
+    - panels
+id: regions_by_pillar-http_status_code-0
+label: Panels
+variant: panels_variant
+variant_settings:
+  blocks:
+    9258f17a-dce0-4dd7-8b20-2ee33bc925b9:
+      id: top_regions_by_pillar
+      label: 'Top Regions by Pillar Chart Block'
+      provider: cpmf_charts
+      label_display: '0'
+      uuid: 9258f17a-dce0-4dd7-8b20-2ee33bc925b9
+      context_mapping: {  }
+      region: main
+  id: panels_variant
+  label: null
+  uuid: ca94815c-64c6-415a-ad47-f14ed9adfc20
+  weight: 0
+  status_code: '404'
+  layout: bs_1col
+  layout_settings:
+    layout:
+      wrapper: div
+      classes:
+        row: row
+      add_layout_class: 1
+      attributes: ''
+    regions:
+      main:
+        wrapper: div
+        classes:
+          col-sm-12: col-sm-12
+        add_region_classes: 1
+        attributes: ''
+  page_title: 'Regions by Pillar'
+  storage_type: page_manager
+  storage_id: regions_by_pillar-http_status_code-0
+  builder: standard
+page: regions_by_pillar
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

@@ -1,0 +1,31 @@
+uuid: 4cbf5e72-f5ac-44ad-9c6a-8a2c7ca118b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_area
+    - paragraphs.paragraphs_type.land_use_classification
+  module:
+    - disable_field
+third_party_settings:
+  disable_field:
+    add_disable: none
+    add_disable_roles: {  }
+    edit_disable: none
+    edit_disable_roles: {  }
+id: paragraph.land_use_classification.field_area
+field_name: field_area
+entity_type: paragraph
+bundle: land_use_classification
+label: Area
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ' ha'
+field_type: decimal

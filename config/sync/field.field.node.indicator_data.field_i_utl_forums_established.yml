@@ -1,0 +1,21 @@
+uuid: be1be6f4-4255-4224-a25c-ff6ae28285fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_i_utl_forums_established
+    - node.type.indicator_data
+id: node.indicator_data.field_i_utl_forums_established
+field_name: field_i_utl_forums_established
+entity_type: node
+bundle: indicator_data
+label: 'Whether the city has established and regularly conducting city management -stakeholders'' forum'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

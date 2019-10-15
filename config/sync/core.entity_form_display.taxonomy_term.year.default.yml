@@ -1,0 +1,39 @@
+uuid: 3ea1bccf-8c22-4be9-9583-162653892c0d
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.year
+  module:
+    - path
+id: taxonomy_term.year.default
+targetEntityType: taxonomy_term
+bundle: year
+mode: default
+content:
+  langcode:
+    type: language_select
+    weight: 1
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  translation:
+    weight: 10
+    region: content
+hidden:
+  description: true

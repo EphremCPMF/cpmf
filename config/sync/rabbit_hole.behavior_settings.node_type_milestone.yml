@@ -1,0 +1,9 @@
+uuid: 3997d92f-7d7f-443b-a7a6-f01cbf570c33
+langcode: en
+status: true
+dependencies: {  }
+id: node_type_milestone
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301

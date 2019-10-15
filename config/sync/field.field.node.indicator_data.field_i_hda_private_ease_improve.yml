@@ -1,0 +1,31 @@
+uuid: c6f3d30e-4f9f-4a5f-840f-5fa4892ea563
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_i_hda_private_ease_improve
+    - node.type.indicator_data
+  module:
+    - disable_field
+third_party_settings:
+  disable_field:
+    add_disable: none
+    add_disable_roles: {  }
+    edit_disable: none
+    edit_disable_roles: {  }
+id: node.indicator_data.field_i_hda_private_ease_improve
+field_name: field_i_hda_private_ease_improve
+entity_type: node
+bundle: indicator_data
+label: 'What is the percentage of private sector firms involved in housing provision who feel that the ease with which they can be involved has improved?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: !!float 0
+  max: !!float 100
+  prefix: ''
+  suffix: '%'
+field_type: decimal

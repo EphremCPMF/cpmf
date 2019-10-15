@@ -1,0 +1,51 @@
+uuid: 3dd324b1-9bb1-44a3-8efc-5e2a7f25144a
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.reports
+  module:
+    - cpmf_reports
+    - panels
+id: reports-panels_variant-0
+label: Panels
+variant: panels_variant
+variant_settings:
+  blocks:
+    61aaf679-6567-4783-94b9-1aa9a8e0612d:
+      id: reports_home
+      label: 'Reports Home Block'
+      provider: cpmf_reports
+      label_display: '0'
+      region: main
+      weight: 0
+      uuid: 61aaf679-6567-4783-94b9-1aa9a8e0612d
+      context_mapping: {  }
+  id: panels_variant
+  uuid: 6d89f539-0617-4301-b4f0-539523a47a80
+  label: null
+  weight: 0
+  layout: bs_1col
+  layout_settings:
+    layout:
+      wrapper: div
+      classes:
+        row: row
+      add_layout_class: 1
+      attributes: ''
+    regions:
+      main:
+        wrapper: div
+        classes:
+          col-sm-12: col-sm-12
+        add_region_classes: 1
+        attributes: ''
+  page_title: Reports
+  storage_type: page_manager
+  storage_id: reports-panels_variant-0
+  builder: standard
+page: reports
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

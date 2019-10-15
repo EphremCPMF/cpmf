@@ -1,0 +1,23 @@
+uuid: ceb71d47-aa8c-49f0-949e-22da193e4aa0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_i_utl_forums
+    - node.type.indicator_data
+id: node.indicator_data.field_i_utl_forums
+field_name: field_i_utl_forums
+entity_type: node
+bundle: indicator_data
+label: 'Number of city management stakeholder forums established and held'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

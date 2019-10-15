@@ -1,0 +1,29 @@
+uuid: 3a81f143-ec33-47fc-9403-4f28e6618cb5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.message.logged_in.field_user_reference
+    - message.template.logged_in
+id: message.logged_in.default
+targetEntityType: message
+bundle: logged_in
+mode: default
+content:
+  field_user_reference:
+    weight: 1
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  partial_0:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true

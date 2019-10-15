@@ -1,0 +1,29 @@
+uuid: 8df5ac34-012f-491d-9ac1-29b2fe7094d2
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:31030a9f-8ddd-43cf-bd52-b304a2be1e14'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - cpmp
+third_party_settings:
+  block_class:
+    classes: ''
+id: cpmp_unhabitatlogo
+theme: cpmp
+region: footer
+weight: -6
+provider: null
+plugin: 'block_content:31030a9f-8ddd-43cf-bd52-b304a2be1e14'
+settings:
+  id: 'block_content:31030a9f-8ddd-43cf-bd52-b304a2be1e14'
+  label: 'UN-Habitat Logo'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

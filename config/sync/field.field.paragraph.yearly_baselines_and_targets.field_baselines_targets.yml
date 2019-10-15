@@ -1,0 +1,44 @@
+uuid: b668c2f0-67f9-46a9-8b7e-2cd3a9a34fa6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_baselines_targets
+    - paragraphs.paragraphs_type.indicator_target
+    - paragraphs.paragraphs_type.yearly_baselines_and_targets
+  module:
+    - disable_field
+    - entity_reference_revisions
+third_party_settings:
+  disable_field:
+    add_disable: none
+    add_disable_roles: {  }
+    edit_disable: none
+    edit_disable_roles: {  }
+id: paragraph.yearly_baselines_and_targets.field_baselines_targets
+field_name: field_baselines_targets
+entity_type: paragraph
+bundle: yearly_baselines_and_targets
+label: 'Baselines | Targets'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      indicator_target: indicator_target
+    target_bundles_drag_drop:
+      yearly_baselines_and_targets:
+        weight: 4
+        enabled: false
+      indicator_target:
+        enabled: true
+        weight: 5
+      population:
+        weight: 6
+        enabled: false
+field_type: entity_reference_revisions

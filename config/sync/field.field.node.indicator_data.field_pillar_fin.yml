@@ -1,0 +1,26 @@
+uuid: bcc30578-41f3-4af2-bd0c-e87d0cf9dc70
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pillar_fin
+    - node.type.indicator_data
+  module:
+    - computed_field
+id: node.indicator_data.field_pillar_fin
+field_name: field_pillar_fin
+entity_type: node
+bundle: indicator_data
+label: 'Urban Finance Improvement and Management '
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  prefix: ''
+  suffix: ''
+  code: '$value = cpmf_data_get_pillar_score(''fin'', $entity);'
+field_type: computed_decimal

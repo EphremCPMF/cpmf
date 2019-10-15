@@ -1,0 +1,29 @@
+uuid: e2edf47e-85cd-4398-87e5-e90de3ca29db
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_i_upd_has_reg_system
+    - node.type.indicator_data
+  module:
+    - disable_field
+third_party_settings:
+  disable_field:
+    add_disable: none
+    add_disable_roles: {  }
+    edit_disable: none
+    edit_disable_roles: {  }
+id: node.indicator_data.field_i_upd_has_reg_system
+field_name: field_i_upd_has_reg_system
+entity_type: node
+bundle: indicator_data
+label: 'Does the city have a functional land management and registration system?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

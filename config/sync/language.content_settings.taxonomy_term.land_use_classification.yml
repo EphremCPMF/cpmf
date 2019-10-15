@@ -1,0 +1,16 @@
+uuid: 72f8aebd-b81f-4704-9ae5-8f7b402c57a1
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.land_use_classification
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.land_use_classification
+target_entity_type_id: taxonomy_term
+target_bundle: land_use_classification
+default_langcode: site_default
+language_alterable: false

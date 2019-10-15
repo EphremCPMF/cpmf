@@ -1,0 +1,18 @@
+uuid: d11016ef-c8c7-46e7-8bb6-1a3d7e0c6f8c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_i_gds_has_watershed_plan
+field_name: field_i_gds_has_watershed_plan
+entity_type: node
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

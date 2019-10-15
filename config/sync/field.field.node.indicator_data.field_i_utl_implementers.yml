@@ -1,0 +1,23 @@
+uuid: 10367cc4-8eec-4f2f-8134-8f69c4acfdd6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_i_utl_implementers
+    - node.type.indicator_data
+id: node.indicator_data.field_i_utl_implementers
+field_name: field_i_utl_implementers
+entity_type: node
+bundle: indicator_data
+label: 'How many Urban Sector Implementers in the city have received Bsc....'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -1,0 +1,54 @@
+uuid: 14814dff-1685-4dfd-95c6-9d214ebf9b8e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.population.field_female_population
+    - field.field.paragraph.population.field_male_population
+    - field.field.paragraph.population.field_population
+    - field.field.paragraph.population.field_year
+    - paragraphs.paragraphs_type.population
+  module:
+    - content_moderation
+id: paragraph.population.default
+targetEntityType: paragraph
+bundle: population
+mode: default
+content:
+  field_female_population:
+    weight: 102
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_male_population:
+    weight: 101
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_population:
+    weight: 7
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_year:
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  moderation_state:
+    type: moderation_state_default
+    weight: 100
+    settings: {  }
+    region: content
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
+  uid: true

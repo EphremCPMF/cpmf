@@ -1,0 +1,47 @@
+uuid: c01f70b5-1388-40a3-a752-b450e3249561
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_i_upd_land_use_ratios
+    - node.type.indicator_data
+    - paragraphs.paragraphs_type.land_use_classification
+  module:
+    - disable_field
+    - entity_reference_revisions
+third_party_settings:
+  disable_field:
+    add_disable: none
+    add_disable_roles: {  }
+    edit_disable: none
+    edit_disable_roles: {  }
+id: node.indicator_data.field_i_upd_land_use_ratios
+field_name: field_i_upd_land_use_ratios
+entity_type: node
+bundle: indicator_data
+label: 'What is the ratio of land use in the city?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      land_use_classification: land_use_classification
+    target_bundles_drag_drop:
+      indicator_target:
+        weight: 5
+        enabled: false
+      land_use_classification:
+        enabled: true
+        weight: 6
+      population:
+        weight: 7
+        enabled: false
+      yearly_baselines_and_targets:
+        weight: 8
+        enabled: false
+field_type: entity_reference_revisions

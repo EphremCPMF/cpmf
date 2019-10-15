@@ -1,0 +1,31 @@
+uuid: e37ccafa-a57b-4c2d-8baa-0818514418f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_i_upd_percentage_in_slums
+    - node.type.indicator_data
+  module:
+    - disable_field
+third_party_settings:
+  disable_field:
+    add_disable: none
+    add_disable_roles: {  }
+    edit_disable: none
+    edit_disable_roles: {  }
+id: node.indicator_data.field_i_upd_percentage_in_slums
+field_name: field_i_upd_percentage_in_slums
+entity_type: node
+bundle: indicator_data
+label: 'What is the proportion of urban population living in slums, informal settlements, or inadequate housing?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: '%'
+field_type: decimal

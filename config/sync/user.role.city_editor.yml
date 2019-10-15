@@ -1,0 +1,26 @@
+uuid: 958fae2e-ea5d-4d48-a141-e5d1c35542c7
+langcode: en
+status: true
+dependencies: {  }
+id: city_editor
+label: 'City editor'
+weight: -7
+is_admin: null
+permissions:
+  - 'create city content'
+  - 'create file media'
+  - 'create image media'
+  - 'delete any city content'
+  - 'delete any indicator_data content'
+  - 'delete own city content'
+  - 'delete own file media'
+  - 'delete own image media'
+  - 'edit any city content'
+  - 'edit any program content'
+  - 'edit any project content'
+  - 'edit own file media'
+  - 'edit own image media'
+  - 'use indicator_data_workflow transition create_new_draft'
+  - 'use indicator_data_workflow transition return_to_draft'
+  - 'use indicator_data_workflow transition submit_for_review'
+  - 'view any unpublished content'

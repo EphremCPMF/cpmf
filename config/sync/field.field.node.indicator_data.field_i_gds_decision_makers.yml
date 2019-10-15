@@ -1,0 +1,31 @@
+uuid: 0dea7c7e-54b6-4101-b2cd-ddf3133fdc71
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_i_gds_decision_makers
+    - node.type.indicator_data
+  module:
+    - disable_field
+third_party_settings:
+  disable_field:
+    add_disable: none
+    add_disable_roles: {  }
+    edit_disable: none
+    edit_disable_roles: {  }
+id: node.indicator_data.field_i_gds_decision_makers
+field_name: field_i_gds_decision_makers
+entity_type: node
+bundle: indicator_data
+label: 'How many decision makers in the city have been trained on green development approaches over the past one year?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

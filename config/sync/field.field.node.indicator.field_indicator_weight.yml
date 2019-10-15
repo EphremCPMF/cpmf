@@ -1,0 +1,31 @@
+uuid: 712281e6-08e4-46ef-acf0-c2f6aad223de
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_indicator_weight
+    - node.type.indicator
+  module:
+    - disable_field
+third_party_settings:
+  disable_field:
+    add_disable: none
+    add_disable_roles: {  }
+    edit_disable: none
+    edit_disable_roles: {  }
+id: node.indicator.field_indicator_weight
+field_name: field_indicator_weight
+entity_type: node
+bundle: indicator
+label: 'Indicator Weight'
+description: '(0 - 100)'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: !!float 0
+  max: !!float 100
+  prefix: ''
+  suffix: '%'
+field_type: decimal

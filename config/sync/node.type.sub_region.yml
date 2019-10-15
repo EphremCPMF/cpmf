@@ -1,0 +1,25 @@
+uuid: 032562a9-0091-416c-b365-145e56d0c2ed
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+    - node_save_redirect
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+  node_save_redirect:
+    save_type: '0'
+    save_location: ''
+    save_destination: 0
+    edit_type: '0'
+    edit_location: ''
+    edit_destination: 0
+name: Zone
+type: sub_region
+description: ''
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false

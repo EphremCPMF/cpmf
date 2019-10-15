@@ -1,0 +1,18 @@
+uuid: 8b693b1f-4b26-42e0-b3ec-d0e3a3f37881
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.city
+id: node.city.created
+field_name: created
+entity_type: node
+bundle: city
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

@@ -1,0 +1,23 @@
+uuid: 70ed0e3d-0500-4d96-b73f-1924c0ad9f49
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_indicator_number
+    - node.type.indicator
+id: node.indicator.field_indicator_number
+field_name: field_indicator_number
+entity_type: node
+bundle: indicator
+label: 'Indicator Number'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 1
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

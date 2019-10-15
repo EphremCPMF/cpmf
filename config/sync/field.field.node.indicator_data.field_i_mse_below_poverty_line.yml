@@ -1,0 +1,23 @@
+uuid: 81b99fb5-198b-498f-9678-4ec0cf7b6c9b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_i_mse_below_poverty_line
+    - node.type.indicator_data
+id: node.indicator_data.field_i_mse_below_poverty_line
+field_name: field_i_mse_below_poverty_line
+entity_type: node
+bundle: indicator_data
+label: 'Proportion of urban households living below the national poverty line'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: !!float 0
+  max: !!float 100
+  prefix: ''
+  suffix: '%'
+field_type: decimal

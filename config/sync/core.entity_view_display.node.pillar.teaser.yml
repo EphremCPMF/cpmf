@@ -1,0 +1,30 @@
+uuid: 1b96710a-1478-4cb0-bcbe-5b54e71dbe4a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.pillar.body
+    - field.field.node.pillar.field_abbreviation
+    - field.field.node.pillar.field_color
+    - field.field.node.pillar.field_field_name_code
+    - field.field.node.pillar.field_pillar_number
+    - node.type.pillar
+  module:
+    - user
+id: node.pillar.teaser
+targetEntityType: node
+bundle: pillar
+mode: teaser
+content: {  }
+hidden:
+  body: true
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  field_abbreviation: true
+  field_color: true
+  field_field_name_code: true
+  field_pillar_number: true
+  langcode: true
+  links: true

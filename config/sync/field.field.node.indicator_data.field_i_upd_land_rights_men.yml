@@ -1,0 +1,23 @@
+uuid: 2c6efe3c-f6f1-4277-ad2b-5ad5521405ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_i_upd_land_rights_men
+    - node.type.indicator_data
+id: node.indicator_data.field_i_upd_land_rights_men
+field_name: field_i_upd_land_rights_men
+entity_type: node
+bundle: indicator_data
+label: 'What is the percentage of men with legally recognized documentation or evidence of secure rights to land?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: !!float 0
+  max: !!float 100
+  prefix: ''
+  suffix: '%'
+field_type: decimal

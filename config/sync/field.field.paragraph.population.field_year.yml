@@ -1,0 +1,32 @@
+uuid: 7d6937d8-869e-483a-8119-e5045c669d5d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_year
+    - paragraphs.paragraphs_type.population
+    - taxonomy.vocabulary.year
+  content:
+    - 'taxonomy_term:year:f7752ebe-c027-4bbe-a508-fa5ff8584263'
+id: paragraph.population.field_year
+field_name: field_year
+entity_type: paragraph
+bundle: population
+label: Year
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: f7752ebe-c027-4bbe-a508-fa5ff8584263
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      year: year
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,122 @@
+uuid: efd81800-6ddb-44ab-8a31-dcfbf7442f71
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.file.field_media_file
+    - image.style.thumbnail
+    - media.type.file
+  module:
+    - field_formatter_class
+    - field_group
+    - file
+    - image
+third_party_settings:
+  field_group:
+    group_thumb:
+      children:
+        - group_media_left
+        - group_media_body
+      parent_name: ''
+      weight: 20
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: media
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: 'Media object'
+      region: content
+    group_media_left:
+      children:
+        - thumbnail
+      parent_name: group_thumb
+      weight: 20
+      format_type: html_element
+      format_settings:
+        label: 'Media left'
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: pull-left
+      label: 'Media left'
+      region: content
+    group_media_body:
+      children:
+        - name
+        - field_media_file
+        - created
+      parent_name: group_thumb
+      weight: 21
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: media-body
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: 'Media body'
+      region: content
+_core:
+  default_config_hash: ur5IEgEgeoNAE7ppqt6usimLP8WHe6WPKuZul582QUM
+id: media.file.default
+targetEntityType: media
+bundle: file
+mode: default
+content:
+  created:
+    type: timestamp
+    weight: 3
+    region: content
+    label: hidden
+    settings:
+      date_format: custom
+      custom_date_format: 'jS F Y'
+      timezone: ''
+    third_party_settings:
+      field_formatter_class:
+        class: h6
+  field_media_file:
+    label: hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    weight: 2
+    region: content
+  name:
+    label: hidden
+    type: string
+    weight: 1
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      field_formatter_class:
+        class: h4
+  thumbnail:
+    type: image
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: thumbnail
+      image_link: ''
+    third_party_settings: {  }
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  langcode: true
+  uid: true

@@ -1,0 +1,12 @@
+uuid: 80da5e93-1a5e-47fb-8aad-933ebfbc88e4
+langcode: en
+status: true
+dependencies: {  }
+id: zones_by_pillar
+label: 'Zones by Pillar'
+description: ''
+use_admin_theme: false
+path: /reports/zones/pillar
+access_logic: and
+access_conditions: {  }
+parameters: {  }

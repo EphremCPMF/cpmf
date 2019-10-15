@@ -1,0 +1,60 @@
+uuid: aca5a1d4-7bb4-4681-b0ff-decd59869cd6
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.indicator_data
+  module:
+    - content_moderation
+id: indicator_data_workflow
+label: 'Indicator Data Workflow'
+type: content_moderation
+type_settings:
+  states:
+    draft:
+      label: Draft
+      published: false
+      default_revision: false
+      weight: -8
+    published:
+      label: Published
+      published: true
+      default_revision: true
+      weight: -10
+    submit_for_review:
+      published: false
+      default_revision: false
+      label: 'Submit for Review'
+      weight: -9
+  transitions:
+    create_new_draft:
+      label: 'Create New Draft'
+      to: draft
+      weight: -7
+      from:
+        - draft
+    publish:
+      label: Publish
+      to: published
+      weight: -10
+      from:
+        - draft
+        - published
+        - submit_for_review
+    return_to_draft:
+      label: 'Return to Draft'
+      from:
+        - published
+        - submit_for_review
+      to: draft
+      weight: -8
+    submit_for_review:
+      label: 'Submit for Review'
+      from:
+        - draft
+        - published
+      to: submit_for_review
+      weight: -9
+  entity_types:
+    node:
+      - indicator_data

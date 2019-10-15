@@ -1,0 +1,12 @@
+uuid: 381ee9d7-b93f-4393-b530-52a187c1d048
+langcode: en
+status: true
+dependencies: {  }
+id: top_cities_by_indicators
+label: 'Top Cities by Indicators'
+description: ''
+use_admin_theme: false
+path: /reports/cities/indicator
+access_logic: and
+access_conditions: {  }
+parameters: {  }

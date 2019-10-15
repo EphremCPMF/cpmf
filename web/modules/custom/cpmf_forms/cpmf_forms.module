@@ -1,0 +1,123 @@
+<?php
+
+/**
+ * @file
+ * Contains cpmf_forms.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Access\AccessResult;
+
+/**
+ * Implements hook_form_BASE_FORM_ID_alter().
+ */
+function cpmf_forms_form_node_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  $node = $form_state->getFormObject()->getEntity();
+
+  if ($node->getType() == 'indicator') {
+    $form['field_sdg_number']['#states'] = [
+      'visible' => [
+        ['input[name="field_indicator_number"]' => ['value' => '9']],
+      ],
+    ];
+
+    $options = cpmf_forms_get_indicator_field_options();
+    $form['field_indicator_data_field']['widget']['#options'] = $options;
+  }
+
+  if ($node->getType() == 'indicator_data') {
+    // utilize Bootstrap's input group
+    $indicator_field_names = cpmf_data_get_indicator_field_names();
+    foreach ($indicator_field_names as $key => $name) {
+      $form[$name]['widget'][0]['value']['#input_group'] = TRUE;
+    }
+
+    // prepend pillar/indicator numbers to field labels
+    $indicator_field_names = cpmf_data_get_indicator_field_names();
+    foreach ($indicator_field_names as $key => $name) {
+      $number = cpmf_data_get_pillar_indicator_numbers_from_field_name($name);
+      $number_prefix = $number . '.&nbsp;&nbsp;';
+      $title = $form[$name]['widget']['#title'];
+      if (isset($form[$name]['widget'][0]['value']['#title'])) {
+        $form[$name]['widget'][0]['value']['#title'] = $number_prefix . ' ' . $title;
+      }
+      else {
+        $form[$name]['widget']['#title'] = $number_prefix . $title;
+      }
+    }
+  }
+}
+
+function cpmf_forms_get_indicator_field_options() {
+  $options = array();
+  $options['_none'] = t('- Select a value -');
+  $indicators = cpmf_data_get_indicator_field_names();
+  foreach ($indicators as $key => $indicator_field_machine_name) {
+    $options[$indicator_field_machine_name] = $indicator_field_machine_name;
+  }
+  return $options;
+
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function cpmf_forms_form_views_exposed_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  $form['#attached']['library'][] = 'cpmf_forms/cpmf-forms';
+  if ($form['#id'] == 'views-exposed-form-cities-block-1') {
+    $form['status']['#options']['All'] = t('All');
+    $form['eref_node_titles']['#options']['All'] = t('All Regions');
+  }
+}
+
+/**
+ * Implements hook_language_switch_links_alter().
+ */
+function cpmf_forms_language_switch_links_alter(array &$links, $type, \Drupal\Core\Url $url) {
+  $links['am']['title'] = 'አማርኛ';
+}
+
+/**
+ * Implements hook_entity_field_access().
+ */
+function cpmf_forms_entity_field_access($operation, \Drupal\Core\Field\FieldDefinitionInterface $field_definition, \Drupal\Core\Session\AccountInterface $account, \Drupal\Core\Field\FieldItemListInterface $items = NULL) {
+  $access = AccessResult::neutral();
+  // Let a user have access to the revision_log widget if they have access to edit the entity.
+  if ($operation == 'edit' && $field_definition->getName() == 'revision_log') {
+    $entity = $items->getParent()->getValue('entity');
+    if ($entity instanceof \Drupal\node\NodeInterface) {
+      $type = $entity->getType();
+      // Can they edit ANY Node or Any of this entity type?
+      if ($account->hasPermission('edit any ' . $type . ' content') || $account->hasPermission('"bypass entity access"')) {
+        $access = AccessResult::allowed();
+      } else {
+        // Does the user own this entity, and can they edit their own entity of this type?
+        $owner_id = $entity->getOwnerId();
+        if ($owner_id == $account->id() && $account->hasPermission('edit own ' . $type . ' content')) {
+          $access = AccessResult::allowed();
+        }
+      }
+    }
+    elseif ($entity instanceof \Drupal\block_content\Entity\BlockContent && $account->hasPermission('administer blocks')) {
+      $access = AccessResult::allowed();
+    }
+  }
+  return $access;
+}
+
+/**
+ * Implements hook_help().
+ */
+function cpmf_forms_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the cpmf_forms module.
+    case 'help.page.cpmf_forms':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Custom forms functionality for CPMF') . '</p>';
+      return $output;
+
+    default:
+      return NULL;
+  }
+}

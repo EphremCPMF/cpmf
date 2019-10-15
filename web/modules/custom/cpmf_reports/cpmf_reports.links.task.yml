@@ -1,0 +1,80 @@
+#make menutest.home route the base tab
+#to which other tabs will attach
+cpmf_reports.home: #give it the same name as the route to make it clear
+  title: Reports
+  route_name: cpmf_reports.home #route defined in .routing.yml
+  base_route: cpmf_reports.home #same as the route name
+  weight: 0
+
+cpmf_reports.tab_cities:
+  title: Cities
+  route_name: cpmf_reports.tab_cities
+  base_route: cpmf_reports.home
+  weight: 1
+
+cpmf_reports.tab_cities.pillar:
+  title: Cities by Pillar
+  route_name: cpmf_reports.tab_cities_pillar
+  parent_id: cpmf_reports.tab_cities
+  weight: 1
+
+cpmf_reports.tab_cities.indicator:
+  title: Cities by Indicator
+  route_name: cpmf_reports.tab_cities_indicator
+  parent_id: cpmf_reports.tab_cities
+  weight: 2
+
+cpmf_reports.tab_regions:
+  title: Regions
+  route_name: cpmf_reports.tab_regions
+  base_route: cpmf_reports.home
+  weight: 2
+
+cpmf_reports.tab_regions.pillar:
+  title: Regions by Pillar
+  route_name: cpmf_reports.tab_regions_pillar
+  parent_id: cpmf_reports.tab_regions
+  weight: 1
+
+cpmf_reports.tab_regions.indicator:
+  title: Regions by Indicator
+  route_name: cpmf_reports.tab_regions_indicator
+  parent_id: cpmf_reports.tab_regions
+  weight: 2
+
+cpmf_reports.tab_zones:
+  title: Zones
+  route_name: cpmf_reports.tab_zones
+  base_route: cpmf_reports.home
+  weight: 3
+
+cpmf_reports.tab_zones.pillar:
+  title: Zones by Pillar
+  route_name: cpmf_reports.tab_zones_pillar
+  parent_id: cpmf_reports.tab_zones
+  weight: 1
+
+cpmf_reports.tab_zones.indicator:
+  title: Zones by Indicator
+  route_name: cpmf_reports.tab_zones_indicator
+  parent_id: cpmf_reports.tab_zones
+  weight: 2
+
+cpmf_reports.tab_national:
+  title: National
+  route_name: cpmf_reports.tab_national
+  base_route: cpmf_reports.home
+  weight: 4
+
+cpmf_reports.tab_national.pillar:
+  title: National by Pillar
+  route_name: cpmf_reports.tab_national_pillar
+  parent_id: cpmf_reports.tab_national
+  weight: 1
+
+cpmf_reports.tab_national.indicator:
+  title: National by Indicator
+  route_name: cpmf_reports.tab_national_indicator
+  parent_id: cpmf_reports.tab_national
+  weight: 2
+

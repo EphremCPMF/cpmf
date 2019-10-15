@@ -1,0 +1,31 @@
+uuid: 24bdaae2-5b93-4c9a-b63e-3ea052f13962
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_i_isc_piped_water
+    - node.type.indicator_data
+  module:
+    - disable_field
+third_party_settings:
+  disable_field:
+    add_disable: none
+    add_disable_roles: {  }
+    edit_disable: none
+    edit_disable_roles: {  }
+id: node.indicator_data.field_i_isc_piped_water
+field_name: field_i_isc_piped_water
+entity_type: node
+bundle: indicator_data
+label: 'What is the percentage of the population of the city that uses safely managed piped water services?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: !!float 0
+  max: !!float 100
+  prefix: ''
+  suffix: '%'
+field_type: decimal

@@ -1,0 +1,23 @@
+uuid: 65258fc6-6536-490d-a82f-f52022949dc0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_reporting_frequency
+    - node.type.indicator
+  module:
+    - options
+id: node.indicator.field_reporting_frequency
+field_name: field_reporting_frequency
+entity_type: node
+bundle: indicator
+label: 'Reporting Frequency'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: annual
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,21 @@
+uuid: f28fb5c5-e11c-4301-bfd6-4a3e1da2749b
+langcode: en
+status: true
+dependencies:
+  module:
+    - computed_field
+    - node
+id: node.field_program_score
+field_name: field_program_score
+entity_type: node
+type: computed_integer
+settings:
+  unsigned: false
+  size: normal
+module: computed_field
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

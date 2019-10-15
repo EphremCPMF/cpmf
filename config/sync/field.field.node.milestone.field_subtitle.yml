@@ -1,0 +1,19 @@
+uuid: abac219c-aed1-4143-bdbb-0598dbaa77e0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_subtitle
+    - node.type.milestone
+id: node.milestone.field_subtitle
+field_name: field_subtitle
+entity_type: node
+bundle: milestone
+label: Subtitle
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

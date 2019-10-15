@@ -1,0 +1,21 @@
+uuid: 4b2d9a9c-a4b0-491c-9a40-7597f258d9ca
+langcode: en
+status: true
+dependencies:
+  module:
+    - computed_field
+    - node
+id: node.field_data_completeness
+field_name: field_data_completeness
+entity_type: node
+type: computed_integer
+settings:
+  unsigned: false
+  size: normal
+module: computed_field
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

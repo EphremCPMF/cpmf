@@ -1,0 +1,20 @@
+uuid: 0dffca6e-0fa5-4721-a1d4-6f000a946934
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_i_isc_officials_trained
+field_name: field_i_isc_officials_trained
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

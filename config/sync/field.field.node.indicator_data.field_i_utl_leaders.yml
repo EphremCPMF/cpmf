@@ -1,0 +1,23 @@
+uuid: b3232b21-b6a1-47b2-961e-8a80e760551b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_i_utl_leaders
+    - node.type.indicator_data
+id: node.indicator_data.field_i_utl_leaders
+field_name: field_i_utl_leaders
+entity_type: node
+bundle: indicator_data
+label: 'Number of urban leaders trained in city management, efficient delivery of services and provision and maintenance of urban infrastructure'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -1,0 +1,26 @@
+uuid: 7fe252f1-6348-4867-854b-b4bfb4e330bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pillar_utl
+    - node.type.indicator_data
+  module:
+    - computed_field
+id: node.indicator_data.field_pillar_utl
+field_name: field_pillar_utl
+entity_type: node
+bundle: indicator_data
+label: 'Urban Transformational Leadership'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  prefix: ''
+  suffix: ''
+  code: '$value = cpmf_data_get_pillar_score(''utl'', $entity);'
+field_type: computed_decimal

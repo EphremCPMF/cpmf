@@ -1,0 +1,23 @@
+uuid: ca3fabd2-f215-4e19-acf5-77cd1caf2a5a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_area
+    - node.type.region
+id: node.region.field_area
+field_name: field_area
+entity_type: node
+bundle: region
+label: Area
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: km<super>2</super>
+field_type: integer

@@ -1,0 +1,5 @@
+name: CPMF Forms
+type: module
+description: Custom forms functionality for CPMF
+core: 8.x
+package: CPMF

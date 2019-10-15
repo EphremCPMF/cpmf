@@ -1,0 +1,22 @@
+uuid: 19614283-2f4c-4202-9e4d-960da079beb5
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - cpmp
+_core:
+  default_config_hash: MhtNdV__HKRTab0ZPjkPNfYL4Ng4UPBucDLoC7Rg5Eo
+id: cpmp_help
+theme: cpmp
+region: help
+weight: -7
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

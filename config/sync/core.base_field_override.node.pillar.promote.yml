@@ -1,0 +1,22 @@
+uuid: eb2c7c5a-6ae5-4a46-95ab-e7582c5daaed
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.pillar
+id: node.pillar.promote
+field_name: promote
+entity_type: node
+bundle: pillar
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

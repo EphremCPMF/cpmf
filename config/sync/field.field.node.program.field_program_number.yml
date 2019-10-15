@@ -1,0 +1,31 @@
+uuid: 7607bd90-74f1-4106-9220-c12266109540
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_program_number
+    - node.type.program
+  module:
+    - disable_field
+third_party_settings:
+  disable_field:
+    add_disable: none
+    add_disable_roles: {  }
+    edit_disable: none
+    edit_disable_roles: {  }
+id: node.program.field_program_number
+field_name: field_program_number
+entity_type: node
+bundle: program
+label: 'Program Number'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

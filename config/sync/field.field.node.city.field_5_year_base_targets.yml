@@ -1,0 +1,53 @@
+uuid: 1a387cb5-cfd4-411a-a429-9091e268c0b8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_5_year_base_targets
+    - node.type.city
+    - paragraphs.paragraphs_type.5_year_baselines_and_targets
+  module:
+    - disable_field
+    - entity_reference_revisions
+third_party_settings:
+  disable_field:
+    add_disable: none
+    add_disable_roles: {  }
+    edit_disable: none
+    edit_disable_roles: {  }
+id: node.city.field_5_year_base_targets
+field_name: field_5_year_base_targets
+entity_type: node
+bundle: city
+label: '5-Year targets'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      5_year_baselines_and_targets: 5_year_baselines_and_targets
+    target_bundles_drag_drop:
+      5_year_baselines_and_targets:
+        enabled: true
+        weight: 6
+      indicator_target:
+        weight: 7
+        enabled: false
+      land_use_classification:
+        weight: 8
+        enabled: false
+      indicator_target_only:
+        weight: 9
+        enabled: false
+      population:
+        weight: 9
+        enabled: false
+      yearly_baselines_and_targets:
+        weight: 10
+        enabled: false
+field_type: entity_reference_revisions

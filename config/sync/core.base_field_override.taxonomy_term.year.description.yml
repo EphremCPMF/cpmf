@@ -1,0 +1,20 @@
+uuid: 1d823850-56bc-4702-8193-69932421498d
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.year
+  module:
+    - text
+id: taxonomy_term.year.description
+field_name: description
+entity_type: taxonomy_term
+bundle: year
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

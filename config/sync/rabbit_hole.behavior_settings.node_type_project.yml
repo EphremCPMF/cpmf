@@ -1,0 +1,9 @@
+uuid: 264cfe78-d98a-46a1-b150-53a810097155
+langcode: en
+status: true
+dependencies: {  }
+id: node_type_project
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301

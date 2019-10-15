@@ -1,0 +1,24 @@
+uuid: 2e7b81b7-07b7-4727-8e3c-e61d850ae894
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.sidebar
+  module:
+    - system
+  theme:
+    - cpmp
+id: cpmp_sidebar
+theme: cpmp
+region: off_canvas
+weight: -8
+provider: null
+plugin: 'system_menu_block:sidebar'
+settings:
+  id: 'system_menu_block:sidebar'
+  label: Sidebar
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

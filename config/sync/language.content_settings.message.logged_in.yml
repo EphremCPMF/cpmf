@@ -1,0 +1,11 @@
+uuid: 834b306f-1448-41c8-8e50-fb549ec2934e
+langcode: en
+status: true
+dependencies:
+  config:
+    - message.template.logged_in
+id: message.logged_in
+target_entity_type_id: message
+target_bundle: logged_in
+default_langcode: site_default
+language_alterable: false

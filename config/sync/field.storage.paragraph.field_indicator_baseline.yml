@@ -1,0 +1,20 @@
+uuid: 888bd0fc-5192-4146-9b59-8455f739341c
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_indicator_baseline
+field_name: field_indicator_baseline
+entity_type: paragraph
+type: decimal
+settings:
+  precision: 10
+  scale: 2
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

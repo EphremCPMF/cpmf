@@ -1,0 +1,9 @@
+uuid: 678331d9-b055-44c7-a2a5-b538a40e965a
+langcode: en
+status: true
+dependencies: {  }
+id: am
+label: Amharic
+direction: ltr
+weight: 1
+locked: false

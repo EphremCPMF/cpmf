@@ -1,0 +1,26 @@
+uuid: c6ea7772-8fae-4f1a-a97d-c72050e9f84e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pillar_ugg
+    - node.type.indicator_data
+  module:
+    - computed_field
+id: node.indicator_data.field_pillar_ugg
+field_name: field_pillar_ugg
+entity_type: node
+bundle: indicator_data
+label: 'Urban Good Governance and Capacity Building'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  prefix: ''
+  suffix: ''
+  code: '$value = cpmf_data_get_pillar_score(''ugg'', $entity);'
+field_type: computed_decimal

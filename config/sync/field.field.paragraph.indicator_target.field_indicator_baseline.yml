@@ -1,0 +1,25 @@
+uuid: 12c18768-e61f-4dab-9c96-5b7f11bb0d00
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_indicator_baseline
+    - paragraphs.paragraphs_type.indicator_target
+id: paragraph.indicator_target.field_indicator_baseline
+field_name: field_indicator_baseline
+entity_type: paragraph
+bundle: indicator_target
+label: Baseline
+description: 'Yes = 1 | No = 0'
+required: false
+translatable: false
+default_value:
+  -
+    value: !!float 0
+default_value_callback: ''
+settings:
+  min: !!float 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

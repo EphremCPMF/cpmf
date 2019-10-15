@@ -1,0 +1,105 @@
+cpmf_reports.home:
+  path: 'reports'
+  defaults:
+    _content: '\Drupal\cpmf_reports\Controller\ReportsTabController::index'
+    _title: 'Reports'
+  requirements:
+    _permission: 'access content'
+
+cpmf_reports.tab_national:
+  path: 'reports/national'
+  defaults:
+    _content: '\Drupal\cpmf_reports\Controller\ReportsTabController::tab_national'
+    _title: 'National'
+  requirements:
+    _permission: 'access content'
+
+cpmf_reports.tab_national_pillar:
+  path: 'reports/national/pillar'
+  defaults:
+    _content: '\Drupal\cpmf_reports\Controller\ReportsTabController::tab_national_pillar'
+    _title: 'National by Pillar'
+  requirements:
+    _permission: 'access content'
+
+cpmf_reports.tab_national_indicator:
+  path: 'reports/national/indicator'
+  defaults:
+    _content: '\Drupal\cpmf_reports\Controller\ReportsTabController::tab_national_indicator'
+    _title: 'National by Indicator'
+  requirements:
+    _permission: 'access content'
+
+cpmf_reports.tab_cities:
+  path: 'reports/cities'
+  defaults:
+    _content: '\Drupal\cpmf_reports\Controller\ReportsTabController::tab_cities'
+    _title: 'Cities'
+  requirements:
+    _permission: 'access content'
+
+cpmf_reports.tab_cities_pillar:
+  path: 'reports/cities/pillar'
+  defaults:
+    _content: '\Drupal\cpmf_reports\Controller\ReportsTabController::tab_cities_pillar'
+    _title: 'Cities by Pillar'
+  requirements:
+    _permission: 'access content'
+
+cpmf_reports.tab_cities_indicator:
+  path: 'reports/cities/indicator'
+  defaults:
+    _content: '\Drupal\cpmf_reports\Controller\ReportsTabController::tab_cities_indicator'
+    _title: 'Cities by Indicator'
+  requirements:
+    _permission: 'access content'
+
+cpmf_reports.tab_regions:
+  path: 'reports/regions'
+  defaults:
+    _content: '\Drupal\cpmf_reports\Controller\ReportsTabController::tab_regions'
+    _title: 'Regions'
+  requirements:
+    _permission: 'access content'
+
+cpmf_reports.tab_regions_pillar:
+  path: 'reports/regions/pillar'
+  defaults:
+    _content: '\Drupal\cpmf_reports\Controller\ReportsTabController::tab_regions_pillar'
+    _title: 'Regions by Pillar'
+  requirements:
+    _permission: 'access content'
+
+cpmf_reports.tab_regions_indicator:
+  path: 'reports/regions/indicator'
+  defaults:
+    _content: '\Drupal\cpmf_reports\Controller\ReportsTabController::tab_regions_indicator'
+    _title: 'Regions by Indicator'
+  requirements:
+    _permission: 'access content'
+
+cpmf_reports.tab_zones:
+  path: 'reports/zones'
+  defaults:
+    _content: '\Drupal\cpmf_reports\Controller\ReportsTabController::tab_zones'
+    _title: 'Zones'
+  requirements:
+    _permission: 'access content'
+
+cpmf_reports.tab_zones_pillar:
+  path: 'reports/zones/pillar'
+  defaults:
+    _content: '\Drupal\cpmf_reports\Controller\ReportsTabController::tab_zones_pillar'
+    _title: 'Zones by Pillar'
+  requirements:
+    _permission: 'access content'
+
+cpmf_reports.tab_zones_indicator:
+  path: 'reports/zones/indicator'
+  defaults:
+    _content: '\Drupal\cpmf_reports\Controller\ReportsTabController::tab_zones_indicator'
+    _title: 'Zones by Indicator'
+  requirements:
+    _permission: 'access content'
+
+

@@ -1,0 +1,23 @@
+uuid: adb7f7f9-23c3-4312-a8bb-0c79636b66d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_i_utl_ict_improvements
+    - node.type.indicator_data
+id: node.indicator_data.field_i_utl_ict_improvements
+field_name: field_i_utl_ict_improvements
+entity_type: node
+bundle: indicator_data
+label: 'Homany  ICT improvements related to MIS and MEL have been  completed over the past 12 months'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

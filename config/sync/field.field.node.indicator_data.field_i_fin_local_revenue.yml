@@ -1,0 +1,31 @@
+uuid: 96d1f73e-a48b-4316-8e98-6f3aca13b294
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_i_fin_local_revenue
+    - node.type.indicator_data
+  module:
+    - disable_field
+third_party_settings:
+  disable_field:
+    add_disable: none
+    add_disable_roles: {  }
+    edit_disable: none
+    edit_disable_roles: {  }
+id: node.indicator_data.field_i_fin_local_revenue
+field_name: field_i_fin_local_revenue
+entity_type: node
+bundle: indicator_data
+label: 'How much is locally raised revenue as percentage of city’s budget for the current budget year?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: !!float 0
+  max: !!float 100
+  prefix: ''
+  suffix: '%'
+field_type: decimal

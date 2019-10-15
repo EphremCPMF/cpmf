@@ -1,0 +1,29 @@
+uuid: 49f069b3-fc38-4a79-a234-c4eeb4dff6e2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_i_isc_gender_inclusion
+    - node.type.indicator_data
+  module:
+    - disable_field
+third_party_settings:
+  disable_field:
+    add_disable: none
+    add_disable_roles: {  }
+    edit_disable: none
+    edit_disable_roles: {  }
+id: node.indicator_data.field_i_isc_gender_inclusion
+field_name: field_i_isc_gender_inclusion
+entity_type: node
+bundle: indicator_data
+label: 'Does the city have a gender and disadvantaged inclusion strategy?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

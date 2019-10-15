@@ -1,0 +1,12 @@
+uuid: 41823b41-0293-49db-acde-88b01be7a706
+langcode: en
+status: true
+dependencies: {  }
+id: zones_by_indicator
+label: 'Zones by Indicator'
+description: ''
+use_admin_theme: false
+path: /reports/zones/indicator
+access_logic: and
+access_conditions: {  }
+parameters: {  }

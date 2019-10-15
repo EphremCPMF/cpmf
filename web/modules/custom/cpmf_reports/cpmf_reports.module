@@ -1,0 +1,33 @@
+<?php
+
+/**
+ * @file
+ * Contains cpmf_message.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\message\Entity\Message;
+
+
+/**
+ * Implements hook_page_attachments().
+ */
+function cpmf_reports_page_attachments(array &$page) {
+  $page['#attached']['library'][] = 'cpmf_reports/cpmf-reports-table-export';
+}
+
+/**
+ * Implements hook_help().
+ */
+function cpmf_reports_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the cpmf_reports module.
+    case 'help.page.cpmf_message':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Reports functionality for CPMF') . '</p>';
+      return $output;
+
+    default:
+  }
+}

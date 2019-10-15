@@ -1,0 +1,22 @@
+uuid: c3994e0e-6268-4eef-86c4-79fb4dfca289
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.city
+id: node.city.status
+field_name: status
+entity_type: node
+bundle: city
+label: 'Publishing status'
+description: 'A boolean indicating whether the node is published.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

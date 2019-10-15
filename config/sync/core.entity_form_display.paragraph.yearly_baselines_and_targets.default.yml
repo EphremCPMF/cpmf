@@ -1,0 +1,47 @@
+uuid: 71ca4bd0-0570-4813-896e-40ecf8eae523
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.yearly_baselines_and_targets.field_baselines_targets
+    - field.field.paragraph.yearly_baselines_and_targets.field_year
+    - paragraphs.paragraphs_type.yearly_baselines_and_targets
+  module:
+    - content_moderation
+    - entity_reference_views_select
+    - paragraphs
+id: paragraph.yearly_baselines_and_targets.default
+targetEntityType: paragraph
+bundle: yearly_baselines_and_targets
+mode: default
+content:
+  field_baselines_targets:
+    type: paragraphs
+    weight: 2
+    settings:
+      title: 'Baseline | Target'
+      title_plural: 'Baselines | Targets'
+      edit_mode: closed
+      closed_mode: summary
+      autocollapse: all
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: indicator_target
+    third_party_settings: {  }
+    region: content
+  field_year:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: erviews_options_select
+    region: content
+  moderation_state:
+    type: moderation_state_default
+    weight: 0
+    settings: {  }
+    region: content
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
+  uid: true

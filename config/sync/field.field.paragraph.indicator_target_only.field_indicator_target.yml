@@ -1,0 +1,31 @@
+uuid: fb897f7b-0969-4fa0-b2eb-3831111e3d6c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_indicator_target
+    - paragraphs.paragraphs_type.indicator_target_only
+  module:
+    - disable_field
+third_party_settings:
+  disable_field:
+    add_disable: none
+    add_disable_roles: {  }
+    edit_disable: none
+    edit_disable_roles: {  }
+id: paragraph.indicator_target_only.field_indicator_target
+field_name: field_indicator_target
+entity_type: paragraph
+bundle: indicator_target_only
+label: Target
+description: 'Yes = 1 | No = 0'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

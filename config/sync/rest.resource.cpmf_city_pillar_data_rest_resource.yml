@@ -1,0 +1,20 @@
+uuid: 53b5ba4d-7727-4bde-99bc-e94ce896ff54
+langcode: en
+status: true
+dependencies:
+  module:
+    - basic_auth
+    - cpmf_data
+    - serialization
+    - user
+id: cpmf_city_pillar_data_rest_resource
+plugin_id: cpmf_city_pillar_data_rest_resource
+granularity: resource
+configuration:
+  methods:
+    - GET
+  formats:
+    - json
+  authentication:
+    - basic_auth
+    - cookie

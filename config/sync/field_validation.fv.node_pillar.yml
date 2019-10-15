@@ -1,0 +1,30 @@
+uuid: 18a0411b-cfe3-4599-b4ce-c3212fde3e10
+langcode: en
+status: true
+dependencies: {  }
+name: node_pillar
+label: 'node pillar validation'
+entity_type: node
+bundle: pillar
+field_validation_rules:
+  f9f9b7d6-cb9f-42d8-b76e-499696ed58c2:
+    uuid: f9f9b7d6-cb9f-42d8-b76e-499696ed58c2
+    id: length_field_validation_rule
+    title: '3-letter length'
+    weight: '1'
+    field_name: field_field_name_code
+    column: value
+    error_message: 'The field name must be exactly 3 letters'
+    data:
+      min: '3'
+      max: '3'
+  43770dc0-607f-49ef-a6cf-f4b16acd818b:
+    uuid: 43770dc0-607f-49ef-a6cf-f4b16acd818b
+    id: unique_field_validation_rule
+    title: 'Unique pillar field name code'
+    weight: 2
+    field_name: field_field_name_code
+    column: value
+    error_message: 'That field name code already exists. It must be unique.'
+    data:
+      scope: bundle

@@ -1,0 +1,44 @@
+uuid: 1397698d-f6e3-44fd-ae58-e9a4805f9851
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_yearly_baselines_targets
+    - node.type.city
+    - paragraphs.paragraphs_type.yearly_baselines_and_targets
+  module:
+    - disable_field
+    - entity_reference_revisions
+third_party_settings:
+  disable_field:
+    add_disable: none
+    add_disable_roles: {  }
+    edit_disable: none
+    edit_disable_roles: {  }
+id: node.city.field_yearly_baselines_targets
+field_name: field_yearly_baselines_targets
+entity_type: node
+bundle: city
+label: 'Yearly Baselines and Targets'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      yearly_baselines_and_targets: yearly_baselines_and_targets
+    target_bundles_drag_drop:
+      yearly_baselines_and_targets:
+        enabled: true
+        weight: 4
+      indicator_target:
+        weight: 5
+        enabled: false
+      population:
+        weight: 6
+        enabled: false
+field_type: entity_reference_revisions

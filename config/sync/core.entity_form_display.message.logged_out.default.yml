@@ -1,0 +1,22 @@
+uuid: 34ce5f63-e463-471c-8f1e-747b5616a7e0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.message.logged_out.field_user_reference
+    - message.template.logged_out
+id: message.logged_out.default
+targetEntityType: message
+bundle: logged_out
+mode: default
+content:
+  field_user_reference:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+hidden: {  }

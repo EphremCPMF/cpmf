@@ -1,0 +1,54 @@
+uuid: 4eeddc85-f03e-46ea-bcc8-7b2b7093deeb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.population.field_female_population
+    - field.field.paragraph.population.field_male_population
+    - field.field.paragraph.population.field_population
+    - field.field.paragraph.population.field_year
+    - paragraphs.paragraphs_type.population
+id: paragraph.population.default
+targetEntityType: paragraph
+bundle: population
+mode: default
+content:
+  field_female_population:
+    weight: 3
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_male_population:
+    weight: 2
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_population:
+    weight: 1
+    label: hidden
+    settings:
+      thousand_separator: ','
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_year:
+    weight: 0
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true

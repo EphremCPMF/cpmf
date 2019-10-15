@@ -1,0 +1,20 @@
+uuid: 1e966953-721d-4834-b617-0c47775b2597
+langcode: en
+status: true
+dependencies:
+  module:
+    - basic_auth
+    - cpmf_data
+    - serialization
+    - user
+id: cpmf_program_data_rest_resource
+plugin_id: cpmf_program_data_rest_resource
+granularity: resource
+configuration:
+  methods:
+    - GET
+  formats:
+    - json
+  authentication:
+    - basic_auth
+    - cookie

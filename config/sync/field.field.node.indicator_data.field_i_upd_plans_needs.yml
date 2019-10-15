@@ -1,0 +1,31 @@
+uuid: 524b1395-fea8-46a2-83d0-46a80d4e9d6e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_i_upd_plans_needs
+    - node.type.indicator_data
+  module:
+    - disable_field
+third_party_settings:
+  disable_field:
+    add_disable: none
+    add_disable_roles: {  }
+    edit_disable: none
+    edit_disable_roles: {  }
+id: node.indicator_data.field_i_upd_plans_needs
+field_name: field_i_upd_plans_needs
+entity_type: node
+bundle: indicator_data
+label: 'Does the city implement urban and regional development plans integrating population projections and resource needs?'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

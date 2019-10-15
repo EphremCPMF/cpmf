@@ -1,0 +1,20 @@
+uuid: ab51a32f-526b-4c4b-a105-78fd8e87c374
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_i_hda_private_ease_improve
+field_name: field_i_hda_private_ease_improve
+entity_type: node
+type: decimal
+settings:
+  precision: 10
+  scale: 2
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

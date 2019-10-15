@@ -1,0 +1,9 @@
+uuid: 41c15054-19cd-4cb3-a45f-520286a72616
+langcode: en
+status: true
+dependencies: {  }
+id: node_type_pillar
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301

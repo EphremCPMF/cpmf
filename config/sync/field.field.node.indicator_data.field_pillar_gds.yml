@@ -1,0 +1,26 @@
+uuid: f2c1dee0-c9cb-455d-ba93-0c76a181de24
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pillar_gds
+    - node.type.indicator_data
+  module:
+    - computed_field
+id: node.indicator_data.field_pillar_gds
+field_name: field_pillar_gds
+entity_type: node
+bundle: indicator_data
+label: 'Environmental, Green Services and Recreation '
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  prefix: ''
+  suffix: ''
+  code: '$value = cpmf_data_get_pillar_score(''gds'', $entity);'
+field_type: computed_decimal

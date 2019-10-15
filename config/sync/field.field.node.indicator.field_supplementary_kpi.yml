@@ -1,0 +1,23 @@
+uuid: b623fd3e-3bbf-46d0-ac0d-d95e1b02ce3b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_supplementary_kpi
+    - node.type.indicator
+id: node.indicator.field_supplementary_kpi
+field_name: field_supplementary_kpi
+entity_type: node
+bundle: indicator
+label: 'Supplementary KPI'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

@@ -1,0 +1,34 @@
+uuid: 3d91a9a6-0a28-4d78-8da5-f321105bc826
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_indicator_data_field
+    - node.type.indicator
+  module:
+    - disable_field
+    - options
+third_party_settings:
+  disable_field:
+    add_disable: none
+    add_disable_roles: {  }
+    edit_disable: roles
+    edit_disable_roles:
+      anonymous: anonymous
+      authenticated: authenticated
+      data_editor: data_editor
+      content_editor: content_editor
+      translator: translator
+      publisher: publisher
+id: node.indicator.field_indicator_data_field
+field_name: field_indicator_data_field
+entity_type: node
+bundle: indicator
+label: 'Indicator Data Field'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

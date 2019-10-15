@@ -1,0 +1,9 @@
+uuid: a041a65f-54b4-4127-b2a5-23bedad49da4
+langcode: en
+status: true
+dependencies: {  }
+id: node_type_slide
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301

@@ -1,0 +1,17 @@
+uuid: a505faba-c7ea-469a-bd70-8bf521489449
+langcode: en
+status: true
+dependencies: {  }
+template: added_content
+label: 'Added Content'
+description: ''
+text:
+  -
+    value: "<p><a href=\"[message:field_user_reference:entity:url]\">[message:field_node_reference:entity:author]</a> has created a new <em>[message:field_node_reference:entity:content-type]</em>: <a href=\"[message:field_node_reference:entity:url]\">[message:field_node_reference:entity:title]</a></p>\r\n"
+    format: full_html
+settings:
+  'token options':
+    clear: false
+    'token replace': true
+  purge_override: false
+  purge_methods: {  }

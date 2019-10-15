@@ -1,0 +1,20 @@
+uuid: 6cc269fd-2785-449e-bb3d-d257544a478f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_i_mse_ben_cash_transfers
+field_name: field_i_mse_ben_cash_transfers
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

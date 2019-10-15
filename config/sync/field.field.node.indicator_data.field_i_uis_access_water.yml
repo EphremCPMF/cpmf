@@ -1,0 +1,31 @@
+uuid: 90bc328f-4f3c-4fda-a515-860aa9ed0d56
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_i_uis_access_water
+    - node.type.indicator_data
+  module:
+    - disable_field
+third_party_settings:
+  disable_field:
+    add_disable: none
+    add_disable_roles: {  }
+    edit_disable: none
+    edit_disable_roles: {  }
+id: node.indicator_data.field_i_uis_access_water
+field_name: field_i_uis_access_water
+entity_type: node
+bundle: indicator_data
+label: 'What is the proportion of urban households with sustainable access to safe water source in the city?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: !!float 0
+  max: !!float 100
+  prefix: ''
+  suffix: '%'
+field_type: decimal

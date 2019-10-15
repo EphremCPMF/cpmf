@@ -1,0 +1,31 @@
+uuid: f7812dec-d946-452b-9402-ad23ed7c5bc5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_i_isc_deaths_etc
+    - node.type.indicator_data
+  module:
+    - disable_field
+third_party_settings:
+  disable_field:
+    add_disable: none
+    add_disable_roles: {  }
+    edit_disable: none
+    edit_disable_roles: {  }
+id: node.indicator_data.field_i_isc_deaths_etc
+field_name: field_i_isc_deaths_etc
+entity_type: node
+bundle: indicator_data
+label: 'What is the number of deaths, missing people, injured, relocated or evacuated due to disasters per 100,000 people in the city over the last 12 months?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

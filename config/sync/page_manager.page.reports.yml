@@ -1,0 +1,12 @@
+uuid: 6c8a0d3a-71a6-4ef4-8f7b-d5e3b24e74ff
+langcode: en
+status: true
+dependencies: {  }
+id: reports
+label: Reports
+description: ''
+use_admin_theme: false
+path: /reports
+access_logic: and
+access_conditions: {  }
+parameters: {  }

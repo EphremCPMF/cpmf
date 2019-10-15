@@ -1,0 +1,25 @@
+uuid: 41c8ce45-955a-47ca-98bc-98f36b594e3b
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+    - node_save_redirect
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+  node_save_redirect:
+    save_type: '0'
+    save_location: ''
+    save_destination: 0
+    edit_type: '4'
+    edit_location: admin/content/pillars
+    edit_destination: 0
+name: Pillar
+type: pillar
+description: ''
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false

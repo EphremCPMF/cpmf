@@ -1,0 +1,25 @@
+uuid: c6628902-f295-4e67-89ed-4d45561a9e6b
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+    - node_save_redirect
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+  node_save_redirect:
+    save_type: '0'
+    save_location: admin/content/indicators
+    save_destination: 0
+    edit_type: '4'
+    edit_location: admin/content/indicators
+    edit_destination: 0
+name: Indicator
+type: indicator
+description: ''
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false

@@ -1,0 +1,23 @@
+uuid: cefc2327-7fe8-476b-915b-240c2b5cc4c0
+langcode: en
+status: true
+dependencies: {  }
+name: slide
+label: slide
+effects:
+  79313d6b-e774-4796-85b0-6817c7029bd1:
+    uuid: 79313d6b-e774-4796-85b0-6817c7029bd1
+    id: image_scale
+    weight: 1
+    data:
+      width: 1900
+      height: null
+      upscale: true
+  27aacbd4-572b-4b51-ae72-095209afa518:
+    uuid: 27aacbd4-572b-4b51-ae72-095209afa518
+    id: image_crop
+    weight: 2
+    data:
+      width: 1900
+      height: 520
+      anchor: center-center

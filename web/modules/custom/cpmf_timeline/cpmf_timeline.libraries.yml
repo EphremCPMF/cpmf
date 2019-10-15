@@ -1,0 +1,11 @@
+frst-timeline:
+  css:
+    theme:
+      css/default.min.css: {}
+      css/frst-timeline-style-12.css: {}
+      css/plugins/animate.min.css: {}
+  js:
+    js/frst-scale-effect.js: {}
+    js/frst-timeline.js: {}
+    js/jquery.overscroll.min.js: {}
+    js/modernizr.js: {}

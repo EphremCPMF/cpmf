@@ -1,0 +1,31 @@
+uuid: de48c40f-c58d-4da7-95b4-e6bbc296c130
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_i_gds_per_capita_budget
+    - node.type.indicator_data
+  module:
+    - disable_field
+third_party_settings:
+  disable_field:
+    add_disable: none
+    add_disable_roles: {  }
+    edit_disable: none
+    edit_disable_roles: {  }
+id: node.indicator_data.field_i_gds_per_capita_budget
+field_name: field_i_gds_per_capita_budget
+entity_type: node
+bundle: indicator_data
+label: 'What is the per capita budget allocated by the city for environmental and green services for the current budget year?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ' birr'
+field_type: decimal

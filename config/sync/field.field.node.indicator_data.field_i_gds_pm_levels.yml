@@ -1,0 +1,31 @@
+uuid: ba9cf64e-72bc-46d1-ad5d-82309d0e8ce7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_i_gds_pm_levels
+    - node.type.indicator_data
+  module:
+    - disable_field
+third_party_settings:
+  disable_field:
+    add_disable: none
+    add_disable_roles: {  }
+    edit_disable: none
+    edit_disable_roles: {  }
+id: node.indicator_data.field_i_gds_pm_levels
+field_name: field_i_gds_pm_levels
+entity_type: node
+bundle: indicator_data
+label: 'What is the annual mean levels of fine particulate matter (i.e. PM2.5 and PM10) in cities (population weighted) in the city for the last one year?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

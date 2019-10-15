@@ -1,0 +1,17 @@
+uuid: 5581b687-5463-4376-bfec-fc441eadbcb9
+langcode: en
+status: true
+dependencies: {  }
+template: logged_out
+label: 'Logged Out'
+description: ''
+text:
+  -
+    value: '<a href="[message:field_user_reference:entity:url]">[message:field_user_reference:entity:account-name]</a> logged out <span class="glyphicon glyphicon-log-out"></span>'
+    format: full_html
+settings:
+  'token options':
+    clear: false
+    'token replace': true
+  purge_override: false
+  purge_methods: {  }

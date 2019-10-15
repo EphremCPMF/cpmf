@@ -1,0 +1,32 @@
+uuid: b2f6dacf-94ce-4320-8123-a09f457c6d0c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.milestone.field_complete
+    - field.field.node.milestone.field_date
+    - field.field.node.milestone.field_date_text
+    - field.field.node.milestone.field_subtitle
+    - node.type.milestone
+  module:
+    - user
+id: node.milestone.teaser
+targetEntityType: node
+bundle: milestone
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  field_complete: true
+  field_date: true
+  field_date_text: true
+  field_subtitle: true
+  langcode: true

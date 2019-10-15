@@ -1,0 +1,31 @@
+uuid: 4f57ed6a-93c8-41e3-99fd-2b3228c2025c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_i_mse_markets
+    - node.type.indicator_data
+  module:
+    - disable_field
+third_party_settings:
+  disable_field:
+    add_disable: none
+    add_disable_roles: {  }
+    edit_disable: none
+    edit_disable_roles: {  }
+id: node.indicator_data.field_i_mse_markets
+field_name: field_i_mse_markets
+entity_type: node
+bundle: indicator_data
+label: 'how many markets have been constructed and and read for MSME in the city to date? '
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

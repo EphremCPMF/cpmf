@@ -1,0 +1,31 @@
+uuid: 63f886c6-664a-4af5-8a8c-0e2d927fc2f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_i_fin_revenue_collection
+    - node.type.indicator_data
+  module:
+    - disable_field
+third_party_settings:
+  disable_field:
+    add_disable: none
+    add_disable_roles: {  }
+    edit_disable: none
+    edit_disable_roles: {  }
+id: node.indicator_data.field_i_fin_revenue_collection
+field_name: field_i_fin_revenue_collection
+entity_type: node
+bundle: indicator_data
+label: 'What was the collection efficiency of municipal revenue in the city for the last budget year?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: !!float 0
+  max: !!float 100
+  prefix: ''
+  suffix: '%'
+field_type: decimal

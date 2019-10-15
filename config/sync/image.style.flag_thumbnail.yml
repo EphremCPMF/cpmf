@@ -1,0 +1,15 @@
+uuid: f4408ecb-5d1f-4b47-a9ad-0f8a3bca45f3
+langcode: en
+status: true
+dependencies: {  }
+name: flag_thumbnail
+label: 'Flag Thumbnail'
+effects:
+  3999cbd0-678e-41d1-99c4-f0c62b364835:
+    uuid: 3999cbd0-678e-41d1-99c4-f0c62b364835
+    id: image_scale
+    weight: 1
+    data:
+      width: 25
+      height: null
+      upscale: false

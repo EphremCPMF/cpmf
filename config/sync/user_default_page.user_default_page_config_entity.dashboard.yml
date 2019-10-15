@@ -1,0 +1,14 @@
+uuid: e22badc4-392e-4a55-9407-99d554efe1d3
+langcode: en
+status: true
+dependencies: {  }
+id: dashboard
+label: Dashboard
+user_roles:
+  authenticated: authenticated
+  administrator: administrator
+users: ','
+login_redirect: dashboard
+login_redirect_message: ''
+logout_redirect: ''
+logout_redirect_message: ''

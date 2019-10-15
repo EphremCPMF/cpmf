@@ -1,0 +1,29 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: ማጣሪያ
+      fields:
+        bundle:
+          label: ምንጭ
+        uid:
+          label: ደራሲ
+        status:
+          label: ሁኔታ
+          settings:
+            format_custom_true: የታተመ
+        operations:
+          label: ክወናዎች
+      filters:
+        bundle:
+          expose:
+            label: ምንጭ
+        status:
+          group_info:
+            group_items:
+              1:
+                title: የታተመ
+        langcode:
+          expose:
+            label: ቋንቋ

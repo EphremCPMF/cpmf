@@ -1,0 +1,31 @@
+uuid: eb6df7bb-d730-4c11-aa8d-28e4c360b1b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_i_isc_officials_trained
+    - node.type.indicator_data
+  module:
+    - disable_field
+third_party_settings:
+  disable_field:
+    add_disable: none
+    add_disable_roles: {  }
+    edit_disable: none
+    edit_disable_roles: {  }
+id: node.indicator_data.field_i_isc_officials_trained
+field_name: field_i_isc_officials_trained
+entity_type: node
+bundle: indicator_data
+label: 'What is the number of the city’s officials that have received and completed training in disaster risk assessment, emergency services co-ordination, gender and disadvantaged inclusion tools and instruments?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

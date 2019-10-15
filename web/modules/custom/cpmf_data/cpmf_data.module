@@ -1,0 +1,647 @@
+<?php
+
+/**
+ * @file
+ * Contains cpmf_data.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\views\ViewExecutable;
+use Drupal\paragraphs\Entity\Paragraph;
+use Drupal\Component\Serialization\Json;
+use GuzzleHttp\Exception\RequestException;
+use Drupal\node\NodeInterface;
+
+function cpmf_data_get_cities_data_in_region($region) {
+  $datasets = NULL;
+  $query = \Drupal::entityQuery('node')
+    ->condition('status', 1)
+    ->condition('type', 'city')
+    ->condition('field_region', $region->id())
+    ->sort('title', 'ASC');
+  $city_ids = $query->execute();
+
+  if ($city_ids) {
+    $active_year = cpmf_data_get_active_year();
+    $query = \Drupal::entityQuery('node')
+      ->condition('status', 1)
+      ->condition('type', 'indicator_data')
+      ->condition('field_city', $city_ids, 'IN')
+      ->condition('field_year', $active_year)
+      ->sort('title', 'ASC');
+    $data_ids = $query->execute();
+
+    $datasets = \Drupal::entityTypeManager()
+      ->getStorage('node')
+      ->loadMultiple($data_ids);
+  }
+
+  return $datasets;
+}
+
+function cpmf_data_get_cities_data_in_zone($zone) {
+  $datasets = NULL;
+  $region = $zone->get('field_region')->getValue();
+  $region_nid = $region[0]['target_id'];
+
+  $query = \Drupal::entityQuery('node')
+    ->condition('status', 1)
+    ->condition('type', 'city')
+    ->condition('field_region', $region_nid)
+    ->condition('field_sub_region', $zone->id())
+    ->sort('title', 'ASC');
+  $city_ids = $query->execute();
+
+  if ($city_ids) {
+    $active_year = cpmf_data_get_active_year();
+    $query = \Drupal::entityQuery('node')
+      ->condition('status', 1)
+      ->condition('type', 'indicator_data')
+      ->condition('field_city', $city_ids, 'IN')
+      ->condition('field_year', $active_year)
+      ->sort('title', 'ASC');
+    $data_ids = $query->execute();
+
+    $datasets = \Drupal::entityTypeManager()
+      ->getStorage('node')
+      ->loadMultiple($data_ids);
+  }
+
+  return $datasets;
+}
+
+function cpmf_data_get_zone_pillar_value($zone, $pillar) {
+  $value = NULL;
+  $datasets = cpmf_data_get_cities_data_in_zone($zone);
+  $total = 0;
+
+  foreach ($datasets as $key => $data) {
+    $total += $data->{$pillar}->value;
+  }
+  if ($total) {
+    $value = $total / count($datasets);
+  }
+  return round($value);
+}
+
+function cpmf_data_get_zone_score($zone) {
+  $value = NULL;
+  $total = 0;
+  $datasets = cpmf_data_get_cities_data_in_zone($zone);
+  if ($datasets) {
+    $pillar_fields = cpmf_data_get_pillar_field_names();
+    foreach ($datasets as $key => $data) {
+      foreach ($pillar_fields as $k => $pillar_field) {
+        $total += $data->{$pillar_field}->value;
+      }
+      if ($total) {
+        $value = $total / count($datasets);
+      }
+    }
+  }
+  return round($value);
+}
+
+function cpmf_data_get_region_pillar_value($region, $pillar) {
+  $value = NULL;
+  $total = 0;
+  $datasets = cpmf_data_get_cities_data_in_region($region);
+  if ($datasets) {
+    foreach ($datasets as $key => $data) {
+      $total += $data->{$pillar}->value;
+    }
+    if ($total) {
+      $value = $total / count($datasets);
+    }
+  }
+  return round($value);
+}
+
+function cpmf_data_get_region_indicator_value($region, $indicator) {
+  $value = NULL;
+  $total = 0;
+  $datasets = cpmf_data_get_cities_data_in_region($region);
+  if ($datasets) {
+    foreach ($datasets as $key => $data) {
+      $total += $data->{$indicator}->value;
+    }
+    if ($total) {
+      $value = $total / count($datasets);
+    }
+  }
+  return round($value);
+}
+
+function cpmf_data_get_zone_indicator_value($zone, $indicator) {
+  $value = NULL;
+  $total = 0;
+  $datasets = cpmf_data_get_cities_data_in_zone($zone);
+  if ($datasets) {
+    foreach ($datasets as $key => $data) {
+      $total += $data->{$indicator}->value;
+    }
+    if ($total) {
+      $value = $total / count($datasets);
+    }
+  }
+  return round($value);
+}
+
+function cpmf_data_get_region_score($region) {
+  $value = NULL;
+  $total = 0;
+  $datasets = cpmf_data_get_cities_data_in_region($region);
+  if ($datasets) {
+    $pillar_fields = cpmf_data_get_pillar_field_names();
+    $number_of_pillar_fields = 0;
+    foreach ($datasets as $key => $data) {
+      foreach ($pillar_fields as $k => $pillar_field) {
+        $total += $data->{$pillar_field}->value;
+        $number_of_pillar_fields++;
+      }
+      if ($total) {
+        $value = $total / $number_of_pillar_fields;
+      }
+    }
+  }
+  return round($value);
+}
+
+function cpmf_data_get_national_score() {
+  $score = NULL;
+  $data = cpmf_data_get_json_data('rest/regions?_format=json');
+  $regions = Json::decode($data);
+
+  if (count($regions)) {
+    $total = 0;
+    foreach ($regions as $key => $region) {
+      $total += $region['region_value'];
+    }
+    $score = $total / count($regions);
+  }
+
+  return round($score);
+}
+
+function cpmf_data_get_pillar_color($id) {
+  $node_storage = \Drupal::entityTypeManager()->getStorage('node');
+  $pillar = $node_storage->load($id);
+  return $pillar->field_color->color;
+}
+
+function cpmf_data_get_overall_score($entity) {
+  $average = NULL;
+  if (!$entity->id()) {
+    return NULL;
+  }
+  $node_storage = \Drupal::entityTypeManager()->getStorage('node');
+  $node = $node_storage->load($entity->id());
+  $pillar_fields = cpmf_data_get_pillar_field_names();
+  $total = 0;
+  foreach ($pillar_fields as $pillar_field) {
+    if (isset($node->{$pillar_field}->value)) {
+      $total += $node->{$pillar_field}->value;
+    }
+  }
+  if ($total) {
+    $count = count($pillar_fields);
+    $average = $total / $count;
+  }
+  return round($average);
+}
+
+function cpmf_data_get_total_pillar_score($entity) {
+  $score = NULL;
+  if (!$entity->id()) {
+    return NULL;
+  }
+  $node_storage = \Drupal::entityTypeManager()->getStorage('node');
+  $node = $node_storage->load($entity->id());
+  $pillar_fields = cpmf_data_get_pillar_field_names();
+  $total = 0;
+  foreach ($pillar_fields as $pillar_field) {
+    if (isset($node->{$pillar_field}->value)) {
+      $total += $node->{$pillar_field}->value;
+    }
+  }
+  if ($total) {
+    $score = $total;
+  }
+  return round($score);
+}
+
+function cpmf_data_get_baselines_targets_by_indicator_data($indicator_data) {
+  $active_year = $indicator_data->field_year->getValue()[0]['target_id'];
+  $city_reference = $indicator_data->field_city->getValue();
+  $city_id = $city_reference[0]['target_id'];
+  $node_storage = \Drupal::entityTypeManager()->getStorage('node');
+  $city = $node_storage->load($city_id);
+  $yearly_baselines_targets = NULL;
+  $yearly_baselines_targets_references = $city->field_yearly_baselines_targets->getValue();
+
+  // Get the baseline/target set for the active year
+  foreach ($yearly_baselines_targets_references as $yearly_baselines_targets_reference) {
+    $yearly_baseline_target = Paragraph::load($yearly_baselines_targets_reference['target_id']);
+    if (isset($yearly_baseline_target->field_year->getValue()[0])) {
+      if ($yearly_baseline_target->field_year->getValue()[0]['target_id'] == $active_year) {
+        $yearly_baselines_targets = $yearly_baseline_target;
+      }
+    }
+  }
+
+  // Get the baselines/targets for each indicator.
+  $baselines_targets = NULL;
+  if (isset($yearly_baselines_targets->field_baselines_targets)) {
+    foreach ($yearly_baselines_targets->field_baselines_targets->getValue() as $baseline_target_reference) {
+      $baselines_targets[] = Paragraph::load($baseline_target_reference['target_id']);
+    }
+  }
+
+  // Build the data/baseline/target array.
+  $data_baseline_target_set = NULL;
+  if ($baselines_targets) {
+    foreach ($baselines_targets as $baseline_target) {
+      $indicator_id = $baseline_target->field_indicator->getValue()[0]['target_id'];
+      $indicator = $node_storage->load($indicator_id);
+      if (isset($indicator->field_indicator_data_field)) {
+        $indicator_field = $indicator->field_indicator_data_field->getValue()[0]['value'];
+        $pillar_id = $indicator->field_pillars->getValue()[0]['target_id'];
+        $pillar = $node_storage->load($pillar_id);
+        $pillar_code = $pillar->field_field_name_code->getValue()[0]['value'];
+        $indicator_value = NULL;
+        if (isset($indicator_data->{$indicator_field}->getValue()[0]['value'])) {
+          $indicator_value = $indicator_data->{$indicator_field}->getValue()[0]['value'];
+        }
+        $indicator_weight = NULL;
+        if (isset($indicator->field_indicator_weight->getValue()[0])) {
+          $indicator_weight = $indicator->field_indicator_weight->getValue()[0]['value'];
+        }
+        $indicator_performance = NULL;
+        if (isset($baseline_target->field_indicator_target->getValue()[0]) && $indicator_value && $indicator_weight) {
+          $indicator_performance = cpmf_data_get_indicator_performance($indicator_value, $baseline_target->field_indicator_baseline->getValue()[0]['value'], $baseline_target->field_indicator_target->getValue()[0]['value']);
+        }
+        $indicator_baseline = NULL;
+        if (isset($baseline_target->field_indicator_baseline->getValue()[0])) {
+          $indicator_baseline = $baseline_target->field_indicator_baseline->getValue()[0]['value'];
+        }
+        $indicator_target = NULL;
+        if (isset($baseline_target->field_indicator_target->getValue()[0])) {
+          $indicator_target = $baseline_target->field_indicator_target->getValue()[0]['value'];
+        }
+        $data_baseline_target_set[$pillar_code][$indicator_field] = [
+          'indicator_data' => $indicator_value,
+          'indicator_baseline' => $indicator_baseline,
+          'indicator_target' => $indicator_target,
+          'indicator_weight' => $indicator_weight,
+          'indicator_performance' => $indicator_performance,
+        ];
+      }
+    }
+  }
+
+  return $data_baseline_target_set;
+}
+
+/*
+ * Calculate indicator performance
+ */
+function cpmf_data_get_indicator_performance($value, $baseline, $target) {
+  $performance = NULL;
+  if ($value && $target && $baseline) {
+    if($target - $baseline > 0) {
+      $value_percentage = ($value - $baseline) / ($target - $baseline);
+      if ($value_percentage > 1) {
+        $value_percentage = 1;
+      }
+      $performance = $value_percentage * 100;
+    }
+  }
+  return round($performance);
+}
+
+/*
+ * Calculate computed pillar score field.
+ */
+function cpmf_data_get_pillar_score($pillar, $indicator_data) {
+  $pillar_score = NULL;
+  $weighted_total = 0;
+  $weight_sum = 0;
+  $baselines_targets = cpmf_data_get_baselines_targets_by_indicator_data($indicator_data);
+  if (isset($baselines_targets[$pillar])) {
+    // Add weighted scores together
+    foreach ($baselines_targets[$pillar] as $indicator_field => $indicator_values) {
+      $weighted_total += $indicator_values['indicator_performance'] * $indicator_values['indicator_weight'];
+      $weight_sum += $indicator_values['indicator_weight'];
+    }
+    $pillar_score = $weighted_total / $weight_sum;
+  }
+  return round($pillar_score);
+}
+
+function computed_field_field_project_score_compute($entity_type_manager, $entity, $fields, $delta) {
+  $score = NULL;
+  if ($fields['field_indicators'] && $fields['field_cities']) {
+    $cities = [];
+    foreach ($fields['field_cities'] as $key => $city) {
+      $cities[] = $city['target_id'];
+    }
+    $indicators = array();
+    foreach ($fields['field_indicators'] as $key => $indicator) {
+      $indicator_field = cpmf_data_get_indicator_field_name_from_indicator_nid($indicator['target_id']);
+      $indicators[] = $indicator_field[0]['value'];
+    }
+
+    $city_data = [];
+    foreach ($cities as $key => $city_id) {
+      $data = cpmf_data_get_json_data('rest/city-data/' . $city_id . '?_format=json');
+      $city_data[] = Json::decode($data);
+    }
+
+    $indicator_performances = [];
+    foreach ($city_data as $key => $city) {
+      foreach ($city as $name => $city_array) {
+        foreach ($city_array['years'] as $year => $year_data) {
+          foreach ($year_data['pillars'] as $pillar_field => $pillar_data) {
+            foreach ($pillar_data['indicators'] as $indicator_field => $indicator_data) {
+              if (in_array($indicator_field, $indicators)) {
+                $indicator_performances[] = $indicator_data['indicator_performance'];
+              }
+            }
+          }
+        }
+      }
+    }
+//    dpm($indicator_performances);
+    $score = array_sum($indicator_performances)/count($indicator_performances);
+  }
+  return round($score);
+}
+
+function computed_field_field_program_score_compute($entity_type_manager, $entity, $fields, $delta) {
+  return rand(20,80);
+}
+
+function cpmf_data_get_indicator_field_name_from_indicator_nid($nid) {
+  $node = \Drupal::entityTypeManager()->getStorage('node')->load($nid);
+  $indicator_field = $node->get('field_indicator_data_field')->getValue();
+  return $indicator_field;
+}
+
+function cpmf_data_get_json_data($path) {
+  global $base_url;
+  try {
+    $response = \Drupal::httpClient()->get($base_url . '/' . $path, array('headers' => array('Accept' => 'application/json')));
+    $data = (string) $response->getBody();
+    if (empty($data)) {
+      return FALSE;
+    }else{
+      return $data;
+    }
+  }
+  catch (RequestException $e) {
+    return FALSE;
+  }
+}
+
+function computed_field_field_ranking_compute($entity_type_manager, $entity, $fields, $delta) {
+  $this_nid = $fields['nid'][0]['value'];
+  $year_tid = $fields['field_year'][0]['target_id'];
+  $query = \Drupal::entityQuery('node')
+    ->condition('status', 1)
+    ->condition('type', 'indicator_data')
+    ->condition('field_year', $year_tid)
+    ->sort('field_overall', 'DESC');
+  $data_ids = $query->execute();
+  $node_storage = \Drupal::entityTypeManager()->getStorage('node');
+  $datasets = $node_storage->loadMultiple($data_ids);
+
+  $rankings = [];
+  $ranking = NULL;
+  $rank = 1;
+  $tie_rank = 0;
+  $previous_score = NULL;
+
+  foreach ($datasets as $nid => $data) {
+    $score = $data->field_overall->value;
+    if ($score != $previous_score) {
+      $count = 0;
+      $previous_score = $score;
+      $rankings[$data->id()] = ['score' => $score, 'rank' => $rank];
+    }
+    else {
+      $previous_score = $score;
+      $rank--;
+      if ($count++ == 0) {
+        $tie_rank = $rank;
+      }
+      $rankings[$data->id()] = ['score' => $score, 'rank' => $tie_rank];
+    }
+
+    $rank++;
+  }
+
+  return $rankings[$this_nid]['rank'];
+}
+
+function cpmf_get_city_data_completeness($entity) {
+  $completeness = 0;
+  $completed_indicator_fields = 0;
+  $indicator_field_names = cpmf_data_get_indicator_field_names();
+  $total_indicator_fields = count($indicator_field_names);
+
+  if ($total_indicator_fields) {
+    foreach ($indicator_field_names as $key => $name) {
+      if (isset($entity->{$name})) {
+        if (!$entity->{$name}->isEmpty()) {
+          $completed_indicator_fields++;
+        }
+      }
+    }
+    $completeness = ($completed_indicator_fields/$total_indicator_fields) * 100;
+  }
+
+  return $completeness;
+}
+
+function cpmf_data_get_field_value($field_name, $indicator_data) {
+  if (!$indicator_data) {
+    return NULL;
+  }
+  if (!$indicator_data->{$field_name}) {
+    return NULL;
+  }
+
+  $field_type_manager = \Drupal::service('plugin.manager.field.field_type');
+  $field_type_definition = $field_type_manager->getDefinition($indicator_data->getFieldDefinition($field_name)->getType());
+  $display_options = [
+    'type' => $field_type_definition['default_formatter'],
+    'label' => 'hidden',
+  ];
+  $output = $indicator_data->{$field_name}->view($display_options);
+  return \Drupal::service('renderer')->renderRoot($output);
+}
+
+function cpmf_data_get_city_indicator_data_node() {
+  $node_storage = \Drupal::entityTypeManager()->getStorage('node');
+  $city_nid = NULL;
+  $city = \Drupal::routeMatch()->getParameter('node');
+
+  if (!$city) {
+    $parameters = \Drupal::routeMatch()->getParameters();
+    if ($parameters) {
+      $city_nid = $parameters->get('arg_0');
+      $city = $node_storage->load($city_nid);
+    }
+  }
+  if (!$city) {
+    return NULL;
+  }
+
+  $active_year_tid = cpmf_data_get_active_year();
+  $indicator_data_nid = NULL;
+  $data = NULL;
+  // Loop through available city indicator data node references
+  foreach($city->get('field_indicator_data')->getValue() as $indicator_data_ref) {
+    $this_indicator_data = $node_storage->load($indicator_data_ref['target_id']);
+    if ($this_indicator_data) {
+      $year_ref = $this_indicator_data->get('field_year')->getValue();
+      $year_ref_tid = $year_ref[0]['target_id'];
+      if ($year_ref_tid == $active_year_tid) {
+        $indicator_data_nid = $this_indicator_data->id();
+        $data = $node_storage->load($indicator_data_nid);
+      }
+    }
+  }
+
+  return $data;
+}
+
+function cpmf_data_get_pillar_field_names() {
+  $pillar_field_names = [];
+  $query = \Drupal::entityQuery('node')
+    ->condition('status', 1)
+    ->condition('type', 'pillar')
+    ->sort('field_pillar_number', 'ASC');
+  $nids = $query->execute();
+  $pillars = \Drupal::entityTypeManager()
+    ->getStorage('node')
+    ->loadMultiple($nids);
+
+  foreach ($pillars as $nid => $pillar) {
+    $pillar_field_names[] = 'field_pillar_' . $pillar->field_field_name_code->value;
+  }
+
+  return $pillar_field_names;
+}
+
+function cpmf_data_get_pillar_nodes_keyed_by_field_code() {
+  $pillar_nodes = [];
+  $query = \Drupal::entityQuery('node')
+    ->condition('status', 1)
+    ->condition('type', 'pillar')
+    ->sort('field_pillar_number', 'ASC');
+  $nids = $query->execute();
+  $pillars = \Drupal::entityTypeManager()
+    ->getStorage('node')
+    ->loadMultiple($nids);
+
+  foreach ($pillars as $nid => $pillar) {
+    $pillar_nodes['field_pillar_' . $pillar->field_field_name_code->value] = $pillar;
+  }
+
+  return $pillar_nodes;
+}
+
+function cpmf_data_get_indicator_field_names($pillar_code = '') {
+  $indicator_field_names = [];
+  $entityFieldManager = Drupal::service('entity_field.manager');
+  $fields = $entityFieldManager->getFieldStorageDefinitions('node');
+  foreach ($fields as $key => $field) {
+    if (strpos($key, 'field_i_' . $pillar_code) !== false) {
+      $indicator_field_names[] = $key;
+    }
+  }
+  return $indicator_field_names;
+}
+
+function cpmf_data_get_pillar_indicator_numbers_from_field_name($field_name) {
+  $number = '';
+  $query = \Drupal::entityQuery('node')
+    ->condition('type', 'indicator')
+    ->condition('field_indicator_data_field', $field_name);
+  $nids = $query->execute();
+  if ($nid = reset($nids)) {
+    // found $nid that matches the field_name
+    $indicator = \Drupal::entityTypeManager()
+      ->getStorage('node')
+      ->load($nid);
+    $indicator_number = $indicator->field_indicator_number->getValue()[0]['value'];
+    $pillar = \Drupal::entityTypeManager()
+      ->getStorage('node')
+      ->load($indicator->field_pillars->getValue()[0]['target_id']);
+    $pillar_number = $pillar->field_pillar_number->getValue()[0]['value'];
+    $number = $pillar_number . '.' . $indicator_number;
+  }
+  return $number;
+}
+
+/**
+ * Implements hook_views_pre_render().
+ */
+function cpmf_data_views_pre_render(ViewExecutable $view) {
+  if (isset($view) && ($view->storage->id() == 'city_raw_data') && $view->current_display == 'page_1') {
+    $view->element['#attached']['library'][] = 'cpmf_data/cpmf-data-city-select';
+  }
+}
+
+/**
+ * Gets the active_year site setting
+ */
+function cpmf_data_get_active_year($type = 'tid') {
+  if (!isset($_SESSION['active_year_tid'])) {
+    $_SESSION['active_year_tid'] = 10452;
+    $_SESSION['active_year_name'] = '2016/17';
+  }
+  if ($type == 'year') {
+    return $_SESSION['active_year_name'];
+  }
+    return $_SESSION['active_year_tid'];
+}
+
+function cpmf_data_get_all_years() {
+  $years = [];
+  $query = \Drupal::entityQuery('taxonomy_term');
+  $query->condition('vid', "year");
+  $tids = $query->execute();
+  $terms = \Drupal\taxonomy\Entity\Term::loadMultiple($tids);
+  foreach ($terms as $term) {
+    $name = $term->get('name')->getString();
+    $tid = $term->get('tid')->getString();
+    $years[$name] = $tid;
+  }
+  return $years;
+}
+
+/**
+ * Implements hook_preprocess().
+ */
+function cpmf_data_preprocess(&$variables, $hook) {
+  kint_require();
+  Kint::$maxLevels = 3;
+}
+
+/**
+ * Implements hook_help().
+ */
+function cpmf_data_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the cpmf_data module.
+    case 'help.page.cpmf_data':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Data manipulation for CPMF') . '</p>';
+      return $output;
+
+    default:
+  }
+}

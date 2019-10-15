@@ -1,0 +1,51 @@
+uuid: acff0040-a5ca-4e1e-893b-5f1a211ebaa7
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.zones_by_pillar
+  module:
+    - cpmf_charts
+    - panels
+id: zones_by_pillar-panels_variant-0
+label: Panels
+variant: panels_variant
+variant_settings:
+  blocks:
+    2ef78d9b-a1ea-4075-b64a-8611fbbdc919:
+      id: top_zones_by_pillar
+      label: 'Top Zones by Pillar Chart Block'
+      provider: cpmf_charts
+      label_display: '0'
+      region: main
+      weight: 0
+      uuid: 2ef78d9b-a1ea-4075-b64a-8611fbbdc919
+      context_mapping: {  }
+  id: panels_variant
+  uuid: e7a6f02e-a827-4b63-b45f-9f8800e8ecfc
+  label: null
+  weight: 0
+  layout: bs_1col
+  layout_settings:
+    layout:
+      wrapper: div
+      classes:
+        row: row
+      add_layout_class: 1
+      attributes: ''
+    regions:
+      main:
+        wrapper: div
+        classes:
+          col-sm-12: col-sm-12
+        add_region_classes: 1
+        attributes: ''
+  page_title: 'Zones by Pillar'
+  storage_type: page_manager
+  storage_id: zones_by_pillar-panels_variant-0
+  builder: standard
+page: zones_by_pillar
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

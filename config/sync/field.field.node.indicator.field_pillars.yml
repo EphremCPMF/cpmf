@@ -1,0 +1,32 @@
+uuid: 02514166-0386-497a-8f3e-93e75f5c229c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pillars
+    - node.type.indicator
+    - node.type.pillar
+  content:
+    - 'node:pillar:a003fbaa-d628-440a-8fda-16a27c6f7662'
+id: node.indicator.field_pillars
+field_name: field_pillars
+entity_type: node
+bundle: indicator
+label: Pillar
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    target_uuid: a003fbaa-d628-440a-8fda-16a27c6f7662
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      pillar: pillar
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

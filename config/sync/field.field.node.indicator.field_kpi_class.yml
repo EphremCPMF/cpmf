@@ -1,0 +1,23 @@
+uuid: 5026da98-fcf9-4daf-8245-b3505feeae57
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_kpi_class
+    - node.type.indicator
+  module:
+    - options
+id: node.indicator.field_kpi_class
+field_name: field_kpi_class
+entity_type: node
+bundle: indicator
+label: 'KPI Class'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: output
+default_value_callback: ''
+settings: {  }
+field_type: list_string

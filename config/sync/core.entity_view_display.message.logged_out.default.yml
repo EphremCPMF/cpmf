@@ -1,0 +1,29 @@
+uuid: c53320e5-8d5d-4de0-b028-5b4f46ba735d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.message.logged_out.field_user_reference
+    - message.template.logged_out
+id: message.logged_out.default
+targetEntityType: message
+bundle: logged_out
+mode: default
+content:
+  field_user_reference:
+    weight: 0
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  partial_0:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true

@@ -1,0 +1,63 @@
+uuid: 91cc978a-21ef-4bc2-a1c6-9b7f8e58c555
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.milestone.field_complete
+    - field.field.node.milestone.field_date
+    - field.field.node.milestone.field_date_text
+    - field.field.node.milestone.field_subtitle
+    - node.type.milestone
+  module:
+    - datetime
+    - user
+id: node.milestone.default
+targetEntityType: node
+bundle: milestone
+mode: default
+content:
+  field_complete:
+    weight: 103
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_date:
+    weight: 102
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_date_text:
+    weight: 104
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_subtitle:
+    weight: 101
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  langcode: true

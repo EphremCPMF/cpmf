@@ -1,0 +1,12 @@
+uuid: 6e077a17-93e7-4e99-8af1-78ea426863b9
+langcode: en
+status: true
+dependencies: {  }
+id: regions_by_indicator
+label: 'Regions by Indicator'
+description: ''
+use_admin_theme: false
+path: /reports/regions/indicator
+access_logic: and
+access_conditions: {  }
+parameters: {  }

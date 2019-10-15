@@ -1,0 +1,29 @@
+uuid: 0de939e2-e789-4b28-82a5-c462f5047aba
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_i_upd_has_standards
+    - node.type.indicator_data
+  module:
+    - disable_field
+third_party_settings:
+  disable_field:
+    add_disable: none
+    add_disable_roles: {  }
+    edit_disable: none
+    edit_disable_roles: {  }
+id: node.indicator_data.field_i_upd_has_standards
+field_name: field_i_upd_has_standards
+entity_type: node
+bundle: indicator_data
+label: 'Does the city have land development and use standards for various purposes?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

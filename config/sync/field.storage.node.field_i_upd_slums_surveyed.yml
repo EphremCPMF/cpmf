@@ -1,0 +1,20 @@
+uuid: 91ae7448-c1b6-450f-8f3c-090d59162d73
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_i_upd_slums_surveyed
+field_name: field_i_upd_slums_surveyed
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

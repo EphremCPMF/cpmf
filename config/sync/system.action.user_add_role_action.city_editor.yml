@@ -1,0 +1,14 @@
+uuid: 43da3429-607a-45ee-9323-c01416966375
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.city_editor
+  module:
+    - user
+id: user_add_role_action.city_editor
+label: 'Add the City editor role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: city_editor

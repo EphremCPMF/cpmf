@@ -1,0 +1,20 @@
+uuid: d2cb1d5d-8538-4912-9975-e04832d95f14
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.pillar
+  module:
+    - path
+id: node.pillar.path
+field_name: path
+entity_type: node
+bundle: pillar
+label: 'URL alias'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

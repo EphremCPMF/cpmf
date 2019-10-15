@@ -1,0 +1,20 @@
+uuid: 2901cb9f-3e43-4e7b-90ca-734b3f01fa7e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_i_upd_officials_trained_up
+field_name: field_i_upd_officials_trained_up
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

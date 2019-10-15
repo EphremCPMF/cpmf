@@ -1,0 +1,19 @@
+uuid: dac7e710-7fba-4c9d-8a6a-159dafacb322
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_abbreviation
+    - node.type.pillar
+id: node.pillar.field_abbreviation
+field_name: field_abbreviation
+entity_type: node
+bundle: pillar
+label: 'Short Title'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

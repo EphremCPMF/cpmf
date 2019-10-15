@@ -1,0 +1,23 @@
+uuid: c27e95cf-2d67-4bc3-bba3-4349585596f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_i_mse_ben_cash_transfers
+    - node.type.indicator_data
+id: node.indicator_data.field_i_mse_ben_cash_transfers
+field_name: field_i_mse_ben_cash_transfers
+entity_type: node
+bundle: indicator_data
+label: 'Numbers of food security and safety net beneficiaries receiving cash transfers'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

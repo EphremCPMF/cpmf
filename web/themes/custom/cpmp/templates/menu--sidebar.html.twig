@@ -1,0 +1,92 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a menu.
+ *
+ * Available variables:
+ * - menu_name: The machine name of the menu.
+ * - items: A nested list of menu items. Each menu item contains:
+ *   - attributes: HTML attributes for the menu item.
+ *   - below: The menu item child items.
+ *   - title: The menu link title.
+ *   - url: The menu link url, instance of \Drupal\Core\Url
+ *   - localized_options: Menu link localized options.
+ *
+ * @ingroup templates
+ */
+#}
+{% import _self as menus %}
+
+{#
+  We call a macro which calls itself to render the full tree.
+  @see http://twig.sensiolabs.org/doc/tags/macro.html
+#}
+{{ menus.menu_links(items, attributes, 0, menu_name) }}
+
+{% macro menu_links(items, attributes, menu_level, menu_name) %}
+  {% import _self as menus %}
+  {% if items %}
+    {% if menu_level == 0 %}
+      <ul id="{{ menu_name }}" {{ attributes.addClass('menu', 'nav', 'collapse', 'out') }}>
+    {% else %}
+      <ul{{ attributes.addClass('dropdown-menu') }}>
+    {% endif %}
+    {% for item in items %}
+      {%
+        set item_classes = [
+          item.is_expanded? 'expanded',
+          item.is_expanded and menu_level == 0 ? 'dropdown',
+          item.in_active_trail ? 'active',
+        ]
+      %}
+      {% if menu_level == 0 and item.is_expanded %}
+        <li{{ item.attributes.addClass(item_classes) }}>
+        <a href="{{ item.url }}" class="dropdown-toggle" data-target="#" data-toggle="dropdown">{{ item.title }} <span class="caret"></span></a>
+      {% else %}
+        <li{{ item.attributes.addClass(item_classes) }}>
+          {% if item.title == 'About' %}
+            <span class="glyphicon glyphicon-info-sign"></span>
+          {% endif %}
+          {% if item.title == 'Dashboard' %}
+            <span class="glyphicon glyphicon-off"></span>
+          {% endif %}
+          {% if item.title == 'Data' %}
+            <span class="glyphicon glyphicon-option-horizontal"></span>
+          {% endif %}
+          {% if item.title == 'Reports' %}
+            <span class="glyphicon glyphicon-paperclip"></span>
+          {% endif %}
+          {% if item.title == 'Cities' %}
+            <span class="glyphicon glyphicon-map-marker"></span>
+          {% endif %}
+        {% if item.title == 'Pillars' %}
+          <span class="glyphicon glyphicon-tower"></span>
+        {% endif %}
+        {% if item.title == 'Programmes' %}
+          <span class="glyphicon glyphicon-book"></span>
+        {% endif %}
+        {% if item.title == 'Projects' %}
+          <span class="glyphicon glyphicon-blackboard"></span>
+        {% endif %}
+          {% if item.title == 'Activity' %}
+            <span class="glyphicon glyphicon-time"></span>
+          {% endif %}
+          {% if item.title == 'Timeline' %}
+            <span class="glyphicon glyphicon-film"></span>
+          {% endif %}
+          {% if item.title == 'Indicators' %}
+            <span class="glyphicon glyphicon-tag"></span>
+          {% endif %}
+          {% if item.title == 'Help' %}
+            <span class="glyphicon glyphicon-question-sign"></span>
+          {% endif %}
+        {{ link(item.title, item.url) }}
+      {% endif %}
+      {% if item.below %}
+        {{ menus.menu_links(item.below, attributes.removeClass('nav'), menu_level + 1) }}
+      {% endif %}
+      </li>
+    {% endfor %}
+    </ul>
+  {% endif %}
+{% endmacro %}

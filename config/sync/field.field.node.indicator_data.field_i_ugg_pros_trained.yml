@@ -1,0 +1,23 @@
+uuid: ebd36145-e6b9-45d8-9ca8-b3b8d75881f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_i_ugg_pros_trained
+    - node.type.indicator_data
+id: node.indicator_data.field_i_ugg_pros_trained
+field_name: field_i_ugg_pros_trained
+entity_type: node
+bundle: indicator_data
+label: 'Number of urban professionals trained on how to adapt, implement and achieve municipal service standards'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

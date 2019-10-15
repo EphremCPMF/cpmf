@@ -1,0 +1,34 @@
+uuid: 30885e1a-5cce-4043-81a1-105256c29966
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.carousel
+  module:
+    - block_class
+    - system
+    - views
+  theme:
+    - cpmp
+third_party_settings:
+  block_class:
+    classes: ''
+id: cpmp_views_block__carousel_block_1
+theme: cpmp
+region: header
+weight: -8
+provider: null
+plugin: 'views_block:carousel-block_1'
+settings:
+  id: 'views_block:carousel-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/352
+    negate: false
+    context_mapping: {  }

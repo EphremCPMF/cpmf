@@ -1,0 +1,31 @@
+uuid: 9eac4496-5d37-44b8-b7dc-abd32d3c8ca2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_i_mse_mses
+    - node.type.indicator_data
+  module:
+    - disable_field
+third_party_settings:
+  disable_field:
+    add_disable: none
+    add_disable_roles: {  }
+    edit_disable: none
+    edit_disable_roles: {  }
+id: node.indicator_data.field_i_mse_mses
+field_name: field_i_mse_mses
+entity_type: node
+bundle: indicator_data
+label: 'How many MSMES were established in the city over the past one year?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

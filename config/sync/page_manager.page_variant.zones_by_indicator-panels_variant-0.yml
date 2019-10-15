@@ -1,0 +1,51 @@
+uuid: 4a71e6bb-bc1c-499c-903b-752f959eef0b
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.zones_by_indicator
+  module:
+    - cpmf_charts
+    - panels
+id: zones_by_indicator-panels_variant-0
+label: Panels
+variant: panels_variant
+variant_settings:
+  blocks:
+    86dc7256-b474-4449-9b00-a037cf07a44d:
+      id: top_zones_by_indicator
+      label: 'Top Zones by Indicator Chart Block'
+      provider: cpmf_charts
+      label_display: '0'
+      region: main
+      weight: 0
+      uuid: 86dc7256-b474-4449-9b00-a037cf07a44d
+      context_mapping: {  }
+  id: panels_variant
+  uuid: 6fb0f195-a63f-4822-822f-56a39d0f6744
+  label: null
+  weight: 0
+  layout: bs_1col
+  layout_settings:
+    layout:
+      wrapper: div
+      classes:
+        row: row
+      add_layout_class: 1
+      attributes: ''
+    regions:
+      main:
+        wrapper: div
+        classes:
+          col-sm-12: col-sm-12
+        add_region_classes: 1
+        attributes: ''
+  page_title: 'Zones by Indicator'
+  storage_type: page_manager
+  storage_id: zones_by_indicator-panels_variant-0
+  builder: standard
+page: zones_by_indicator
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

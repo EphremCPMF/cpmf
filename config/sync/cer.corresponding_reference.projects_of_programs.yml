@@ -1,0 +1,13 @@
+uuid: 6363a539-ce02-4d14-9ef5-995aa9e251a4
+langcode: en
+status: true
+dependencies: {  }
+id: projects_of_programs
+label: 'Projects of Programs'
+enabled: true
+first_field: field_program
+second_field: field_projects
+bundles:
+  node:
+    - program
+    - project

@@ -1,0 +1,14 @@
+uuid: 7851d054-834e-4cfb-931e-eca17eaced1c
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.city_editor
+  module:
+    - user
+id: user_remove_role_action.city_editor
+label: 'Remove the City editor role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: city_editor

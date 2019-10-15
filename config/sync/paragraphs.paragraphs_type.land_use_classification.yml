@@ -1,0 +1,9 @@
+uuid: 91710fe9-5e3d-4142-afe3-a86a491a69dc
+langcode: en
+status: true
+dependencies: {  }
+id: land_use_classification
+label: 'Land use classification'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

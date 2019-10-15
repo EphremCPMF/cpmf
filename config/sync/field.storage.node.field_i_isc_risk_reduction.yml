@@ -1,0 +1,18 @@
+uuid: 1cfe4ef7-5631-4784-abb1-c66d089cec91
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_i_isc_risk_reduction
+field_name: field_i_isc_risk_reduction
+entity_type: node
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

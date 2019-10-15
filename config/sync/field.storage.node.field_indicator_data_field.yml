@@ -1,0 +1,21 @@
+uuid: 20a822e4-0479-41c5-8514-0f94556afa7a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_indicator_data_field
+field_name: field_indicator_data_field
+entity_type: node
+type: list_string
+settings:
+  allowed_values: {  }
+  allowed_values_function: cpmf_forms_get_indicator_field_options
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

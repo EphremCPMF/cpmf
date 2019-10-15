@@ -1,0 +1,7 @@
+name: 'Remove field label length limit'
+type: module
+description: 'Removes field label length limit (which is 128 characters).'
+package: Fields
+core: '8.x'
+dependencies:
+  - field_ui

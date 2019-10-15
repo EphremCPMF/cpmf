@@ -1,0 +1,38 @@
+uuid: 4b6c1473-de74-4f02-8b97-738bc83d2d42
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_flag
+    - node.type.region
+  module:
+    - image
+id: node.region.field_flag
+field_name: field_flag
+entity_type: node
+bundle: region
+label: Flag
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: regions
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

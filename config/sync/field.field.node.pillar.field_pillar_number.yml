@@ -1,0 +1,23 @@
+uuid: 2a894149-aea3-46c5-b20a-392266501418
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pillar_number
+    - node.type.pillar
+id: node.pillar.field_pillar_number
+field_name: field_pillar_number
+entity_type: node
+bundle: pillar
+label: 'Pillar Number'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 1
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

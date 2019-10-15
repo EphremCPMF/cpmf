@@ -1,0 +1,20 @@
+uuid: 0b7af714-3fb0-4575-89be-53c1f376deec
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_i_upd_land_rights_women
+field_name: field_i_upd_land_rights_women
+entity_type: node
+type: decimal
+settings:
+  precision: 10
+  scale: 2
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,31 @@
+uuid: eff50439-c0a9-4b99-b55f-9956b332319a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_i_mse_ben_employed
+    - node.type.indicator_data
+  module:
+    - disable_field
+third_party_settings:
+  disable_field:
+    add_disable: none
+    add_disable_roles: {  }
+    edit_disable: none
+    edit_disable_roles: {  }
+id: node.indicator_data.field_i_mse_ben_employed
+field_name: field_i_mse_ben_employed
+entity_type: node
+bundle: indicator_data
+label: 'What is the Number of beneficiaries participating in the food security and safety net programmes in the city who found employments over the past one year?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

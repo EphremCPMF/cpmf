@@ -1,0 +1,17 @@
+uuid: 4cb26470-579c-46c4-b5d5-0b0b9b6d8693
+langcode: en
+status: true
+dependencies: {  }
+template: logged_in
+label: 'Logged In'
+description: ''
+text:
+  -
+    value: '<a href="[message:field_user_reference:entity:url]">[message:field_user_reference:entity:account-name]</a> logged in <span class="glyphicon glyphicon-log-in"></span>'
+    format: full_html
+settings:
+  'token options':
+    clear: false
+    'token replace': true
+  purge_override: false
+  purge_methods: {  }

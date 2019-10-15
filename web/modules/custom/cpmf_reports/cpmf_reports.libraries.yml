@@ -1,0 +1,13 @@
+cpmf-reports-table-export:
+  js:
+    js/Blob.min.js: {}
+    js/xlsx.core.min.js: {}
+    js/FileSaver.min.js: {}
+    js/tableexport.min.js: {}
+    js/cpmf-reports.js: {}
+#  css:
+#    theme:
+#      css/tableexport.css: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once

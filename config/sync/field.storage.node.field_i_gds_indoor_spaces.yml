@@ -1,0 +1,20 @@
+uuid: fc3a6ada-d017-4e7d-9d12-ee7227be2514
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_i_gds_indoor_spaces
+field_name: field_i_gds_indoor_spaces
+entity_type: node
+type: decimal
+settings:
+  precision: 10
+  scale: 2
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

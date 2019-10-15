@@ -1,0 +1,22 @@
+uuid: a17f865f-f7ba-41f4-bafb-611ad0b4a0bd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.message.logged_in.field_user_reference
+    - message.template.logged_in
+id: message.logged_in.default
+targetEntityType: message
+bundle: logged_in
+mode: default
+content:
+  field_user_reference:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+hidden: {  }

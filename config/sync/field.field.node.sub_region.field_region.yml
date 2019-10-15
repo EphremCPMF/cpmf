@@ -1,0 +1,32 @@
+uuid: 7f5c0cf2-5155-4bd9-9e65-41760d8ce39e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_region
+    - node.type.region
+    - node.type.sub_region
+  content:
+    - 'node:region:bd91ffd6-513d-4c29-86b3-aa56f716badc'
+id: node.sub_region.field_region
+field_name: field_region
+entity_type: node
+bundle: sub_region
+label: Region
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: bd91ffd6-513d-4c29-86b3-aa56f716badc
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      region: region
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,31 @@
+uuid: 266bd3b1-0eef-46d8-afa5-c3f45af869da
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_project_weight
+    - node.type.project
+  module:
+    - disable_field
+third_party_settings:
+  disable_field:
+    add_disable: none
+    add_disable_roles: {  }
+    edit_disable: none
+    edit_disable_roles: {  }
+id: node.project.field_project_weight
+field_name: field_project_weight
+entity_type: node
+bundle: project
+label: 'Project weight'
+description: 'Enter a weight between 0 and 100. Total weights for all projects in a program must equal 100.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: !!float 0
+  max: !!float 100
+  prefix: ''
+  suffix: '%'
+field_type: decimal

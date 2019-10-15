@@ -1,0 +1,31 @@
+uuid: cea3b0b2-063f-4af1-8d20-255385ead9c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_i_hda_price_income_ratio
+    - node.type.indicator_data
+  module:
+    - disable_field
+third_party_settings:
+  disable_field:
+    add_disable: none
+    add_disable_roles: {  }
+    edit_disable: none
+    edit_disable_roles: {  }
+id: node.indicator_data.field_i_hda_price_income_ratio
+field_name: field_i_hda_price_income_ratio
+entity_type: node
+bundle: indicator_data
+label: 'What is the housing price to income ratio in the city?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: !!float 0
+  max: !!float 100
+  prefix: ''
+  suffix: '%'
+field_type: decimal

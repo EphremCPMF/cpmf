@@ -1,0 +1,32 @@
+uuid: 7ec52780-7dd5-457f-8410-c8b1610baa02
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.message.added_content.field_node_reference
+    - field.field.message.added_content.field_user_reference
+    - message.template.added_content
+id: message.added_content.default
+targetEntityType: message
+bundle: added_content
+mode: default
+content:
+  field_node_reference:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_user_reference:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+hidden: {  }

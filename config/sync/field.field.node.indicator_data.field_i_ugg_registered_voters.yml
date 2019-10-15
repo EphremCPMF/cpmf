@@ -1,0 +1,23 @@
+uuid: 9253a077-c784-48b3-9284-62b428f50944
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_i_ugg_registered_voters
+    - node.type.indicator_data
+id: node.indicator_data.field_i_ugg_registered_voters
+field_name: field_i_ugg_registered_voters
+entity_type: node
+bundle: indicator_data
+label: 'Number of registered voters as a proportion of the voting age population'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -1,0 +1,28 @@
+uuid: 1ba68842-3cfd-4171-a4c0-9e9802670500
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.message.field_user_reference
+    - message.template.added_content
+id: message.added_content.field_user_reference
+field_name: field_user_reference
+entity_type: message
+bundle: added_content
+label: 'User Reference'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: false
+    filter:
+      type: _none
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

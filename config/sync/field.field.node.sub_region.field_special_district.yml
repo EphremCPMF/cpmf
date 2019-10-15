@@ -1,0 +1,23 @@
+uuid: b73a914e-5c30-4e3d-8f5e-fa3cb2f876e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_special_district
+    - node.type.sub_region
+id: node.sub_region.field_special_district
+field_name: field_special_district
+entity_type: node
+bundle: sub_region
+label: 'Special District'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

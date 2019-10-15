@@ -1,0 +1,51 @@
+uuid: adc3e5db-63d8-47dc-a8dd-0a47fcb90316
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.zones
+  module:
+    - cpmf_charts
+    - panels
+id: zones-panels_variant-0
+label: Panels
+variant: panels_variant
+variant_settings:
+  blocks:
+    f5986c9c-4c48-4def-8c05-e5095f060f82:
+      id: top_zones
+      label: 'Top Zones Chart Block'
+      provider: cpmf_charts
+      label_display: '0'
+      region: main
+      weight: 0
+      uuid: f5986c9c-4c48-4def-8c05-e5095f060f82
+      context_mapping: {  }
+  id: panels_variant
+  uuid: b0f1ac25-6006-4d4f-8864-a16df7d2816a
+  label: null
+  weight: 0
+  layout: bs_1col
+  layout_settings:
+    layout:
+      wrapper: div
+      classes:
+        row: row
+      add_layout_class: 1
+      attributes: ''
+    regions:
+      main:
+        wrapper: div
+        classes:
+          col-sm-12: col-sm-12
+        add_region_classes: 1
+        attributes: ''
+  page_title: Zones
+  storage_type: page_manager
+  storage_id: zones-panels_variant-0
+  builder: standard
+page: zones
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

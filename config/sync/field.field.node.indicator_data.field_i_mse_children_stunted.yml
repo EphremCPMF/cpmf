@@ -1,0 +1,23 @@
+uuid: ce8f4886-f0d9-47dc-b63e-e88fb1c45f43
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_i_mse_children_stunted
+    - node.type.indicator_data
+id: node.indicator_data.field_i_mse_children_stunted
+field_name: field_i_mse_children_stunted
+entity_type: node
+bundle: indicator_data
+label: '% of > 5 year old children that are medically classified as stunted'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: !!float 0
+  max: !!float 100
+  prefix: ''
+  suffix: '%'
+field_type: decimal

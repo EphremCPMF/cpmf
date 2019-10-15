@@ -1,0 +1,31 @@
+uuid: aadca23b-0e38-48db-8263-41f25d08ba0f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_i_mse_jobs_in_manufacture
+    - node.type.indicator_data
+  module:
+    - disable_field
+third_party_settings:
+  disable_field:
+    add_disable: none
+    add_disable_roles: {  }
+    edit_disable: none
+    edit_disable_roles: {  }
+id: node.indicator_data.field_i_mse_jobs_in_manufacture
+field_name: field_i_mse_jobs_in_manufacture
+entity_type: node
+bundle: indicator_data
+label: 'What is the number of jobs in the construction industry that involved in the manufacture of local building materials, out of the total number of jobs in the construction industry of the city?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

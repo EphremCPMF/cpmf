@@ -1,0 +1,18 @@
+uuid: 4be8a954-c73c-44ab-b13d-8ab588e742aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.city
+id: node.city.title
+field_name: title
+entity_type: node
+bundle: city
+label: Name
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

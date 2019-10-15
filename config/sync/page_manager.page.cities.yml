@@ -1,0 +1,12 @@
+uuid: 3cee1214-0e49-41cf-9700-862e5922bc8a
+langcode: en
+status: true
+dependencies: {  }
+id: cities
+label: Cities
+description: ''
+use_admin_theme: false
+path: /reports/cities
+access_logic: and
+access_conditions: {  }
+parameters: {  }

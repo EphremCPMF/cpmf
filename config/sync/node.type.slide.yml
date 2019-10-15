@@ -1,0 +1,25 @@
+uuid: 7b7b8d1b-ddcd-413f-b06c-7ddaa378d63b
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+    - node_save_redirect
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+  node_save_redirect:
+    save_type: '0'
+    save_location: ''
+    save_destination: 0
+    edit_type: '0'
+    edit_location: ''
+    edit_destination: 0
+name: Slide
+type: slide
+description: ''
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

@@ -1,0 +1,23 @@
+uuid: 7c403c39-ec6d-4fda-824f-cbcdbc8f6577
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_complete
+    - node.type.milestone
+id: node.milestone.field_complete
+field_name: field_complete
+entity_type: node
+bundle: milestone
+label: Complete
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

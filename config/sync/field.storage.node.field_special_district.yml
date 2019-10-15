@@ -1,0 +1,18 @@
+uuid: 328ab544-a5cc-4d59-80bd-b0bbd0b80911
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_special_district
+field_name: field_special_district
+entity_type: node
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

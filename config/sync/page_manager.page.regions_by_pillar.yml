@@ -1,0 +1,12 @@
+uuid: eff3cc6c-9c31-4df1-af24-65b25e7a631b
+langcode: en
+status: true
+dependencies: {  }
+id: regions_by_pillar
+label: 'Regions by Pillar'
+description: ''
+use_admin_theme: false
+path: /reports/regions/pillar
+access_logic: and
+access_conditions: {  }
+parameters: {  }

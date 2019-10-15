@@ -1,0 +1,23 @@
+uuid: 52e3505a-70d4-447b-9422-19617c9b8248
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_i_mse_informal_employment
+    - node.type.indicator_data
+id: node.indicator_data.field_i_mse_informal_employment
+field_name: field_i_mse_informal_employment
+entity_type: node
+bundle: indicator_data
+label: 'Percentage of population engaged in informal employment'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: !!float 0
+  max: !!float 100
+  prefix: ''
+  suffix: '%'
+field_type: decimal

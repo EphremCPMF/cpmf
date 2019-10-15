@@ -1,0 +1,27 @@
+uuid: dab06f8d-0b7a-4826-8efb-90562f859d99
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.5_year_baselines_and_targets.field_targets
+    - paragraphs.paragraphs_type.5_year_baselines_and_targets
+  module:
+    - entity_reference_revisions
+id: paragraph.5_year_baselines_and_targets.default
+targetEntityType: paragraph
+bundle: 5_year_baselines_and_targets
+mode: default
+content:
+  field_targets:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true

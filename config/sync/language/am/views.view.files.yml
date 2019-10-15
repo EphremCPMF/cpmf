@@ -1,0 +1,15 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: ማጣሪያ
+      fields:
+        filename:
+          label: ስም
+        status:
+          label: ሁኔታ
+      filters:
+        status:
+          expose:
+            label: ሁኔታ

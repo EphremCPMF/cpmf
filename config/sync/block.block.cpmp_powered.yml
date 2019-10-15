@@ -1,0 +1,22 @@
+uuid: 122741f8-fe10-4554-93b9-3182374b31bd
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - cpmp
+_core:
+  default_config_hash: iggZSiUKz4mYP1YPJ8SsUfFu79HIgOTt6IDy3Up59aM
+id: cpmp_powered
+theme: cpmp
+region: navigation
+weight: -7
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

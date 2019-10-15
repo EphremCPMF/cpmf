@@ -1,0 +1,30 @@
+uuid: 176cccef-0d38-42ef-8003-b6055a6fb8ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_population
+    - node.type.region
+    - paragraphs.paragraphs_type.population
+  module:
+    - entity_reference_revisions
+id: node.region.field_population
+field_name: field_population
+entity_type: node
+bundle: region
+label: Population
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      population: population
+    target_bundles_drag_drop:
+      population:
+        enabled: true
+        weight: 2
+field_type: entity_reference_revisions

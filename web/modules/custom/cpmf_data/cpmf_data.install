@@ -1,0 +1,24 @@
+<?php
+
+use Drupal\Core\Field\BaseFieldDefinition;
+
+/**
+* Implements hook_install().
+*/
+//function cpmf_data_install() {
+//  $storage_definition = BaseFieldDefinition::create('float')
+//    ->setLabel(t('Overall Score'));
+//  \Drupal::entityDefinitionUpdateManager()
+//    ->installFieldStorageDefinition('cpmf_overall_score', 'node', 'node', $storage_definition);
+//}
+
+/**
+* Implements hook_uninstall().
+*/
+//function cpmf_data_uninstall() {
+//  $entity_definition_update_manager = Drupal::entityDefinitionUpdateManager();
+//  $storage_definition = $entity_definition_update_manager->getFieldStorageDefinition('cpmf_overall_score', 'node');
+//  if ($storage_definition) {
+//    $entity_definition_update_manager->uninstallFieldStorageDefinition($storage_definition);
+//  }
+//}

@@ -1,0 +1,37 @@
+uuid: 150cda80-d45d-4714-aced-c34ab4fc073f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_year
+    - paragraphs.paragraphs_type.yearly_baselines_and_targets
+    - taxonomy.vocabulary.year
+  module:
+    - disable_field
+third_party_settings:
+  disable_field:
+    add_disable: none
+    add_disable_roles: {  }
+    edit_disable: none
+    edit_disable_roles: {  }
+id: paragraph.yearly_baselines_and_targets.field_year
+field_name: field_year
+entity_type: paragraph
+bundle: yearly_baselines_and_targets
+label: Year
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      year: year
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,23 @@
+uuid: 150ebc0b-8a35-4894-b566-b61f99b3cdf3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_i_mse_ben_training
+    - node.type.indicator_data
+id: node.indicator_data.field_i_mse_ben_training
+field_name: field_i_mse_ben_training
+entity_type: node
+bundle: indicator_data
+label: 'Number of beneficiaries getting training'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

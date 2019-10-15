@@ -1,0 +1,39 @@
+uuid: 6977cf49-b5a4-4152-8d7f-efde9f89e321
+langcode: en
+status: true
+dependencies: {  }
+id: publisher
+label: Publisher
+weight: -4
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'access environment indicator'
+  - 'access toolbar'
+  - 'access user profiles'
+  - 'add terms in land_use_classification'
+  - 'add terms in year'
+  - 'administer content types'
+  - 'administer node fields'
+  - 'administer node form display'
+  - 'administer nodes'
+  - 'administer users'
+  - 'delete terms in land_use_classification'
+  - 'edit terms in land_use_classification'
+  - 'edit terms in year'
+  - 'reorder terms in land_use_classification'
+  - 'reorder terms in year'
+  - 'revert all revisions'
+  - 'revert indicator_data revisions'
+  - 'use indicator_data_workflow transition create_new_draft'
+  - 'use indicator_data_workflow transition publish'
+  - 'use indicator_data_workflow transition return_to_draft'
+  - 'use indicator_data_workflow transition submit_for_review'
+  - 'use text format restricted_html'
+  - 'view all revisions'
+  - 'view any unpublished content'
+  - 'view indicator_data revisions'
+  - 'view latest version'
+  - 'view own unpublished content'
+  - 'view the administration theme'

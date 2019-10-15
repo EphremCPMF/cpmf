@@ -1,0 +1,20 @@
+uuid: 48d9db91-3379-4f97-aab0-d80a37c40f7b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_i_mse_access_finance
+field_name: field_i_mse_access_finance
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

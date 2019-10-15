@@ -1,0 +1,11 @@
+uuid: 590928cf-66b4-49c5-ab8c-09d276decab8
+langcode: en
+status: true
+dependencies:
+  config:
+    - message.template.edited_content
+id: message.edited_content
+target_entity_type_id: message
+target_bundle: edited_content
+default_langcode: site_default
+language_alterable: false

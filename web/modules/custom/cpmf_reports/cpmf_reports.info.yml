@@ -1,0 +1,5 @@
+name: CPMF Reports
+type: module
+description: Reports functionality for CPMF
+core: 8.x
+package: CPMF

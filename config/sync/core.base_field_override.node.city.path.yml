@@ -1,0 +1,20 @@
+uuid: e2bb9089-f50c-4e85-a2f2-a41a024f428a
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.city
+  module:
+    - path
+id: node.city.path
+field_name: path
+entity_type: node
+bundle: city
+label: 'URL alias'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

@@ -1,0 +1,25 @@
+uuid: 5ad88665-8f4a-4957-ad07-759484f5373c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sub_region
+    - node.type.city
+id: node.city.field_sub_region
+field_name: field_sub_region
+entity_type: node
+bundle: city
+label: Zone
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: sub_region_reference
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference

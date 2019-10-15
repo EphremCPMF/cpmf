@@ -1,0 +1,29 @@
+uuid: 3034feed-3ca5-4f55-9e58-abf9c1dcccf4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_i_upd_structural_plans
+    - node.type.indicator_data
+  module:
+    - disable_field
+third_party_settings:
+  disable_field:
+    add_disable: none
+    add_disable_roles: {  }
+    edit_disable: none
+    edit_disable_roles: {  }
+id: node.indicator_data.field_i_upd_structural_plans
+field_name: field_i_upd_structural_plans
+entity_type: node
+bundle: indicator_data
+label: 'Does the city have structural and neighborhood plans?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

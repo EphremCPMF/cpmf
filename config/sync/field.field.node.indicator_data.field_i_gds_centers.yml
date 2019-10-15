@@ -1,0 +1,31 @@
+uuid: b6466e62-b29b-4100-8260-3a643f75cc35
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_i_gds_centers
+    - node.type.indicator_data
+  module:
+    - disable_field
+third_party_settings:
+  disable_field:
+    add_disable: none
+    add_disable_roles: {  }
+    edit_disable: none
+    edit_disable_roles: {  }
+id: node.indicator_data.field_i_gds_centers
+field_name: field_i_gds_centers
+entity_type: node
+bundle: indicator_data
+label: 'How many youth, sports, art and culture centers have been constructed and maintained in the city over the last one year?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

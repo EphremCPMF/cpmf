@@ -1,0 +1,25 @@
+uuid: f6a3da98-eb27-449c-8b8f-7307e613f128
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_indicator
+    - paragraphs.paragraphs_type.indicator_target
+id: paragraph.indicator_target.field_indicator
+field_name: field_indicator
+entity_type: paragraph
+bundle: indicator_target
+label: Indicator
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: indicator_reference
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference

@@ -1,0 +1,5 @@
+name: CPMF Message
+type: module
+description: Message functionality for CPMF
+core: 8.x
+package: CPMF

@@ -1,0 +1,32 @@
+uuid: 0ce3f796-1ce1-4434-b0b4-e0f86c97757a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.message.edited_content.field_node_reference
+    - field.field.message.edited_content.field_user_reference
+    - message.template.edited_content
+id: message.edited_content.default
+targetEntityType: message
+bundle: edited_content
+mode: default
+content:
+  field_node_reference:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_user_reference:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+hidden: {  }

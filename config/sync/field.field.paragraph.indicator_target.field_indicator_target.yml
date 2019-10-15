@@ -1,0 +1,25 @@
+uuid: e9e874fc-0dab-45c9-bfda-3e33b6529fd7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_indicator_target
+    - paragraphs.paragraphs_type.indicator_target
+id: paragraph.indicator_target.field_indicator_target
+field_name: field_indicator_target
+entity_type: paragraph
+bundle: indicator_target
+label: Target
+description: 'Yes = 1 | No = 0'
+required: false
+translatable: false
+default_value:
+  -
+    value: !!float 1
+default_value_callback: ''
+settings:
+  min: !!float 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

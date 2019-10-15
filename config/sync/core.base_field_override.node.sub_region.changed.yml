@@ -1,0 +1,18 @@
+uuid: 86f06755-0b16-49d1-9335-4f9d2107fb3b
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.sub_region
+id: node.sub_region.changed
+field_name: changed
+entity_type: node
+bundle: sub_region
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

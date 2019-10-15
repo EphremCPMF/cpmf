@@ -1,0 +1,20 @@
+uuid: abd78881-3a2e-42a1-96f8-1e8643d91367
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_i_ugg_registered_voters
+field_name: field_i_ugg_registered_voters
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

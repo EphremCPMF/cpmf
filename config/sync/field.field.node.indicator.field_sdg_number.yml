@@ -1,0 +1,19 @@
+uuid: 5e81d6df-ede0-471f-a543-6647bfbfc622
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sdg_number
+    - node.type.indicator
+id: node.indicator.field_sdg_number
+field_name: field_sdg_number
+entity_type: node
+bundle: indicator
+label: 'SDG Number'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

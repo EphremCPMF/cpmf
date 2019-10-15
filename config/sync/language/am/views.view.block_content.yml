@@ -1,0 +1,14 @@
+display:
+  default:
+    display_options:
+      fields:
+        info:
+          label: 'የጥምር ማብራሪያ'
+        operations:
+          label: ክወናዎች
+      filters:
+        info:
+          expose:
+            label: 'የጥምር ማብራሪያ'
+  page_1:
+    display_title: ገጽ

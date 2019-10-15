@@ -1,0 +1,17 @@
+uuid: e18ea463-3be9-49e9-a126-2cca912d7bf8
+langcode: en
+status: true
+dependencies: {  }
+template: edited_content
+label: 'Edited Content'
+description: ''
+text:
+  -
+    value: "<p><a href=\"[message:field_user_reference:entity:url]\">[message:field_node_reference:entity:author]</a> has edited this <em>[message:field_node_reference:entity:content-type]</em>: <a href=\"[message:field_node_reference:entity:url]\">[message:field_node_reference:entity:title]</a></p>\r\n"
+    format: full_html
+settings:
+  'token options':
+    clear: false
+    'token replace': true
+  purge_override: false
+  purge_methods: {  }

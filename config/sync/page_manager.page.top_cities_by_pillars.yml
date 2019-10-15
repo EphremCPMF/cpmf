@@ -1,0 +1,12 @@
+uuid: 4127d2b4-272e-4c5d-8c1f-c85677f69de3
+langcode: en
+status: true
+dependencies: {  }
+id: top_cities_by_pillars
+label: 'Top Cities by Pillars'
+description: ''
+use_admin_theme: false
+path: /reports/cities/pillar
+access_logic: and
+access_conditions: {  }
+parameters: {  }

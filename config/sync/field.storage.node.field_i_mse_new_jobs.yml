@@ -1,0 +1,20 @@
+uuid: 70ca213e-1f5a-41fb-9a16-431d869e8778
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_i_mse_new_jobs
+field_name: field_i_mse_new_jobs
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

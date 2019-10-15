@@ -1,0 +1,23 @@
+uuid: 296d0a17-5de7-45a6-aab5-fb59d6ac883a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_i_ugg_engaged_civic
+    - node.type.indicator_data
+id: node.indicator_data.field_i_ugg_engaged_civic
+field_name: field_i_ugg_engaged_civic
+entity_type: node
+bundle: indicator_data
+label: 'Proportion of urban population engaged in civic activities'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: !!float 0
+  max: !!float 100
+  prefix: ''
+  suffix: '%'
+field_type: decimal

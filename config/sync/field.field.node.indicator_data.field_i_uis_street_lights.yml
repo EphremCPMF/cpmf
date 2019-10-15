@@ -1,0 +1,31 @@
+uuid: c59b665c-9403-4869-9aac-0d8ebd3b69c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_i_uis_street_lights
+    - node.type.indicator_data
+  module:
+    - disable_field
+third_party_settings:
+  disable_field:
+    add_disable: none
+    add_disable_roles: {  }
+    edit_disable: none
+    edit_disable_roles: {  }
+id: node.indicator_data.field_i_uis_street_lights
+field_name: field_i_uis_street_lights
+entity_type: node
+bundle: indicator_data
+label: 'What is the total length of streets with installed street lights in the city?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ' km'
+field_type: integer

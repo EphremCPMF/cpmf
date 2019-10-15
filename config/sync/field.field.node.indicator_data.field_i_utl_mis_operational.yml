@@ -1,0 +1,21 @@
+uuid: c750a37e-28fd-4d87-a456-5a9a21565b5f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_i_utl_mis_operational
+    - node.type.indicator_data
+id: node.indicator_data.field_i_utl_mis_operational
+field_name: field_i_utl_mis_operational
+entity_type: node
+bundle: indicator_data
+label: 'Whether the city''s MIS systems is operational (and including a statistical unit) or not'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

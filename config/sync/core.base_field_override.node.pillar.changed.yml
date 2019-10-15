@@ -1,0 +1,18 @@
+uuid: 8b32e379-f24b-45e5-aedc-8cb9d46e378f
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.pillar
+id: node.pillar.changed
+field_name: changed
+entity_type: node
+bundle: pillar
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

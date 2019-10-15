@@ -1,0 +1,25 @@
+uuid: 612c2d80-0b1a-4c63-8841-b33d3c27635a
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+    - node_save_redirect
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+  node_save_redirect:
+    save_type: '0'
+    save_location: ''
+    save_destination: 0
+    edit_type: '1'
+    edit_location: ''
+    edit_destination: 0
+name: 'City Indicator Data'
+type: indicator_data
+description: ''
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

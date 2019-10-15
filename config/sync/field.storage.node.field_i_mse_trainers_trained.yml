@@ -1,0 +1,20 @@
+uuid: d518e867-f9bd-43e2-a05b-686e3035327e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_i_mse_trainers_trained
+field_name: field_i_mse_trainers_trained
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

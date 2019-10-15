@@ -1,0 +1,21 @@
+uuid: 6119ca89-6c78-4cad-83b8-d9c15f9b8fe6
+langcode: en
+status: true
+dependencies:
+  module:
+    - computed_field
+    - node
+id: node.field_total_pillar_score
+field_name: field_total_pillar_score
+entity_type: node
+type: computed_decimal
+settings:
+  precision: '10'
+  scale: '2'
+module: computed_field
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

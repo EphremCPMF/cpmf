@@ -1,0 +1,9 @@
+version: "2.1"
+services:
+  cli:
+    volumes:
+    - docksal_ssh_agent:/.ssh-agent:ro
+  mail:
+    extends:
+      file: ${HOME}/.docksal/stacks/services.yml
+      service: mail

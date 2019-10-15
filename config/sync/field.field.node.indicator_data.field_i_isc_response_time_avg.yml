@@ -1,0 +1,31 @@
+uuid: f9583ea9-50ff-4cd6-885e-bbcb666c0ed9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_i_isc_response_time_avg
+    - node.type.indicator_data
+  module:
+    - disable_field
+third_party_settings:
+  disable_field:
+    add_disable: none
+    add_disable_roles: {  }
+    edit_disable: none
+    edit_disable_roles: {  }
+id: node.indicator_data.field_i_isc_response_time_avg
+field_name: field_i_isc_response_time_avg
+entity_type: node
+bundle: indicator_data
+label: 'What is the average response time in the city for emergency response services from initial call?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ' minutes'
+field_type: decimal

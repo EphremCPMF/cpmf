@@ -1,0 +1,47 @@
+uuid: d8a46a0a-ec2a-46c5-9710-7b44d07d17d4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.indicator_target.field_indicator
+    - field.field.paragraph.indicator_target.field_indicator_baseline
+    - field.field.paragraph.indicator_target.field_indicator_target
+    - paragraphs.paragraphs_type.indicator_target
+  module:
+    - content_moderation
+    - entity_reference_views_select
+id: paragraph.indicator_target.default
+targetEntityType: paragraph
+bundle: indicator_target
+mode: default
+content:
+  field_indicator:
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    type: erviews_options_select
+    region: content
+  field_indicator_baseline:
+    weight: 102
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_indicator_target:
+    weight: 103
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  moderation_state:
+    type: moderation_state_default
+    weight: 100
+    settings: {  }
+    region: content
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
+  uid: true

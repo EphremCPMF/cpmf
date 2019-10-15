@@ -1,0 +1,22 @@
+uuid: 8c12e7f1-4137-410e-975a-869ba29aa3a7
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: zone
+label: Zone
+type: 'canonical_entities:node'
+pattern: 'zone/[node:title]'
+selection_criteria:
+  6dc66ca4-d378-49ef-bda7-3298155874e6:
+    id: node_type
+    bundles:
+      sub_region: sub_region
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 6dc66ca4-d378-49ef-bda7-3298155874e6
+selection_logic: and
+weight: -5
+relationships: {  }

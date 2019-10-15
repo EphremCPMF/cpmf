@@ -1,0 +1,22 @@
+uuid: 51392f5a-fcc1-4da8-8c74-282094607d16
+langcode: en
+status: true
+dependencies:
+  theme:
+    - cpmp
+_core:
+  default_config_hash: qHdtze2DZ2mFfaJadxjZz6epm92_SN9SAFY4yJGl8Fo
+id: cpmp_local_tasks
+theme: cpmp
+region: header
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

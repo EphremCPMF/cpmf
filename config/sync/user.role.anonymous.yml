@@ -1,0 +1,35 @@
+uuid: 5ff07858-1841-4a08-b32c-0fc02697e5ba
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: j5zLMOdJBqC0bMvSdth5UebkprJB8g_2FXHqhfpJzow
+id: anonymous
+label: 'Anonymous user'
+weight: -10
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access site-wide contact form'
+  - 'entity print access type node'
+  - 'entity print views access'
+  - 'restful get cpmf_cities_by_pillar_rest_resource'
+  - 'restful get cpmf_cities_indicator_line_rest_resource'
+  - 'restful get cpmf_cities_overall_line_rest_resource'
+  - 'restful get cpmf_cities_overall_rest_resource'
+  - 'restful get cpmf_cities_pillar_line_rest_resource'
+  - 'restful get cpmf_city_data_rest_resource'
+  - 'restful get cpmf_city_pillar_data_rest_resource'
+  - 'restful get cpmf_indicators_rest_resource'
+  - 'restful get cpmf_pillars_rest_resource'
+  - 'restful get cpmf_program_data_rest_resource'
+  - 'restful get cpmf_region_by_indicators_rest_resource'
+  - 'restful get cpmf_regions_by_pillar_rest_resource'
+  - 'restful get cpmf_regions_rest_resource'
+  - 'restful get cpmf_zone_by_indicators_rest_resource'
+  - 'restful get cpmf_zones_by_pillar_rest_resource'
+  - 'restful get cpmf_zones_rest_resource'
+  - 'search content'
+  - 'view entity pdf'
+  - 'view media'

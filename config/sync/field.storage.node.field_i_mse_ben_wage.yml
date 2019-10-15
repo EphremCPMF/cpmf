@@ -1,0 +1,20 @@
+uuid: 5ecd363b-74d0-4e9f-83a7-2d032c56b5a8
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_i_mse_ben_wage
+field_name: field_i_mse_ben_wage
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

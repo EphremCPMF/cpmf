@@ -1,0 +1,16 @@
+uuid: e84c72d4-7082-45e2-bd1c-ad601a68ace6
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.city
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: node.city
+target_entity_type_id: node
+target_bundle: city
+default_langcode: site_default
+language_alterable: false

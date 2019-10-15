@@ -1,0 +1,20 @@
+uuid: 69ca0879-0374-4a38-9b48-d9ca98a0453d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_i_gds_per_capita_budget
+field_name: field_i_gds_per_capita_budget
+entity_type: node
+type: decimal
+settings:
+  precision: 10
+  scale: 2
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

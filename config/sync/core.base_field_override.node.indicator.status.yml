@@ -1,0 +1,22 @@
+uuid: a116f314-ec63-4f86-86b4-a51bc9b446ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.indicator
+id: node.indicator.status
+field_name: status
+entity_type: node
+bundle: indicator
+label: 'Publishing status'
+description: 'A boolean indicating the published state.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

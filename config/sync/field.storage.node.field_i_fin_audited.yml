@@ -1,0 +1,18 @@
+uuid: 255e27f3-4f86-407b-ab82-08353e5d8ebc
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_i_fin_audited
+field_name: field_i_fin_audited
+entity_type: node
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

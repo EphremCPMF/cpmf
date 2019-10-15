@@ -1,0 +1,13 @@
+uuid: bb624c1d-b558-4593-9baf-bb35c7d69204
+langcode: en
+status: true
+dependencies: {  }
+id: cities_and_indicator_data
+label: 'Cities and Indicator Data'
+enabled: true
+first_field: field_city
+second_field: field_indicator_data
+bundles:
+  node:
+    - city
+    - indicator_data
