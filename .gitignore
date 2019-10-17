@@ -27,7 +27,7 @@
 .DS_Store
 
 # Ignore archives
-#*.sql
+*.sql
 *.gz
 *.tar.gz
 *.gz.info
