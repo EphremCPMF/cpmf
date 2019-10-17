@@ -227,7 +227,7 @@
         "highcharts/highcharts": "6.0.4",
         "highcharts/more": "6.0.4",
         "symfony/var-dumper": "^3.3",
-        "twig/twig": "1.38.2",
+        "twig/twig": "1.37.1",
         "vlucas/phpdotenv": "^2.4",
         "webflo/drupal-finder": "^1.0.0",
         "webmozart/path-util": "^2.3",
